@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_schema_attribute">
+    <sys_schema_attribute action="INSERT_OR_UPDATE">
+        <applies_to>COLUMN</applies_to>
+        <applies_to_description/>
+        <column_on_table display_value="Cashier Status" element="cashier_status" name="x_1797098_pettyc_0_petty_cash_lines">9983dc0bc3f03210111afb377d01310b</column_on_table>
+        <column_type display_value="Choice">5217a7c1bf3320001875647fcf0739b7</column_type>
+        <description/>
+        <label>No list edit</label>
+        <name>u_no_list_edit</name>
+        <on_table display_value="PettyCashLines" name="x_1797098_pettyc_0_petty_cash_lines">90a5855ac3a03610111afb377d013145</on_table>
+        <read_roles/>
+        <remove_roles/>
+        <sys_class_name>sys_schema_attribute</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-29 10:48:24</sys_created_on>
+        <sys_id>862d2ccbc3743210111afb377d0131e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>No list edit</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_schema_attribute_862d2ccbc3743210111afb377d0131e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-29 10:48:24</sys_updated_on>
+        <update_roles>x_1797098_pettyc_0.Pettycash_Cashier</update_roles>
+        <value_description/>
+        <value_type display_value="True/False">17d3ba81bf3320001875647fcf0739dc</value_type>
+    </sys_schema_attribute>
+</record_update>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source">
+    <ais_search_source action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <datasource display_value="">x_1797098_pettyc_0_pettycashmain</datasource>
+        <has_dynamic_filters>false</has_dynamic_filters>
+        <name>PettyCashMain</name>
+        <sys_class_name>ais_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-26 05:54:23</sys_created_on>
+        <sys_id>465d40cac3f4fa10111afb377d013106</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PettyCashMain</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>ais_search_source_465d40cac3f4fa10111afb377d013106</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-26 05:54:23</sys_updated_on>
+    </ais_search_source>
+</record_update>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1797098_pettyc_0_petty_cash_lines</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>PettyCash Recalc Header line_amount sum</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) {
+  var HEADER_TABLE       = 'x_1797098_pettyc_0_pettycashmain';
+  var LINES_TABLE        = 'x_1797098_pettyc_0_pettycashlines';
+  var REF_TO_HEADER      = 'pettycashmain_ref';
+  var LINE_AMOUNT_FIELD  = 'total_line_amount';
+  var HEADER_TOTAL_FIELD = 'total_line_amount';
+
+  var headersToRecalc = {};
+
+  // new/current header (insert/update)
+  if (current.operation() !== 'delete') {
+    var curHdr = current.getValue(REF_TO_HEADER);
+    if (curHdr) headersToRecalc[curHdr] = true;
+  }
+
+  // previous/old header (delete or ref changed)
+  var prevHdr = previous ? previous.getValue(REF_TO_HEADER) : '';
+  var refChanged = previous && current.operation() === 'update' &&
+                   current.getValue(REF_TO_HEADER) !== prevHdr;
+  if (current.operation() === 'delete' && prevHdr) headersToRecalc[prevHdr] = true;
+  if (refChanged && prevHdr) headersToRecalc[prevHdr] = true;
+
+  function recalcAndUpdate(headerSysId) {
+    var ga = new GlideAggregate(LINES_TABLE);
+    ga.addQuery(REF_TO_HEADER, headerSysId);
+    ga.addAggregate('SUM', LINE_AMOUNT_FIELD);
+    ga.query();
+
+    var total = 0;
+    if (ga.next()) total = parseFloat(ga.getAggregate('SUM', LINE_AMOUNT_FIELD) || 0) || 0;
+
+    var hdr = new GlideRecord(HEADER_TABLE);
+    if (hdr.get(headerSysId)) {
+      hdr.setWorkflow(false);
+      hdr.setUseEngines(false);
+      hdr.setValue(HEADER_TOTAL_FIELD, total);
+      hdr.update();
+    }
+  }
+
+  for (var id in headersToRecalc) if (headersToRecalc[id]) recalcAndUpdate(id);
+
+})(current, previous);
+
+/* third
+    var HEADER_TABLE = 'x_1797098_pettyc_0_pettycashmain'; 
+    var LINES_TABLE = 'x_1797098_pettyc_0_pettycashlines';
+    var REF_TO_HEADER = 'pettycashmain_ref'; // on lines
+    var LINE_AMOUNT_FIELD = 'line_amount'; // on lines
+    var HEADER_TOTAL_FIELD = 'line_amount'; // on header (where we store the SUM)
+
+    var headersToRecalc = {};
+    // New/current header (for insert/update where ref is set)
+    var currentHeaderId = current && current.isValidRecord() ? current.getValue(REF_TO_HEADER) : '';
+    if (current.operation() !== 'delete' && currentHeaderId)
+        headersToRecalc[currentHeaderId] = true;
+
+    // Old/previous header (for delete OR ref moved)
+    var previousHeaderId = previous ? previous.getValue(REF_TO_HEADER) : '';
+    var refChanged = previous && current.operation() === 'update' &&
+        current.getValue(REF_TO_HEADER) !== previousHeaderId;
+
+    if (current.operation() === 'delete' && previousHeaderId)
+        headersToRecalc[previousHeaderId] = true;
+
+    if (refChanged && previousHeaderId)
+        headersToRecalc[previousHeaderId] = true;
+
+    // Helper: recalc SUM(line_amount) for one header and update header.line_amount
+    function recalcAndUpdate(headerSysId) {
+        if (!headerSysId) return;
+
+        var ga = new GlideAggregate(LINES_TABLE);
+        ga.addQuery(REF_TO_HEADER, headerSysId);
+        ga.addAggregate('SUM', LINE_AMOUNT_FIELD);
+        ga.query();
+
+        var total = 0;
+        if (ga.next()) {
+            var sumStr = ga.getAggregate('SUM', LINE_AMOUNT_FIELD);
+            total = parseFloat(sumStr || 0);
+            if (isNaN(total)) total = 0;
+        }
+
+        var hdr = new GlideRecord(HEADER_TABLE);
+        if (hdr.get(headerSysId)) {
+            // Avoid triggering flows/BRs unintentionally
+            hdr.setWorkflow(false);
+            hdr.setUseEngines(false);
+
+            // If your header field has 2 decimal places, you can format:
+            // hdr.setValue(HEADER_TOTAL_FIELD, total.toFixed(2));
+            // Otherwise, set the raw number:
+            hdr.setValue(HEADER_TOTAL_FIELD, total);
+
+            hdr.update();
+        }
+    }
+
+    // Recalc all impacted headers (can be 1 or 2)
+    for (var id in headersToRecalc) {
+        if (headersToRecalc.hasOwnProperty(id)) {
+            recalcAndUpdate(id);
+        }
+    }
+*/
+
+    /* SECOND
+        var headerId = current.pettycashmain_ref || (previous && previous.pettycashmain_ref);
+        if (!headerId) return;
+        // Add your code here
+
+        var ga = new GlideAggregate('x_1797098_pettyc_0_petty_cash_lines');
+        ga.addQuery('pettycashmain_ref', headerId);
+        ga.addAggregate('SUM', 'line_amount'); // adjust 'amount' if your line field API is different
+        ga.query();
+
+        var total = 0;
+        if (ga.next()) {
+            total = parseFloat(ga.getAggregate('SUM', 'line_amount') || 0);
+        }
+
+        // Update the header without re-triggering flows/BRs
+        var hdr = new GlideRecord('x_1797098_pettyc_0_pettycashmain');
+        if (hdr.get(headerId)) {
+            hdr.setWorkflow(false); // prevent loops
+            hdr.setValue('line_amount', total); // or 'amount' if you want to store sum in header.amount
+            hdr.update();
+        }
+    */
+    /*  var total = 0;
+    var lineGR = new GlideRecord('x_1797098_pettyc_0_petty_cash_lines');
+    lineGR.addQuery('x_1797098_pettyc_0_pettycashmain', current.x_1797098_pettyc_0_pettycashmain);
+    lineGR.query();
+    while (lineGR.next()) {
+        total += parseFloat(lineGR.line_amount || 0);
+    }
+
+    var mainGR = new GlideRecord('x_1797098_pettyc_0_pettycashmain');
+    if (mainGR.get(current.x_1797098_pettyc_0_pettycashmain)) {
+        mainGR.line_amount = total;
+        mainGR.update();
+    }
+
+*/
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-19 15:09:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>44188233c32c3210111afb377d013179</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>PettyCash Recalc Header line_amount sum</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_script_44188233c32c3210111afb377d013179</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-20 07:04:07</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=44188233c32c3210111afb377d013179"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>44188233c32c3210111afb377d013179</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-19 15:09:22</sys_created_on>
+        <sys_id>17390633c32c3210111afb377d0131aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-19 15:09:22</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

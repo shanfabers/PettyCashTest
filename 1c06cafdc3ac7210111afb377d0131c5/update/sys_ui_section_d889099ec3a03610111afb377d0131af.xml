@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="d889099ec3a03610111afb377d0131af" sys_domain="global" table="x_1797098_pettyc_0_pettycashmain" version="3" view="Tables">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-16 05:04:24</sys_created_on>
+            <sys_id>9802e076c3e83210111afb377d0131ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="8369e87f5db122104f34969735a7ada1">d889099ec3a03610111afb377d0131af</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-16 05:04:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-16 05:04:24</sys_created_on>
+            <sys_id>1002e076c3e83210111afb377d0131ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="8369e87f5db122104f34969735a7ada1">d889099ec3a03610111afb377d0131af</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-16 05:04:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-16 05:04:24</sys_created_on>
+            <sys_id>9402e076c3e83210111afb377d0131ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="8369e87f5db122104f34969735a7ada1">d889099ec3a03610111afb377d0131af</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-16 05:04:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>receipt_upload</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-16 05:04:24</sys_created_on>
+            <sys_id>1c02e076c3e83210111afb377d0131ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="8369e87f5db122104f34969735a7ada1">d889099ec3a03610111afb377d0131af</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-16 05:04:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-16 05:04:24</sys_created_on>
+            <sys_id>9002e076c3e83210111afb377d0131ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="8369e87f5db122104f34969735a7ada1">d889099ec3a03610111afb377d0131af</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-16 05:04:24</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>employeename</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-16 05:04:24</sys_created_on>
+            <sys_id>1802e076c3e83210111afb377d0131ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="8369e87f5db122104f34969735a7ada1">d889099ec3a03610111afb377d0131af</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-16 05:04:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>amount</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-16 05:04:24</sys_created_on>
+            <sys_id>9c02e076c3e83210111afb377d0131ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="8369e87f5db122104f34969735a7ada1">d889099ec3a03610111afb377d0131af</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-16 05:04:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>employee_email</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-16 05:04:24</sys_created_on>
+            <sys_id>1402e076c3e83210111afb377d0131ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="8369e87f5db122104f34969735a7ada1">d889099ec3a03610111afb377d0131af</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-16 05:04:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1797098_pettyc_0_pettycashmain</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-14 18:40:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d889099ec3a03610111afb377d0131af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1797098_pettyc_0_pettycashmain</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+            <sys_update_name>sys_ui_section_d889099ec3a03610111afb377d0131af</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-14 18:40:01</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Tables" name="Tables">8369e87f5db122104f34969735a7ada1</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>employee_email</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-14 15:26:05</sys_created_on>
+        <sys_id>a31ddc96c3ecf210111afb377d0131d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>employee_email</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_ui_policy_action_a31ddc96c3ecf210111afb377d0131d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-14 15:26:05</sys_updated_on>
+        <table>x_1797098_pettyc_0_pettycashmain</table>
+        <ui_policy display_value="populate emp email automatically">271ddc96c3ecf210111afb377d013154</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=a31ddc96c3ecf210111afb377d0131d6"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</application>
+        <file_path/>
+        <instance_id>577afe99db5a3d5cebdd2a59139619a6</instance_id>
+        <instance_name>dev202651</instance_name>
+        <name>sys_ui_policy_action_a31ddc96c3ecf210111afb377d0131d6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>true</disabled><field>employee_email</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-14 15:26:05</sys_created_on><sys_id>a31ddc96c3ecf210111afb377d0131d6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>employee_email</sys_name><sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package><sys_policy/><sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope><sys_update_name>sys_ui_policy_action_a31ddc96c3ecf210111afb377d0131d6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-14 15:26:05</sys_updated_on><table>x_1797098_pettyc_0_pettycashmain</table><ui_policy display_value="populate emp email automatically">271ddc96c3ecf210111afb377d013154</ui_policy><value/><value_action>ignore</value_action><visible>true</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=a31ddc96c3ecf210111afb377d0131d6"/></record_update>]]></payload>
+        <payload_hash>-239010297</payload_hash>
+        <record_name>employee_email</record_name>
+        <reverted_from/>
+        <source>1006cafdc3ac7210111afb377d0131cb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-14 15:26:05</sys_created_on>
+        <sys_id>631ddc96c3ecf210111afb377d0131da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199e3541f950000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-14 15:26:05</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>271ddc9667ecf2107d20fef367c8a4d9</update_guid>
+        <update_guid_history>271ddc9667ecf2107d20fef367c8a4d9:-239010297</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 05:01:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>1e1fce49e2e9492c849f2e0d43a0bf90</sys_id>
+        <sys_metadata>a31ddc96c3ecf210111afb377d0131d6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>employee_email</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_parent display_value="Make emp email readonly Pettycash">271ddc96c3ecf210111afb377d013154</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_scope_delete display_value="">0cc400a5ae7b4560926829d174760089</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_a31ddc96c3ecf210111afb377d0131d6</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_a31ddc96c3ecf210111afb377d0131d6">631ddc96c3ecf210111afb377d0131da</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-16 05:01:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

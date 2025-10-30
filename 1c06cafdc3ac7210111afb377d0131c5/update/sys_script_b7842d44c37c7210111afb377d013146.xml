@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1797098_pettyc_0_petty_cash_lines</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_1797098_pettyc_0_petty_cash_lines">null<item endquery="false" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>PettyCash Update Main Total Line Amount</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) {
+    // === SET THESE EXACTLY TO YOUR INSTANCE ===
+    var HEADER_TABLE = 'x_1797098_pettyc_0_pettycashmain';
+    var LINES_TABLE = 'x_1797098_pettyc_0_petty_cash_lines'; // <-- use your actual lines table name from the error
+    var REF_TO_HEADER = 'pettycashmain_ref'; // header reference field on lines
+    var LINE_AMOUNT_FIELD = 'total_line_amount'; // amount on lines
+    var HEADER_TOTAL_FIELD = 'total_line_amount'; // total on header
+    var PFX = '[PettyCash SUM] ';
+
+    // Collect affected header ids
+    var headers = {};
+    if (current.operation() !== 'delete') {
+        var curHdr = current.getValue(REF_TO_HEADER);
+        if (curHdr) headers[curHdr] = true;
+    }
+    var prevHdr = previous ? previous.getValue(REF_TO_HEADER) : '';
+    var refChanged = previous && current.operation() === 'update' &&
+        current.getValue(REF_TO_HEADER) !== prevHdr;
+    if (current.operation() === 'delete' && prevHdr) headers[prevHdr] = true;
+    if (refChanged && prevHdr) headers[prevHdr] = true;
+
+gs.debug(DEBUG_PREFIX + 'op=' + current.operation() +
+            ' line=' + current.getUniqueValue() +
+            ' cur.' + LINE_AMOUNT_FIELD + '=' + curAmt +
+            ' ref=' + (current.getValue(REF_TO_HEADER) || '(none)'));
+			
+    function recalc(headerId) {
+        if (!headerId) return;
+
+        var ln = new GlideRecord(LINES_TABLE);
+        if (!ln.isValid()) {
+            gs.error(PFX + 'Lines table not valid: ' + LINES_TABLE);
+            return;
+        }
+        if (!ln.isValidField(REF_TO_HEADER)) {
+            gs.error(PFX + 'Invalid REF_TO_HEADER "' + REF_TO_HEADER + '" on ' + LINES_TABLE);
+            return;
+        }
+        if (!ln.isValidField(LINE_AMOUNT_FIELD)) {
+            gs.error(PFX + 'Invalid LINE_AMOUNT_FIELD "' + LINE_AMOUNT_FIELD + '" on ' + LINES_TABLE);
+            return;
+        }
+
+        var total = 0;
+        ln.addQuery(REF_TO_HEADER, headerId);
+        ln.query();
+        while (ln.next()) {
+            var v = ln.getValue(LINE_AMOUNT_FIELD);
+            var n = parseFloat(v);
+            if (!isNaN(n)) total += n;
+        }
+
+        var hdr = new GlideRecord(HEADER_TABLE);
+        if (hdr.get(headerId)) {
+            hdr.setWorkflow(false);
+            hdr.setValue(HEADER_TOTAL_FIELD, total);
+            hdr.update();
+            gs.info(PFX + 'Updated header ' + hdr.getDisplayValue('number') + ' total=' + total);
+        } else {
+            gs.error(PFX + 'Header not found: ' + headerId);
+        }
+    }
+
+    for (var id in headers)
+        if (headers[id]) recalc(id);
+})(current, previous);
+
+/*    (function executeRule(current, previous) {
+        // ====== CONFIG ======
+        var HEADER_TABLE = 'x_1797098_pettyc_0_pettycashmain';
+        var REF_TO_HEADER = 'pettycashmain_ref';
+        var LINE_AMOUNT_FIELD = 'total_line_amount'; // <-- change to 'line_amount' if that's your lines amount API
+        var HEADER_TOTAL_FIELD = 'total_line_amount'; // header field for the SUM
+        var AMOUNT_BALANCE_FIELD = 'amount_balance';
+        var DEBUG_PREFIX = 'PettyCash SUM ';
+        // =====================
+
+        // Log the current line value we are saving
+        var curAmt = current.operation() !== 'delete' ? current.getValue(LINE_AMOUNT_FIELD) : '(deleted)';
+        gs.debug(DEBUG_PREFIX + 'op=' + current.operation() +
+            ' line=' + current.getUniqueValue() +
+            ' cur.' + LINE_AMOUNT_FIELD + '=' + curAmt +
+            ' ref=' + (current.getValue(REF_TO_HEADER) || '(none)'));
+
+        // Collect headers to recalc (current + previous if moved or deleted)
+        var headers = {};
+        if (current.operation() !== 'delete') {
+            var curHdr = current.getValue(REF_TO_HEADER);
+            if (curHdr) headers[curHdr] = true;
+        }
+        var prevHdr = previous ? previous.getValue(REF_TO_HEADER) : '';
+        var refChanged = previous && current.operation() === 'update' &&
+            current.getValue(REF_TO_HEADER) !== prevHdr;
+        if (current.operation() === 'delete' && prevHdr) headers[prevHdr] = true;
+        if (refChanged && prevHdr) headers[prevHdr] = true;
+
+        function toNum(v) {
+            var n = parseFloat(v);
+            return isNaN(n) ? 0 : n;
+        }
+
+        function recalcVerbose(headerId) {
+            if (!headerId) return;
+
+            // Iterate children so we can log each amount we add
+            var total = 0;
+            var ln = new GlideRecord(current.getTableName()); // child table
+            ln.addQuery(REF_TO_HEADER, headerId);
+            ln.orderBy('sys_created_on');
+            ln.query();
+
+            gs.debug(DEBUG_PREFIX + 'header=' + headerId + ' — BEGIN itemization');
+            while (ln.next()) {
+                var a = ln.getValue(LINE_AMOUNT_FIELD);
+                var aFallback = ln.getValue('line_amount'); // helpful if you accidentally used the other field
+                var add = toNum(a);
+                total += add;
+
+                gs.debug(DEBUG_PREFIX +
+                    '  add line=' + ln.getDisplayValue('number') +
+                    ' sys_id=' + ln.getUniqueValue() +
+                    ' ' + LINE_AMOUNT_FIELD + '=' + a +
+                    (a ? '' : (' (fallback line_amount=' + aFallback + ')')) +
+                    ' => running_total=' + total);
+            }
+            gs.debug(DEBUG_PREFIX + 'header=' + headerId + ' — END itemization; FINAL total=' + total);
+
+            // Write to header
+            var hdr = new GlideRecord(HEADER_TABLE);
+            if (hdr.get(headerId)) {
+                hdr.setWorkflow(false);
+                hdr.setValue(HEADER_TOTAL_FIELD, total);
+                // var hdrAmt = parseFloat(hdr.amount) || 0;
+                //  var balance = hdrAmt - total;
+                //hdr.setValue(AMOUNT_BALANCE_FIELD,balance);
+                hdr.update();
+                gs.debug(DEBUG_PREFIX + 'wrote header.' + HEADER_TOTAL_FIELD + '=' + total +
+                    ' for ' + hdr.getDisplayValue('number'));
+            } else {
+                gs.error(DEBUG_PREFIX + 'header not found: ' + headerId);
+            }
+        }
+
+        for (var id in headers)
+            if (headers[id]) recalcVerbose(id);
+    })(current, previous);
+
+
+    /*
+    working now currently 
+        // ====== CONFIG (match your real APIs) ======
+        var HEADER_TABLE = 'x_1797098_pettyc_0_pettycashmain';
+        var LINES_TABLE = 'x_1797098_pettyc_0_petty_cash_lines'; // <-- correct table
+        var REF_TO_HEADER = 'pettycashmain_ref'; // child -> header ref
+        var LINE_AMOUNT_FIELD = 'total_line_amount'; // amount on lines
+        var HEADER_TOTAL_FIELD = 'total_line_amount'; // total stored on header
+        // If your header field is named 'line_amount' instead, set HEADER_TOTAL_FIELD = 'line_amount'
+        // ==========================================
+
+        // figure out which header(s) need recalculation
+        var headersToRecalc = {};
+
+        // new/current header (for insert/update)
+        if (current.operation() !== 'delete') {
+            var curHdr = current.getValue(REF_TO_HEADER);
+    		
+            if (curHdr) headersToRecalc[curHdr] = true;
+            gs.info('PettyCashLines Debug 1: Processing line ' + current.number + ' (SYS_ID: ' + current.sys_id + '). Target Header ID (mainRef): ' + curHdr);
+        }
+
+        // previous/old header (for delete or ref move)
+        var prevHdr = previous ? previous.getValue(REF_TO_HEADER) : '';
+        var refChanged = previous && current.operation() === 'update' &&
+            current.getValue(REF_TO_HEADER) !== prevHdr;
+        if (current.operation() === 'delete' && prevHdr) headersToRecalc[prevHdr] = true;
+        if (refChanged && prevHdr) headersToRecalc[prevHdr] = true;
+
+        function recalcAndUpdate(headerSysId) {
+            if (!headerSysId) return;
+
+            var ga = new GlideAggregate(LINES_TABLE);
+            ga.addAggregate('SUM', LINE_AMOUNT_FIELD); // <-- sum the correct line field
+            ga.addQuery(REF_TO_HEADER, headerSysId);
+            ga.query();
+
+            var total = 0;
+            if (ga.next()) {
+                var agg = ga.getAggregate('SUM', LINE_AMOUNT_FIELD);
+                total = parseFloat(agg || 0) || 0;
+            }
+
+            //gs.info('PettyCashLines Debug 2: Calculated totalAmount : ' + total + ' for Header ID: ' + curHdr);
+            gs.info('[PettyCash SUM] header=' + headerSysId + ' total=' + total);
+
+    	
+
+            var hdr = new GlideRecord(HEADER_TABLE);
+
+            if (hdr.get(headerSysId)) {
+                //hdr.setWorkflow(false); // avoid loops
+                //hdr.setUseEngines(false);
+                hdr.setValue(HEADER_TOTAL_FIELD, total); // write the sum to header
+
+                hdr.total_line_amount = total;
+
+                //gs.info('PettyCashLines Debug 3: Before Updating Header : ' + total + ' for Header ID: ' + curHdr);
+
+                hdr.update();
+                gs.info('[PettyCash SUM] wrote header.' + HEADER_TOTAL_FIELD + '=' + total + ' for ' + hdr.getDisplayValue());
+            } else {
+                gs.error('[PettyCash SUM] header not found: ' + headerSysId);
+            }
+        }
+
+        for (var id in headersToRecalc) {
+            if (headersToRecalc[id]) recalcAndUpdate(id);
+        }
+
+        gs.info('[PettyCash SUM] BR fired op=' + current.operation() +     ' line=' + current.getUniqueValue() +        ' headers=' + Object.keys(headersToRecalc).join(','));
+    working now currently 
+    */
+/* working now currently  2
+   var mainRef = current.getValue('pettycashmain_ref');
+
+    gs.info('PettyCashLines Debug 1: Processing line ' + current.number + ' (SYS_ID: ' + current.sys_id + '). Target Header ID (mainRef): ' + mainRef);
+
+
+
+    // 2. Query the Lines table to calculate the sum
+    var totalAmount = new GlideAggregate('x_1797098_pettyc_0_petty_cash_lines');
+
+    gs.info('PettyCashLines Debug 2: Calculated totalAmount : ' + totalAmount + ' for Header ID: ' + mainRef);
+
+
+    // Set up the aggregation: SUM of total_line_amount
+    totalAmount.addAggregate('SUM', 'total_line_amount');
+
+    gs.info('PettyCashLines Debug 3: Calculated totalAmount : ' + totalAmount + ' for Header ID: ' + mainRef);
+
+    // Filter the lines to only include those related to the current main record
+    totalAmount.addQuery('pettycashmain_ref', mainRef);
+
+    // Execute the query
+    totalAmount.query();
+
+    var sum = 0;
+
+    // Process the result
+    if (totalAmount.next()) {
+        // Retrieve the calculated sum
+        sum = totalAmount.getAggregate('SUM', 'total_line_amount');
+    }
+
+
+    gs.info('PettyCashLines Debug 4: Calculated Total Line Amount (sum): ' + sum + ' for Header ID: ' + mainRef);
+
+
+    // 3. Update the Header table
+    var mainRecord = new GlideRecord('x_1797098_pettyc_0_pettycashmain');
+
+    // Find the header record using the reference field value
+    if (mainRecord.get(mainRef)) {
+
+        // Update the header's total_line_amount field
+        mainRecord.total_line_amount = sum;
+        gs.info('PettyCashLines Debug 5: SUCCESSFULLY UPDATED Header ' + mainRecord.number + ' with new total: ' + sum);
+
+        // Save the update
+        mainRecord.update();
+    } else {
+        // --- DEBUGGING STEP 4: Log if the header record was NOT found ---
+
+        gs.info('PettyCashLines Debug 6: Calculated totalAmount : ' + totalAmount + ' for Header ID: ' + mainRef);
+
+        gs.error('PettyCashLines Debug: FAILED to find Header record with SYS_ID: ' + mainRef);
+    }
+ //working
+	*/
+
+
+/*  // Add your code here
+    var parentRecordSysId = current.pettycashmain_ref;
+    // Check if a parent record exists
+    if (!parentRecordSysId) {
+        gs.info('Business Rule: Cannot update parent total. Parent reference field is empty.');
+        return;
+    }
+
+    var totalAmount = new GlideAggregate('x_1797098_pettyc_0_pettycashlines');
+    totalAmount.addQuery('pettycashmain_ref', parentRecordSysId); // Query only the lines for the current parent
+    totalAmount.addAggregate('SUM', 'total_line_amount');
+    totalAmount.query();
+
+    var newTotal = 0;
+    if (totalAmount.next()) {
+        // Get the calculated sum
+        newTotal = totalAmount.getAggregate('SUM', 'total_line_amount');
+        // Ensure the total is a valid number, default to 0 if null or invalid
+        newTotal = parseFloat(newTotal) || 0;
+    }
+
+    var gr = new GlideRecord('x_1797098_pettyc_0_pettycashmain');
+    if (gr.get(parentRecordSysId)) {
+        gr.setValue('total_line_amount', newTotal);
+        gr.update();
+    } else {
+        gs.error('Business Rule: Could not find Petty Cash Main record with Sys ID: ' + parentRecordSysId);
+    }
+*/]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-20 07:09:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b7842d44c37c7210111afb377d013146</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_name>PettyCash Update Main Total Line Amount</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_script_b7842d44c37c7210111afb377d013146</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-23 06:35:17</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b7842d44c37c7210111afb377d013146"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>b7842d44c37c7210111afb377d013146</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-20 07:09:16</sys_created_on>
+        <sys_id>ecf4a944c37c7210111afb377d013157</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-20 07:09:16</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

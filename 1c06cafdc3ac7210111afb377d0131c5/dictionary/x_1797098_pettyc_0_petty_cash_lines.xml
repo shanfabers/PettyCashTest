@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="90a5855ac3a03610111afb377d013145" label="PettyCashLines" max_length="40" name="x_1797098_pettyc_0_petty_cash_lines" text_index="true" type="collection">
+        <element label="Cashier Comments" max_length="40" name="cashier_comments" type="string"/>
+        <element display="true" label="Description" max_length="40" name="description" type="string"/>
+        <element label="Line Amount" mandatory="true" max_length="20" name="total_line_amount" type="decimal"/>
+        <element label="PettyCashMain Ref" mandatory="true" max_length="32" name="pettycashmain_ref" reference="x_1797098_pettyc_0_pettycashmain" type="reference"/>
+        <element label="Finance Comments" max_length="240" name="finance_comments" type="string"/>
+        <element attributes="u_no_list_edit" choice="1" label="Cashier Status" max_length="40" name="cashier_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Disbursed" sequence="1" value="disbursed"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="u_no_list_edit=true" choice="1" default="New" label="Finance Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" sequence="1" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+            </choice>
+        </element>
+        <element label="Receipt Upload" max_length="40" name="receipt_upload" type="file_attachment"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="pettycashmain_ref"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

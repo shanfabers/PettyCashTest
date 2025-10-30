@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="finance_reviewer" label="Finance Reviewer" language="en" table="x_1797098_pettyc_0_pettycashmain">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>finance_reviewer</element>
+            <help/>
+            <hint/>
+            <label>Finance Reviewer</label>
+            <language>en</language>
+            <name>x_1797098_pettyc_0_pettycashmain</name>
+            <plural>Finance Reviewers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-20 11:17:47</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Finance Reviewer</sys_name>
+            <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+            <sys_update_name>sys_documentation_x_1797098_pettyc_0_pettycashmain_finance_reviewer_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-20 11:17:47</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

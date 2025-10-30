@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>employeename</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>PettyCash Set Employee Email Auto</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        // Clear the target email field
+        g_form.setValue('employee_email', '');
+        return;
+    }
+
+    g_form.getReference('employeename', populateEmail);
+
+    function populateEmail(userRecord) {
+        // Check if a valid record was returned (userRecord) and if it has an email property
+        if (userRecord && userRecord.email) {
+            // Set the value of the target email field ('employee_email')
+            g_form.setValue('employee_email', userRecord.email);
+        } else {
+            // Clear the email field if the user record is invalid or lacks an email
+            g_form.setValue('employee_email', '');
+        }
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 09:26:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2d7d1536c3207210111afb377d013118</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>PettyCash Set Employee Email Auto</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_script_client_2d7d1536c3207210111afb377d013118</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-20 10:37:07</sys_updated_on>
+        <table>x_1797098_pettyc_0_pettycashmain</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

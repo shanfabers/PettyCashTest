@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_source">
+    <sys_search_source action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1797098_pettyc_0_pettycash_users_group">active=true<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        </condition>
+        <group/>
+        <name>Petty Cash Workspace - x_1797098_pettyc_0_pettycas</name>
+        <roles/>
+        <source_table>x_1797098_pettyc_0_pettycash_users_group</source_table>
+        <sys_class_name>sys_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-26 05:54:20</sys_created_on>
+        <sys_id>115dcc8ac3f4fa10111afb377d01314b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Petty Cash Workspace - x_1797098_pettyc_0_pettycas</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_search_source_115dcc8ac3f4fa10111afb377d01314b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-26 05:54:20</sys_updated_on>
+    </sys_search_source>
+</record_update>

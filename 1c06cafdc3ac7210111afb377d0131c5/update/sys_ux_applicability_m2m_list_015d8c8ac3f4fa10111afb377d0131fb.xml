@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Audience for app petty-cash-workspace">fc5d8c8ac3f4fa10111afb377d0131bd</applicability>
+        <list display_value="All">495d8c8ac3f4fa10111afb377d0131f8</list>
+        <order>100</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-26 05:54:19</sys_created_on>
+        <sys_id>015d8c8ac3f4fa10111afb377d0131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_015d8c8ac3f4fa10111afb377d0131fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-26 05:54:19</sys_updated_on>
+    </sys_ux_applicability_m2m_list>
+</record_update>

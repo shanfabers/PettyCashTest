@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Tabs Configuration</description>
+        <name>chrome_tab</name>
+        <page display_value="Petty Cash Workspace">7b4d4c8a35f4fa10a462a3d6a59af8b5</page>
+        <required_translations>[ {
+  "message" : "New PettyCash Users Group",
+  "comment" : ""
+}, {
+  "message" : "New PettyCashLines",
+  "comment" : ""
+}, {
+  "message" : "New PettyCashMain",
+  "comment" : ""
+}, {
+  "message" : "New PettyCashUsers",
+  "comment" : ""
+} ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-26 05:54:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>334d4c8ab2f4fa10f414dc65dd03f3a8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>chrome_tab</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_ux_page_property_334d4c8ab2f4fa10f414dc65dd03f3a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-26 05:54:21</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_1797098_pettyc_0.7b4d4c8a35f4fa10a462a3d6a59af8b5.root.global.chrome_tab</unique_name>
+        <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New PettyCash Users Group"},"routeInfo":{"route":"record","fields":{"table":"x_1797098_pettyc_0_pettycash_users_group","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1797098_pettyc_0_pettycash_users_group","canCreate":true}}},{"label":{"translatable":true,"message":"New PettyCashLines"},"routeInfo":{"route":"record","fields":{"table":"x_1797098_pettyc_0_petty_cash_lines","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1797098_pettyc_0_petty_cash_lines","canCreate":true}}},{"label":{"translatable":true,"message":"New PettyCashMain"},"routeInfo":{"route":"record","fields":{"table":"x_1797098_pettyc_0_pettycashmain","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1797098_pettyc_0_pettycashmain","canCreate":true}}},{"label":{"translatable":true,"message":"New PettyCashUsers"},"routeInfo":{"route":"record","fields":{"table":"x_1797098_pettyc_0_pc_user","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1797098_pettyc_0_pc_user","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=334d4c8ab2f4fa10f414dc65dd03f3a8"/>
+</record_update>

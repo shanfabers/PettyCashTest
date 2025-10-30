@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_search_source display_value="PettyCashLines">b95d00cac3f4fa10111afb377d01319e</ais_search_source>
+        <label>PettyCashLines</label>
+        <name>PettyCashLines</name>
+        <order>200</order>
+        <search_context_config display_value="Petty Cash Workspace AI Search Configuration">b74d4c8a17f4fa100006bd68461680ae</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-26 05:54:22</sys_created_on>
+        <sys_id>7d5d00cac3f4fa10111afb377d0131b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PettyCashLines</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_search_filter_7d5d00cac3f4fa10111afb377d0131b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-26 05:54:22</sys_updated_on>
+    </sys_search_filter>
+</record_update>

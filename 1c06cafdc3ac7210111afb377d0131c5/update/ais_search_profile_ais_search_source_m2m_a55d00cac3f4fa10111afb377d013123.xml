@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results>
+        <exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results>
+        <exclude_in_regular_search>false</exclude_in_regular_search>
+        <profile display_value="petty-cash-workspace Search Profile">b74d4c8ad3f4fa1056297181a3ee4fb5</profile>
+        <search_source display_value="PettyCash Users Group">295d00cac3f4fa10111afb377d01311f</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-26 05:54:22</sys_created_on>
+        <sys_id>a55d00cac3f4fa10111afb377d013123</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>petty-cash-workspace Search Profile.PettyCash Users Group</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_a55d00cac3f4fa10111afb377d013123</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-26 05:54:22</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>

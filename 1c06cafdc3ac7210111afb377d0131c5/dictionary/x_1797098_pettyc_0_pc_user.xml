@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="894802f1c3ec7210111afb377d013126" extends="sys_user" label="PettyCashUsers" max_length="40" name="x_1797098_pettyc_0_pc_user" text_index="true" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

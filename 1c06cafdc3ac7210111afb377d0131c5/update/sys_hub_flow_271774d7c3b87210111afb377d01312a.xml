@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2688000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>PettyCash Lines When Finance Reviewer sets Finance Status = Approved → email Finance Manager</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>pettycash_lines_when_finance_reviewer_sets_finance_status</internal_name>
+        <label_cache>[{"name":"Updated_1.current.total_line_amount","label":"Trigger - Record Updated➛PettyCashLines Record➛Total Line Amount","reference":"","reference_display":"Total Line Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"total_line_amount","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.amount","label":"1 - Look Up Record➛PettyCashMain Record➛Amount","reference":"","reference_display":"Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"amount","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employeename","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Name","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employeename","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_subject"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.number","label":"1 - Look Up Record➛PettyCashMain Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"number","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_subject"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employee_email","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employee_email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_cc"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.finance_manager.email","label":"1 - Look Up Record➛PettyCashMain Record➛Finance Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_to"]}},{"name":"Updated_1.current.pettycashmain_ref","label":"Trigger - Record Updated➛PettyCashLines Record➛PettyCashMain Ref","reference":"x_1797098_pettyc_0_pettycashmain","reference_display":"PettyCashMain","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"pettycashmain_ref","usedInstances":{"2c935d68-38f2-4d65-bf46-39ed710f013a":["conditions"]}}]</label_cache>
+        <master_snapshot>14aaf01fc3b87210111afb377d0131b6</master_snapshot>
+        <master_snapshot_digest/>
+        <name>PettyCash Lines When Finance Reviewer sets Finance Status</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>24aa341fc3b87210111afb377d013103</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:09:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>271774d7c3b87210111afb377d01312a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>PettyCash Lines When Finance Reviewer sets Finance Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_hub_flow_271774d7c3b87210111afb377d01312a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:54:08</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=271774d7c3b87210111afb377d01312a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=271774d7c3b87210111afb377d01312a"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1797098_pettyc_0_petty_cash_lines">statusCHANGESTOapproved<item display_value="Approved" endquery="false" field="status" goto="false" newquery="false" operator="CHANGESTO" or="false" value="approved"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>24aa341fc3b87210111afb377d013103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:40</sys_updated_on>
+        <table>x_1797098_pettyc_0_petty_cash_lines</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>271774d7c3b87210111afb377d01312a</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:54:08</sys_created_on>
+        <sys_id>98614d17c3f87210111afb377d013194</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:54:08</sys_updated_on>
+        <trigger display_value="">24aa341fc3b87210111afb377d013103</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=271774d7c3b87210111afb377d01312a^sys_idNOT IN98614d17c3f87210111afb377d013194"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=271774d7c3b87210111afb377d01312a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=271774d7c3b87210111afb377d01312a^sys_idNOT INab1774d7c3b87210111afb377d01312d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>271774d7c3b87210111afb377d01312a</id>
+        <name>PettyCash Lines When Finance Reviewer sets Finance Status</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:09:18</sys_created_on>
+        <sys_id>ab1774d7c3b87210111afb377d01312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:09:18</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ab1774d7c3b87210111afb377d01312d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=271774d7c3b87210111afb377d01312a^sys_idNOT IN059a701fc3b87210111afb377d0131d8,059a701fc3b87210111afb377d0131e8,f49a701fc3b87210111afb377d0131d0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</model>
+        <model_id>271774d7c3b87210111afb377d01312a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_271774d7c3b87210111afb377d01312a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:25</sys_created_on>
+        <sys_id>059a701fc3b87210111afb377d0131d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=059a701fc3b87210111afb377d0131d8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</model>
+        <model_id>271774d7c3b87210111afb377d01312a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_271774d7c3b87210111afb377d01312a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:25</sys_created_on>
+        <sys_id>059a701fc3b87210111afb377d0131e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=059a701fc3b87210111afb377d0131e8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</model>
+        <model_id>271774d7c3b87210111afb377d01312a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_271774d7c3b87210111afb377d01312a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:25</sys_created_on>
+        <sys_id>f49a701fc3b87210111afb377d0131d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f49a701fc3b87210111afb377d0131d0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=271774d7c3b87210111afb377d01312a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=271774d7c3b87210111afb377d01312a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=271774d7c3b87210111afb377d01312a^sys_idNOT IN899ab01fc3b87210111afb377d01310a"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:25</sys_created_on>
+        <sys_id>899ab01fc3b87210111afb377d01310a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:39</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=271774d7c3b87210111afb377d01312a^sys_idNOT IN0d9ab01fc3b87210111afb377d013110,899ab01fc3b87210111afb377d01310c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:26</sys_created_on>
+        <sys_id>0d9ab01fc3b87210111afb377d013110</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:56:36</sys_updated_on>
+        <ui_id>3e11dadd-eba7-4128-a39a-a36f6d7b3863</ui_id>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:25</sys_created_on>
+        <sys_id>899ab01fc3b87210111afb377d01310c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:56:36</sys_updated_on>
+        <ui_id>2c935d68-38f2-4d65-bf46-39ed710f013a</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcigQGCrTNokl76RYERVIxsTSlklQSx/B/36FI2a6t2NauAyTYm8kZkm9m3htS/rEMOQ0vQzqJJtlkMhwnUdTvR9Fo1Cc4TtP+iKRRigdhJ5R4zsDT4FQwGD5gUdrxE4qTSRJNxqhgxiwIivwPrGdzzCW4Uq4LgRff/Yo/rfkKzJ+dmcy4oIrJ8PLHz05YYAUHGabCy+WO6VSkAqdMgOudh7qD3CyK9RBVNjf3aXtZ8MUZckUtlKgTsifDJGWAIcNCs044x5Jik6vFekYxTG+k2EzMuDSwY2idnzR/hnPHkfXLGERFmLOth8hnyk1n19jgW6NKYkrlXcks54Rplw/KMlwKc7U95xxuCsNz6Za4sN3qXJRz+cWlI1xvUBcGZkoNIFhhA7XIfRjZ7Sx//FqjnHJZ5cQbRU6wWI+wMYqnpbF4liETbA4boTkuCi7vUaHyB14tBizz7r2AQTcT+SMcqvm97GJigXchr7g7hfnravo7VtxG8Rm2gcUAiAtgCHIl1HmpqlQ+ICJKXRkUltrtFa46oV7oK4G13kQOKUe/Sovb5cFHjFzS7BKieGE+wBYPzAe36tRiGR6k4GRDOZJLyi0KvaUYQIM4/auExXS5/FZAsIyiuEtKBfk13d/kgwDparUvon+3SUupHY+zltrVdqBNwXvR7c19atrAiy4+m+gGUfSeZAeHvz3VtdeRS8ERMcX0IMnohk86Vwa5XG6paV8arXl+AoSa5zeWmUG6eAmVp3nGmaBNd8vUGnbult7/8255kyQHQBS56nEpuKweCgD0tdg/PEi9NN7hWUWvrZvEzmFN9jWAA5MHz62VcAKcWgm3cHZw5/A0QKz7fUWZ3V5fT3oB9M8mgH7vPAJYrsNcJ7Ih5/Xb0Faz9n+2/njXHyi4tSBeNQms1Zlx2zN7q30B91speJtsznL9AufO/Ih8QZGd12wBM1jqz0NOv+iR03tmNqfXXjQ3j1j83WT3jEN1oarwXuFBGh/8Jkq3HqQ8Q3OoHC/g3awYAXJohBVDWV5KivyLeUMkW8mMK228836j+cpAPzLIQZiBmbGg8g7W3i0v4uNx1Kn8mAV1IP40HUAgQRVIsA6kXdhtmtbgjI/TczetKeaiqgZ8DBVb5WRK5eqFxnWkkAcYcWJXOxFUfFZQ/73tNUmgsf0dwfouvqzP35oIw+mgh0dJP46jKI5oEo2TJB6P0myEk0G20ShCWhLoprBzBlSB7VFNjbrO0X7/cS21baM5AVVNwetc2q/sXmICCwvqG9SwjgP3DSXNc8Gw3Okod3BP/DH1+D1fh2+uq7yL/5lKfrebaTfVmOvXejeU/Jvkv0r20VJszKLeOKbkYpzEycUgo6OLCcXDCzxJh0mfMjLIzvkU+PkP904LsMoVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=271774d7c3b87210111afb377d01312a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=271774d7c3b87210111afb377d01312a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=271774d7c3b87210111afb377d01312a^sys_idNOT IN859ab01fc3b87210111afb377d013113,c19ab01fc3b87210111afb377d013113,c99ab01fc3b87210111afb377d013112"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>271774d7c3b87210111afb377d01312a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.total_line_amount}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:26</sys_created_on>
+        <sys_id>859ab01fc3b87210111afb377d013113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>43c28506-d482-404d-8b78-41f1e0db161a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>271774d7c3b87210111afb377d01312a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{2c935d68-38f2-4d65-bf46-39ed710f013a.Record.amount}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:26</sys_created_on>
+        <sys_id>c19ab01fc3b87210111afb377d013113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>580776a9-94d4-4e79-b843-7b3d78deac53</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>271774d7c3b87210111afb377d01312a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employeename}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:26</sys_created_on>
+        <sys_id>c99ab01fc3b87210111afb377d013112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f28d9e5e-bf00-48c1-8636-8d50d8d3b662</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=271774d7c3b87210111afb377d01312a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_271774d7c3b87210111afb377d01312a^sys_idNOT IN099a701fc3b87210111afb377d0131ea,4d9a701fc3b87210111afb377d0131da,cd9a701fc3b87210111afb377d0131d6"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_271774d7c3b87210111afb377d01312a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:25</sys_created_on>
+        <sys_id>099a701fc3b87210111afb377d0131ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_271774d7c3b87210111afb377d01312a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:25</sys_created_on>
+        <sys_id>4d9a701fc3b87210111afb377d0131da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_271774d7c3b87210111afb377d01312a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:25</sys_created_on>
+        <sys_id>cd9a701fc3b87210111afb377d0131d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_271774d7c3b87210111afb377d01312a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_271774d7c3b87210111afb377d01312a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_271774d7c3b87210111afb377d01312a"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>PettyCash Lines When Finance Reviewer sets Finance Status = Approved → email Finance Manager</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>pettycash_lines_when_finance_reviewer_sets_finance_status</internal_name>
+        <label_cache>[{"name":"Updated_1.current.total_line_amount","label":"Trigger - Record Updated➛PettyCashLines Record➛Total Line Amount","reference":"","reference_display":"Total Line Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"total_line_amount","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.amount","label":"1 - Look Up Record➛PettyCashMain Record➛Amount","reference":"","reference_display":"Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"amount","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employeename","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Name","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employeename","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_subject"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.number","label":"1 - Look Up Record➛PettyCashMain Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"number","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_subject"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employee_email","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employee_email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_cc"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.finance_manager.email","label":"1 - Look Up Record➛PettyCashMain Record➛Finance Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_to"]}},{"name":"Updated_1.current.pettycashmain_ref","label":"Trigger - Record Updated➛PettyCashLines Record➛PettyCashMain Ref","reference":"x_1797098_pettyc_0_pettycashmain","reference_display":"PettyCashMain","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"pettycashmain_ref","usedInstances":{"2c935d68-38f2-4d65-bf46-39ed710f013a":["conditions"]}}]</label_cache>
+        <master>true</master>
+        <name>PettyCash Lines When Finance Reviewer sets Finance Status</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>14aaf01fc3b87210111afb377d0131b6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:54:07</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=14aaf01fc3b87210111afb377d0131b6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=14aaf01fc3b87210111afb377d0131b6"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=14aaf01fc3b87210111afb377d0131b6"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=14aaf01fc3b87210111afb377d0131b6^sys_idNOT IN28aaf01fc3b87210111afb377d0131b7"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>14aaf01fc3b87210111afb377d0131b6</id>
+        <name>PettyCash Lines When Finance Reviewer sets Finance Status</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:39</sys_created_on>
+        <sys_id>28aaf01fc3b87210111afb377d0131b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:39</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=28aaf01fc3b87210111afb377d0131b7"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=14aaf01fc3b87210111afb377d0131b6^sys_idNOT IN28aaf01fc3b87210111afb377d0131c4,2caaf01fc3b87210111afb377d0131b8,e8aaf01fc3b87210111afb377d0131cb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="PettyCash Lines When Finance Reviewer sets Finance Status">14aaf01fc3b87210111afb377d0131b6</model>
+        <model_id>14aaf01fc3b87210111afb377d0131b6</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_14aaf01fc3b87210111afb377d0131b6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:39</sys_created_on>
+        <sys_id>28aaf01fc3b87210111afb377d0131c4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:54:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=28aaf01fc3b87210111afb377d0131c4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PettyCash Lines When Finance Reviewer sets Finance Status">14aaf01fc3b87210111afb377d0131b6</model>
+        <model_id>14aaf01fc3b87210111afb377d0131b6</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_14aaf01fc3b87210111afb377d0131b6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:39</sys_created_on>
+        <sys_id>2caaf01fc3b87210111afb377d0131b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:54:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2caaf01fc3b87210111afb377d0131b8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PettyCash Lines When Finance Reviewer sets Finance Status">14aaf01fc3b87210111afb377d0131b6</model>
+        <model_id>14aaf01fc3b87210111afb377d0131b6</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_14aaf01fc3b87210111afb377d0131b6</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:39</sys_created_on>
+        <sys_id>e8aaf01fc3b87210111afb377d0131cb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:54:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e8aaf01fc3b87210111afb377d0131cb"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=14aaf01fc3b87210111afb377d0131b6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=14aaf01fc3b87210111afb377d0131b6"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=14aaf01fc3b87210111afb377d0131b6^sys_idNOT INa4aaf01fc3b87210111afb377d0131db"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">14aaf01fc3b87210111afb377d0131b6</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:40</sys_created_on>
+        <sys_id>a4aaf01fc3b87210111afb377d0131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:40</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=14aaf01fc3b87210111afb377d0131b6^sys_idNOT IN68aaf01fc3b87210111afb377d0131d7,ecaaf01fc3b87210111afb377d0131da"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">14aaf01fc3b87210111afb377d0131b6</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:40</sys_created_on>
+        <sys_id>68aaf01fc3b87210111afb377d0131d7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:40</sys_updated_on>
+        <ui_id>2c935d68-38f2-4d65-bf46-39ed710f013a</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcigQGCrTNokl76RYERVIxsTSlklQSx/B/36FI2a6t2NauAyTYm8kZkm9m3htS/rEMOQ0vQzqJJtlkMhwnUdTvR9Fo1Cc4TtP+iKRRigdhJ5R4zsDT4FQwGD5gUdrxE4qTSRJNxqhgxiwIivwPrGdzzCW4Uq4LgRff/Yo/rfkKzJ+dmcy4oIrJ8PLHz05YYAUHGabCy+WO6VSkAqdMgOudh7qD3CyK9RBVNjf3aXtZ8MUZckUtlKgTsifDJGWAIcNCs044x5Jik6vFekYxTG+k2EzMuDSwY2idnzR/hnPHkfXLGERFmLOth8hnyk1n19jgW6NKYkrlXcks54Rplw/KMlwKc7U95xxuCsNz6Za4sN3qXJRz+cWlI1xvUBcGZkoNIFhhA7XIfRjZ7Sx//FqjnHJZ5cQbRU6wWI+wMYqnpbF4liETbA4boTkuCi7vUaHyB14tBizz7r2AQTcT+SMcqvm97GJigXchr7g7hfnravo7VtxG8Rm2gcUAiAtgCHIl1HmpqlQ+ICJKXRkUltrtFa46oV7oK4G13kQOKUe/Sovb5cFHjFzS7BKieGE+wBYPzAe36tRiGR6k4GRDOZJLyi0KvaUYQIM4/auExXS5/FZAsIyiuEtKBfk13d/kgwDparUvon+3SUupHY+zltrVdqBNwXvR7c19atrAiy4+m+gGUfSeZAeHvz3VtdeRS8ERMcX0IMnohk86Vwa5XG6paV8arXl+AoSa5zeWmUG6eAmVp3nGmaBNd8vUGnbult7/8255kyQHQBS56nEpuKweCgD0tdg/PEi9NN7hWUWvrZvEzmFN9jWAA5MHz62VcAKcWgm3cHZw5/A0QKz7fUWZ3V5fT3oB9M8mgH7vPAJYrsNcJ7Ih5/Xb0Faz9n+2/njXHyi4tSBeNQms1Zlx2zN7q30B91speJtsznL9AufO/Ih8QZGd12wBM1jqz0NOv+iR03tmNqfXXjQ3j1j83WT3jEN1oarwXuFBGh/8Jkq3HqQ8Q3OoHC/g3awYAXJohBVDWV5KivyLeUMkW8mMK228836j+cpAPzLIQZiBmbGg8g7W3i0v4uNx1Kn8mAV1IP40HUAgQRVIsA6kXdhtmtbgjI/TczetKeaiqgZ8DBVb5WRK5eqFxnWkkAcYcWJXOxFUfFZQ/73tNUmgsf0dwfouvqzP35oIw+mgh0dJP46jKI5oEo2TJB6P0myEk0G20ShCWhLoprBzBlSB7VFNjbrO0X7/cS21baM5AVVNwetc2q/sXmICCwvqG9SwjgP3DSXNc8Gw3Okod3BP/DH1+D1fh2+uq7yL/5lKfrebaTfVmOvXejeU/Jvkv0r20VJszKLeOKbkYpzEycUgo6OLCcXDCzxJh0mfMjLIzvkU+PkP904LsMoVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">14aaf01fc3b87210111afb377d0131b6</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:40</sys_created_on>
+        <sys_id>ecaaf01fc3b87210111afb377d0131da</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:54:07</sys_updated_on>
+        <ui_id>3e11dadd-eba7-4128-a39a-a36f6d7b3863</ui_id>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=14aaf01fc3b87210111afb377d0131b6"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=14aaf01fc3b87210111afb377d0131b6"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=14aaf01fc3b87210111afb377d0131b6^sys_idNOT IN28aaf01fc3b87210111afb377d0131db,2caaf01fc3b87210111afb377d0131db,a8aaf01fc3b87210111afb377d0131db"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>14aaf01fc3b87210111afb377d0131b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.total_line_amount}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:40</sys_created_on>
+        <sys_id>28aaf01fc3b87210111afb377d0131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>43c28506-d482-404d-8b78-41f1e0db161a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>14aaf01fc3b87210111afb377d0131b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{2c935d68-38f2-4d65-bf46-39ed710f013a.Record.amount}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:40</sys_created_on>
+        <sys_id>2caaf01fc3b87210111afb377d0131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>580776a9-94d4-4e79-b843-7b3d78deac53</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>14aaf01fc3b87210111afb377d0131b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employeename}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:40</sys_created_on>
+        <sys_id>a8aaf01fc3b87210111afb377d0131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f28d9e5e-bf00-48c1-8636-8d50d8d3b662</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=14aaf01fc3b87210111afb377d0131b6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_14aaf01fc3b87210111afb377d0131b6^sys_idNOT IN60aaf01fc3b87210111afb377d0131c9,60aaf01fc3b87210111afb377d0131d0,acaaf01fc3b87210111afb377d0131c1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_14aaf01fc3b87210111afb377d0131b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:39</sys_created_on>
+        <sys_id>60aaf01fc3b87210111afb377d0131c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_14aaf01fc3b87210111afb377d0131b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:39</sys_created_on>
+        <sys_id>60aaf01fc3b87210111afb377d0131d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_14aaf01fc3b87210111afb377d0131b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:39</sys_created_on>
+        <sys_id>acaaf01fc3b87210111afb377d0131c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_14aaf01fc3b87210111afb377d0131b6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_14aaf01fc3b87210111afb377d0131b6"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_14aaf01fc3b87210111afb377d0131b6"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>271774d7c3b87210111afb377d01312a</sys_id>
+        <latest_snapshot>14aaf01fc3b87210111afb377d0131b6</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch9-05-21-2025_06-04-2025_0434.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=271774d7c3b87210111afb377d01312a^sys_idNOT IN34aa341fc3b87210111afb377d013105"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"34aa341fc3b87210111afb377d013105","name":"plan","plan_signature":null}}</plan>
+        <plan_id>271774d7c3b87210111afb377d01312a</plan_id>
+        <snapshot>d8f1c957c3f87210111afb377d013135</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:24:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>34aa341fc3b87210111afb377d013105</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:24:40</sys_updated_on>
+        <trigger display_value="">24aa341fc3b87210111afb377d013103</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=271774d7c3b87210111afb377d01312a"/>
+</record_update>

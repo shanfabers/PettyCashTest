@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2836000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>When Cashier sets Cashier Status = Approved → email Employee</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>pettycash_line__cashier_approved__notify_employee</internal_name>
+        <label_cache>[{"name":"Updated_1.current.total_line_amount","label":"Trigger - Record Updated➛PettyCashLines Record➛Total Line Amount","reference":"","reference_display":"Total Line Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"total_line_amount","usedInstances":{"7caff7df-d2fe-40fd-bd55-cc63cca9685b":[null]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.Record.employeename","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Name","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employeename","usedInstances":{"7caff7df-d2fe-40fd-bd55-cc63cca9685b":[null]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.Record.manager.email","label":"1 - Look Up Record➛PettyCashMain Record➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"7caff7df-d2fe-40fd-bd55-cc63cca9685b":["ah_cc"]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.Record.finance_reviewer.email","label":"1 - Look Up Record➛PettyCashMain Record➛Finance Reviewer➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"7caff7df-d2fe-40fd-bd55-cc63cca9685b":["ah_cc"]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.Record.cashier.email","label":"1 - Look Up Record➛PettyCashMain Record➛Cashier➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"7caff7df-d2fe-40fd-bd55-cc63cca9685b":["ah_cc"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛PettyCashLines Record","reference":"x_1797098_pettyc_0_petty_cash_lines","reference_display":"PettyCashLines","type":"reference","base_type":"reference","usedInstances":{},"attributes":{}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","usedInstances":{"d7a18c3f-e4fa-4790-aa89-bacbff79f077":["ah_subject"],"7caff7df-d2fe-40fd-bd55-cc63cca9685b":["ah_subject",null]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.Record.number","label":"1 - Look Up Record➛PettyCashMain Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"number","usedInstances":{"d7a18c3f-e4fa-4790-aa89-bacbff79f077":["ah_subject"],"7caff7df-d2fe-40fd-bd55-cc63cca9685b":["ah_subject"]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.Record.employee_email","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employee_email","usedInstances":{"d7a18c3f-e4fa-4790-aa89-bacbff79f077":["ah_to"],"7caff7df-d2fe-40fd-bd55-cc63cca9685b":["ah_to"]}},{"name":"Updated_1.current.pettycashmain_ref","label":"Trigger - Record Updated➛PettyCashLines Record➛PettyCashMain Ref","reference":"x_1797098_pettyc_0_pettycashmain","reference_display":"PettyCashMain","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"pettycashmain_ref","usedInstances":{"dcddb845-72b7-489c-984c-cac83a71e4c7":["conditions"],"0cee978e-08fa-48e8-8381-4b1d6b42b901":["conditions"]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"d7a18c3f-e4fa-4790-aa89-bacbff79f077":[null]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Updated_1.current.cashier_status","label":"Trigger - Record Updated➛PettyCashLines Record➛Cashier Status","reference":"","reference_display":"Cashier Status","type":"choice","base_type":"choice","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"cashier_status","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"New","image":"","reference":false,"rawLabel":"New","selected":false,"missing":false,"value":"new","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Disbursed","image":"","reference":false,"rawLabel":"Disbursed","selected":false,"missing":false,"value":"disbursed","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Rejected","image":"","reference":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}}],"usedInstances":{"d7a18c3f-e4fa-4790-aa89-bacbff79f077":[null]}}]</label_cache>
+        <master_snapshot>4784499bc3f87210111afb377d01313c</master_snapshot>
+        <master_snapshot_digest/>
+        <name>PettyCash Line – Cashier Approved → Notify Employee</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>8384499bc3f87210111afb377d013170</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:25:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4bcaf41bc3b87210111afb377d0131af</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>PettyCash Line – Cashier Approved → Notify Employee</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_hub_flow_4bcaf41bc3b87210111afb377d0131af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:41</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=4bcaf41bc3b87210111afb377d0131af"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4bcaf41bc3b87210111afb377d0131af"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1797098_pettyc_0_petty_cash_lines">cashier_statusCHANGESTOdisbursed<item display_value="Disbursed" endquery="false" field="cashier_status" goto="false" newquery="false" operator="CHANGESTO" or="false" value="disbursed"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8384499bc3f87210111afb377d013170</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:07:59</sys_updated_on>
+        <table>x_1797098_pettyc_0_petty_cash_lines</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>4bcaf41bc3b87210111afb377d0131af</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:12:41</sys_created_on>
+        <sys_id>48a5011fc3f87210111afb377d013129</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:41</sys_updated_on>
+        <trigger display_value="">8384499bc3f87210111afb377d013170</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=4bcaf41bc3b87210111afb377d0131af^sys_idNOT IN48a5011fc3f87210111afb377d013129"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4bcaf41bc3b87210111afb377d0131af"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4bcaf41bc3b87210111afb377d0131af^sys_idNOT IN0bcaf41bc3b87210111afb377d0131b0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4bcaf41bc3b87210111afb377d0131af</id>
+        <name>PettyCash Line – Cashier Approved → Notify Employee</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:25:23</sys_created_on>
+        <sys_id>0bcaf41bc3b87210111afb377d0131b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:25:23</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0bcaf41bc3b87210111afb377d0131b0"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4bcaf41bc3b87210111afb377d0131af^sys_idNOT IN8c3bfc1fc3b87210111afb377d0131b4,bf2bb41bc3b87210111afb377d013179,c43bfc1fc3b87210111afb377d0131b8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="PettyCash Line – Cashier Approved → Notify Employee">4bcaf41bc3b87210111afb377d0131af</model>
+        <model_id>4bcaf41bc3b87210111afb377d0131af</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4bcaf41bc3b87210111afb377d0131af</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:27:05</sys_created_on>
+        <sys_id>8c3bfc1fc3b87210111afb377d0131b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:27:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8c3bfc1fc3b87210111afb377d0131b4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PettyCash Line – Cashier Approved → Notify Employee">4bcaf41bc3b87210111afb377d0131af</model>
+        <model_id>4bcaf41bc3b87210111afb377d0131af</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4bcaf41bc3b87210111afb377d0131af</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:27:04</sys_created_on>
+        <sys_id>bf2bb41bc3b87210111afb377d013179</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:27:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bf2bb41bc3b87210111afb377d013179"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PettyCash Line – Cashier Approved → Notify Employee">4bcaf41bc3b87210111afb377d0131af</model>
+        <model_id>4bcaf41bc3b87210111afb377d0131af</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4bcaf41bc3b87210111afb377d0131af</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:27:05</sys_created_on>
+        <sys_id>c43bfc1fc3b87210111afb377d0131b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:27:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c43bfc1fc3b87210111afb377d0131b8"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=4bcaf41bc3b87210111afb377d0131af"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4bcaf41bc3b87210111afb377d0131af"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=4bcaf41bc3b87210111afb377d0131af^sys_idNOT IN483bfc1fc3b87210111afb377d0131c5"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="PettyCash Line – Cashier Approved → Notify Employee">4bcaf41bc3b87210111afb377d0131af</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:27:05</sys_created_on>
+        <sys_id>483bfc1fc3b87210111afb377d0131c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:52:52</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=4bcaf41bc3b87210111afb377d0131af^sys_idNOT IN4e95cddbc3f87210111afb377d01311c,803bfc1fc3b87210111afb377d0131c7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="PettyCash Line – Cashier Approved → Notify Employee">4bcaf41bc3b87210111afb377d0131af</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:12:33</sys_created_on>
+        <sys_id>4e95cddbc3f87210111afb377d01311c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:33</sys_updated_on>
+        <ui_id>7caff7df-d2fe-40fd-bd55-cc63cca9685b</ui_id>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="PettyCash Line – Cashier Approved → Notify Employee">4bcaf41bc3b87210111afb377d0131af</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:27:05</sys_created_on>
+        <sys_id>803bfc1fc3b87210111afb377d0131c7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:52:52</sys_updated_on>
+        <ui_id>dcddb845-72b7-489c-984c-cac83a71e4c7</ui_id>
+        <values>H4sIAAAAAAAA/9VYW2/bIBT+K5af08zOzUnfplaRJm3rtHV76SqEATdoBDzAbdMo/30HYydp7k0zrXsLcC7fOec7x5CbachpeB7SQTTIBoNuP4midjuKer02wXGatnskjVLcCRuhxGMGkhangsHyHovCrR9RnAySaNBHObN2QlBU/cBmNMZcgijlJhd48qPS+OKOL+D4kz8mIy6oZjI8v7lthDnW4MgyHZ5PV47sJGdI4JQJsHLtcASfHajGwTE8U16PyTmol0h600pThyVqhOzRMkkZuMqwMKwRjrGk2Co9me9ohumVFIuNEZcWLIZO+NHwJzDfj5xcxiAswvzZfImqVPltMlKcsKvcciX9jgfqD5UoxvKzD8AlmWW4ELZOMuwUBuyx3GF2ICpE2beRevhaOxxyWYZXHQpFsJivsLWap4VlxtWCCTYGQ2iM85zLO5Rrdc9LZcAybt4JWDQzoR7AqeF3somJA96EFOHmEPYvy+0fWHMXxScwA8oAiAuoNvJJN6rQZVbuERGFKQ80lsbbCmdlrtDvwqH0UVfxIZ8iEDBE89y+B4V7VoUya9Q07+6kyGBBCaIk5c6nWeK6mRjE6c8ClOl0+j2H0BhFcZMUGrJpm8+IjwDpbLZO/+OMHNckF8tRHJqBjcqb0lK1y7O9ql3ik7VLJ4r+UcNYXby9ftnXAT7gPW0Q050koIt6G6Ut8plb6oN1Uh/N0CFngj4b4weAq5WvHNmCdLINb0XQzPlYmeet/36ev0l6AiCKfL65FFyWn1MAehredndSI41XeFCWf2l6uz1syDp7cWBV8HT8lC3rWvP3AJC14jdAFFx7lBuA1/O1Nl9Rt30y6rZbL6MuEOdmOkc/z9qGBNe3Jle6Wv7JyeNVeWDXkkI8u51T/+I4n/FLfbacz5XebL+oOZeZ5U8utxDsxHeyLc3W+JvdPQLVyh/yzYoeOL1jduG9lqLKPmDxa9N5xa55D5Xhvfp+F+98AqRL9zueoTHUiedw6dSMABUMwpqhTBWSouq6uaCNq1vGtbGV8PoM+cpsoWWgoOUCO2JBKR3MpU8xWQ6Irlb8kAV1eBUGE0B4QRleMA/vZcnYMo86J7zrvWYeDTEXZerh2ZAv1Y5prfSWmbSnajvKf+DAOhBUfFJQr59om/i+cbLtwfpfvEFfO3UIw2mnhXtJO46jKI5oEvWTJO730qyHk062aDSEjCQwFsFyBsQA86gmQl3VaH20+Nl49B8lMHPfDSsTh+KtlS+VdC/VVmIDBxjqHNSA94dUzYtUKcGwXNCz+88Gxlv5L6Xg16u58VsfNxXtb33MC/5d8t8F++BI0WdRqx9TctZP4uSsk9He2YDi7hkepN2kTRnpZMd/n2//APhPkMpoFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=4bcaf41bc3b87210111afb377d0131af"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=4bcaf41bc3b87210111afb377d0131af"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4bcaf41bc3b87210111afb377d0131af^sys_idNOT IN1a95cddbc3f87210111afb377d01311e,9e95cddbc3f87210111afb377d01311e,b134019bc3f87210111afb377d0131ed,da95cddbc3f87210111afb377d01311e,fd34019bc3f87210111afb377d0131ec"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4bcaf41bc3b87210111afb377d0131af</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{dcddb845-72b7-489c-984c-cac83a71e4c7.Record.employeename}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:12:33</sys_created_on>
+        <sys_id>1a95cddbc3f87210111afb377d01311e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e234d4a5-18c1-4dae-a37c-3b7313a2e939</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4bcaf41bc3b87210111afb377d0131af</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:12:33</sys_created_on>
+        <sys_id>9e95cddbc3f87210111afb377d01311e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8e05fae6-f950-4f42-9c66-3bbfb043893c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4bcaf41bc3b87210111afb377d0131af</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.cashier_status}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:06:32</sys_created_on>
+        <sys_id>b134019bc3f87210111afb377d0131ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:06:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>2131027a-963d-4a83-bb2b-d679255e3d79</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4bcaf41bc3b87210111afb377d0131af</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.total_line_amount}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:12:33</sys_created_on>
+        <sys_id>da95cddbc3f87210111afb377d01311e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>20127554-757f-498e-bf9f-e13ad57f6e3f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4bcaf41bc3b87210111afb377d0131af</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{dcddb845-72b7-489c-984c-cac83a71e4c7.status}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:06:32</sys_created_on>
+        <sys_id>fd34019bc3f87210111afb377d0131ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:06:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c3dc63de-7415-48e8-97e1-9661c5f8ed69</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4bcaf41bc3b87210111afb377d0131af"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4bcaf41bc3b87210111afb377d0131af^sys_idNOT IN8c3bfc1fc3b87210111afb377d0131b3,c43bfc1fc3b87210111afb377d0131b7,c83bfc1fc3b87210111afb377d0131ba"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4bcaf41bc3b87210111afb377d0131af</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:27:05</sys_created_on>
+        <sys_id>8c3bfc1fc3b87210111afb377d0131b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:27:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4bcaf41bc3b87210111afb377d0131af</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:27:05</sys_created_on>
+        <sys_id>c43bfc1fc3b87210111afb377d0131b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:27:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4bcaf41bc3b87210111afb377d0131af</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 06:27:05</sys_created_on>
+        <sys_id>c83bfc1fc3b87210111afb377d0131ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 06:27:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4bcaf41bc3b87210111afb377d0131af"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4bcaf41bc3b87210111afb377d0131af"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4bcaf41bc3b87210111afb377d0131af"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>When Cashier sets Cashier Status = Approved → email Employee</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>pettycash_line__cashier_approved__notify_employee</internal_name>
+        <label_cache>[{"name":"Updated_1.current.total_line_amount","label":"Trigger - Record Updated➛PettyCashLines Record➛Total Line Amount","reference":"","reference_display":"Total Line Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"total_line_amount","usedInstances":{"7caff7df-d2fe-40fd-bd55-cc63cca9685b":[null]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.Record.employeename","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Name","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employeename","usedInstances":{"7caff7df-d2fe-40fd-bd55-cc63cca9685b":[null]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.Record.manager.email","label":"1 - Look Up Record➛PettyCashMain Record➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"7caff7df-d2fe-40fd-bd55-cc63cca9685b":["ah_cc"]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.Record.finance_reviewer.email","label":"1 - Look Up Record➛PettyCashMain Record➛Finance Reviewer➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"7caff7df-d2fe-40fd-bd55-cc63cca9685b":["ah_cc"]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.Record.cashier.email","label":"1 - Look Up Record➛PettyCashMain Record➛Cashier➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"7caff7df-d2fe-40fd-bd55-cc63cca9685b":["ah_cc"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛PettyCashLines Record","reference":"x_1797098_pettyc_0_petty_cash_lines","reference_display":"PettyCashLines","type":"reference","base_type":"reference","usedInstances":{},"attributes":{}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","usedInstances":{"d7a18c3f-e4fa-4790-aa89-bacbff79f077":["ah_subject"],"7caff7df-d2fe-40fd-bd55-cc63cca9685b":["ah_subject",null]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.Record.number","label":"1 - Look Up Record➛PettyCashMain Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"number","usedInstances":{"d7a18c3f-e4fa-4790-aa89-bacbff79f077":["ah_subject"],"7caff7df-d2fe-40fd-bd55-cc63cca9685b":["ah_subject"]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.Record.employee_email","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employee_email","usedInstances":{"d7a18c3f-e4fa-4790-aa89-bacbff79f077":["ah_to"],"7caff7df-d2fe-40fd-bd55-cc63cca9685b":["ah_to"]}},{"name":"Updated_1.current.pettycashmain_ref","label":"Trigger - Record Updated➛PettyCashLines Record➛PettyCashMain Ref","reference":"x_1797098_pettyc_0_pettycashmain","reference_display":"PettyCashMain","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"pettycashmain_ref","usedInstances":{"dcddb845-72b7-489c-984c-cac83a71e4c7":["conditions"],"0cee978e-08fa-48e8-8381-4b1d6b42b901":["conditions"]}},{"name":"dcddb845-72b7-489c-984c-cac83a71e4c7.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"d7a18c3f-e4fa-4790-aa89-bacbff79f077":[null]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Updated_1.current.cashier_status","label":"Trigger - Record Updated➛PettyCashLines Record➛Cashier Status","reference":"","reference_display":"Cashier Status","type":"choice","base_type":"choice","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"cashier_status","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"New","image":"","reference":false,"rawLabel":"New","selected":false,"missing":false,"value":"new","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Disbursed","image":"","reference":false,"rawLabel":"Disbursed","selected":false,"missing":false,"value":"disbursed","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Rejected","image":"","reference":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}}],"usedInstances":{"d7a18c3f-e4fa-4790-aa89-bacbff79f077":[null]}}]</label_cache>
+        <master>true</master>
+        <name>PettyCash Line – Cashier Approved → Notify Employee</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="PettyCash Line – Cashier Approved → Notify Employee">4bcaf41bc3b87210111afb377d0131af</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4784499bc3f87210111afb377d01313c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:41</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=4784499bc3f87210111afb377d01313c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4784499bc3f87210111afb377d01313c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4784499bc3f87210111afb377d01313c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4784499bc3f87210111afb377d01313c^sys_idNOT IN4f84499bc3f87210111afb377d01313c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4784499bc3f87210111afb377d01313c</id>
+        <name>PettyCash Line – Cashier Approved → Notify Employee</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:58</sys_created_on>
+        <sys_id>4f84499bc3f87210111afb377d01313c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:07:58</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4f84499bc3f87210111afb377d01313c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4784499bc3f87210111afb377d01313c^sys_idNOT IN0f84499bc3f87210111afb377d01314e,cb84499bc3f87210111afb377d01313d,cf84499bc3f87210111afb377d013147"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PettyCash Line – Cashier Approved → Notify Employee">4784499bc3f87210111afb377d01313c</model>
+        <model_id>4784499bc3f87210111afb377d01313c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4784499bc3f87210111afb377d01313c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:58</sys_created_on>
+        <sys_id>0f84499bc3f87210111afb377d01314e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0f84499bc3f87210111afb377d01314e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PettyCash Line – Cashier Approved → Notify Employee">4784499bc3f87210111afb377d01313c</model>
+        <model_id>4784499bc3f87210111afb377d01313c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4784499bc3f87210111afb377d01313c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:58</sys_created_on>
+        <sys_id>cb84499bc3f87210111afb377d01313d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cb84499bc3f87210111afb377d01313d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="PettyCash Line – Cashier Approved → Notify Employee">4784499bc3f87210111afb377d01313c</model>
+        <model_id>4784499bc3f87210111afb377d01313c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4784499bc3f87210111afb377d01313c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:58</sys_created_on>
+        <sys_id>cf84499bc3f87210111afb377d013147</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cf84499bc3f87210111afb377d013147"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=4784499bc3f87210111afb377d01313c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4784499bc3f87210111afb377d01313c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=4784499bc3f87210111afb377d01313c^sys_idNOT INcb84499bc3f87210111afb377d01315a"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="PettyCash Line – Cashier Approved → Notify Employee">4784499bc3f87210111afb377d01313c</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:59</sys_created_on>
+        <sys_id>cb84499bc3f87210111afb377d01315a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:07:59</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=4784499bc3f87210111afb377d01313c^sys_idNOT IN0784499bc3f87210111afb377d01315a,b395cddbc3f87210111afb377d0131ef"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PettyCash Line – Cashier Approved → Notify Employee">4784499bc3f87210111afb377d01313c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:59</sys_created_on>
+        <sys_id>0784499bc3f87210111afb377d01315a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:07:59</sys_updated_on>
+        <ui_id>dcddb845-72b7-489c-984c-cac83a71e4c7</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcigQGCrTNokl76RYERVIxsTSlklQSx/B/36FI2a6t2NauAyTYm8kZkm9m3htS/rEMOQ0vQzqJJtlkMhwnUdTvR9Fo1Cc4TtP+iKRRigdhJ5R4zsDT4FQwGD5gUdrxE4qTSRJNxqhgxiwIivwPrGdzzCW4Uq4LgRff/Yo/rfkKzJ+dmcy4oIrJ8PLHz05YYAUHGabCy+WO6VSkAqdMgOudh7qD3CyK9RBVNjf3aXtZ8MUZckUtlKgTsifDJGWAIcNCs044x5Jik6vFekYxTG+k2EzMuDSwY2idnzR/hnPHkfXLGERFmLOth8hnyk1n19jgW6NKYkrlXcks54Rplw/KMlwKc7U95xxuCsNz6Za4sN3qXJRz+cWlI1xvUBcGZkoNIFhhA7XIfRjZ7Sx//FqjnHJZ5cQbRU6wWI+wMYqnpbF4liETbA4boTkuCi7vUaHyB14tBizz7r2AQTcT+SMcqvm97GJigXchr7g7hfnravo7VtxG8Rm2gcUAiAtgCHIl1HmpqlQ+ICJKXRkUltrtFa46oV7oK4G13kQOKUe/Sovb5cFHjFzS7BKieGE+wBYPzAe36tRiGR6k4GRDOZJLyi0KvaUYQIM4/auExXS5/FZAsIyiuEtKBfk13d/kgwDparUvon+3SUupHY+zltrVdqBNwXvR7c19atrAiy4+m+gGUfSeZAeHvz3VtdeRS8ERMcX0IMnohk86Vwa5XG6paV8arXl+AoSa5zeWmUG6eAmVp3nGmaBNd8vUGnbult7/8255kyQHQBS56nEpuKweCgD0tdg/PEi9NN7hWUWvrZvEzmFN9jWAA5MHz62VcAKcWgm3cHZw5/A0QKz7fUWZ3V5fT3oB9M8mgH7vPAJYrsNcJ7Ih5/Xb0Faz9n+2/njXHyi4tSBeNQms1Zlx2zN7q30B91speJtsznL9AufO/Ih8QZGd12wBM1jqz0NOv+iR03tmNqfXXjQ3j1j83WT3jEN1oarwXuFBGh/8Jkq3HqQ8Q3OoHC/g3awYAXJohBVDWV5KivyLeUMkW8mMK228836j+cpAPzLIQZiBmbGg8g7W3i0v4uNx1Kn8mAV1IP40HUAgQRVIsA6kXdhtmtbgjI/TczetKeaiqgZ8DBVb5WRK5eqFxnWkkAcYcWJXOxFUfFZQ/73tNUmgsf0dwfouvqzP35oIw+mgh0dJP46jKI5oEo2TJB6P0myEk0G20ShCWhLoprBzBlSB7VFNjbrO0X7/cS21baM5AVVNwetc2q/sXmICCwvqG9SwjgP3DSXNc8Gw3Okod3BP/DH1+D1fh2+uq7yL/5lKfrebaTfVmOvXejeU/Jvkv0r20VJszKLeOKbkYpzEycUgo6OLCcXDCzxJh0mfMjLIzvkU+PkP904LsMoVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PettyCash Line – Cashier Approved → Notify Employee">4784499bc3f87210111afb377d01313c</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:12:40</sys_created_on>
+        <sys_id>b395cddbc3f87210111afb377d0131ef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:40</sys_updated_on>
+        <ui_id>7caff7df-d2fe-40fd-bd55-cc63cca9685b</ui_id>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=4784499bc3f87210111afb377d01313c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=4784499bc3f87210111afb377d01313c"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4784499bc3f87210111afb377d01313c^sys_idNOT IN4f84499bc3f87210111afb377d01315a,b395011fc3f87210111afb377d013105,b795011fc3f87210111afb377d013105,bb95011fc3f87210111afb377d013105,cf84499bc3f87210111afb377d01315a"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4784499bc3f87210111afb377d01313c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{dcddb845-72b7-489c-984c-cac83a71e4c7.status}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:59</sys_created_on>
+        <sys_id>4f84499bc3f87210111afb377d01315a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:07:59</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c3dc63de-7415-48e8-97e1-9661c5f8ed69</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4784499bc3f87210111afb377d01313c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.total_line_amount}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:12:40</sys_created_on>
+        <sys_id>b395011fc3f87210111afb377d013105</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>20127554-757f-498e-bf9f-e13ad57f6e3f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4784499bc3f87210111afb377d01313c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:12:41</sys_created_on>
+        <sys_id>b795011fc3f87210111afb377d013105</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:41</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8e05fae6-f950-4f42-9c66-3bbfb043893c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4784499bc3f87210111afb377d01313c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{dcddb845-72b7-489c-984c-cac83a71e4c7.Record.employeename}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:12:41</sys_created_on>
+        <sys_id>bb95011fc3f87210111afb377d013105</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:12:41</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e234d4a5-18c1-4dae-a37c-3b7313a2e939</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4784499bc3f87210111afb377d01313c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.cashier_status}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:59</sys_created_on>
+        <sys_id>cf84499bc3f87210111afb377d01315a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:07:59</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>2131027a-963d-4a83-bb2b-d679255e3d79</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4784499bc3f87210111afb377d01313c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4784499bc3f87210111afb377d01313c^sys_idNOT IN0b84499bc3f87210111afb377d013145,4784499bc3f87210111afb377d01314c,cf84499bc3f87210111afb377d013152"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4784499bc3f87210111afb377d01313c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:58</sys_created_on>
+        <sys_id>0b84499bc3f87210111afb377d013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:07:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4784499bc3f87210111afb377d01313c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:58</sys_created_on>
+        <sys_id>4784499bc3f87210111afb377d01314c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:07:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4784499bc3f87210111afb377d01313c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:58</sys_created_on>
+        <sys_id>cf84499bc3f87210111afb377d013152</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:07:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4784499bc3f87210111afb377d01313c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4784499bc3f87210111afb377d01313c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4784499bc3f87210111afb377d01313c"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>4bcaf41bc3b87210111afb377d0131af</sys_id>
+        <latest_snapshot>4784499bc3f87210111afb377d01313c</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=4bcaf41bc3b87210111afb377d0131af^sys_idNOT IN0384499bc3f87210111afb377d013172"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>4bcaf41bc3b87210111afb377d0131af</plan_id>
+        <snapshot>4784499bc3f87210111afb377d01313c</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-30 07:07:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0384499bc3f87210111afb377d013172</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-30 07:07:59</sys_updated_on>
+        <trigger display_value="">8384499bc3f87210111afb377d013170</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=4bcaf41bc3b87210111afb377d0131af"/>
+</record_update>

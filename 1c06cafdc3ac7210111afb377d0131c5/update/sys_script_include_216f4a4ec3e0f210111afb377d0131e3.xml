@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1797098_pettyc_0.FetchManagerDetails</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>to get the manager name and email automatically</description>
+        <mobile_callable>false</mobile_callable>
+        <name>FetchManagerDetails</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var FetchManagerDetails = Class.create();
+FetchManagerDetails.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getDetails: function() {
+        var userId = this.getParameter('sysparm_user_id');
+        var userGR = new GlideRecord('PettyCashUsers');
+		
+        if (userGR.get(userId) && userGR.manager  ) {
+            var managerGR = new GlideRecord('PettyCashUsers');
+            if (managerGR.get(userGR.manager)) {
+                return JSON.stringify({
+                    name: managerGR.name.toString(),
+                    email: managerGR.email.toString()
+                });
+            }
+        }
+        return JSON.stringify({
+            name: '',
+            email: ''
+        });
+    }
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-14 05:12:30</sys_created_on>
+        <sys_id>216f4a4ec3e0f210111afb377d0131e3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>FetchManagerDetails</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_script_include_216f4a4ec3e0f210111afb377d0131e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-14 06:03:14</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>216f4a4ec3e0f210111afb377d0131e3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-14 05:12:30</sys_created_on>
+        <sys_id>e7a05e0ec3e0f210111afb377d01318f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-14 05:12:30</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

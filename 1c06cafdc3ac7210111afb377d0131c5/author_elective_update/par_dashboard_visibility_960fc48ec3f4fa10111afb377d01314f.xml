@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_visibility">
+    <par_dashboard_visibility action="DELETE">
+        <dashboard display_value="Total Sum">5e0f084ec3f4fa10111afb377d01316a</dashboard>
+        <experience display_value="Petty Cash Workspace">7b4d4c8a35f4fa10a462a3d6a59af8b5</experience>
+        <sys_class_name>par_dashboard_visibility</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-26 06:01:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>960fc48ec3f4fa10111afb377d01314f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>par_dashboard_visibility_960fc48ec3f4fa10111afb377d01314f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-26 06:01:46</sys_updated_on>
+    </par_dashboard_visibility>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</application>
+        <file_path/>
+        <instance_id>577afe99db5a3d5cebdd2a59139619a6</instance_id>
+        <instance_name>dev202651</instance_name>
+        <name>par_dashboard_visibility_960fc48ec3f4fa10111afb377d01314f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_visibility"><par_dashboard_visibility action="INSERT_OR_UPDATE"><dashboard display_value="Total Sum">5e0f084ec3f4fa10111afb377d01316a</dashboard><experience display_value="Petty Cash Workspace">7b4d4c8a35f4fa10a462a3d6a59af8b5</experience><sys_class_name>par_dashboard_visibility</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-26 06:01:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>960fc48ec3f4fa10111afb377d01314f</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package><sys_policy/><sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope><sys_update_name>par_dashboard_visibility_960fc48ec3f4fa10111afb377d01314f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-26 06:01:46</sys_updated_on></par_dashboard_visibility></record_update>]]></payload>
+        <payload_hash>1579510893</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>1006cafdc3ac7210111afb377d0131cb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-26 06:01:46</sys_created_on>
+        <sys_id>5a0fc48ec3f4fa10111afb377d013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a1f1bccc60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-26 06:01:46</sys_updated_on>
+        <type>PAR Dashboard Visibility</type>
+        <update_guid>5e0fc48e5af4fa10527a9bf1dc41ae50</update_guid>
+        <update_guid_history>5e0fc48e5af4fa10527a9bf1dc41ae50:1579510893</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">14009ccec3f4fa10111afb377d013155</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-26 06:06:00</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_visibility">par_dashboard_visibility</sys_db_object>
+        <sys_id>31d01a7e215141eaa8e9ea30cbcce884</sys_id>
+        <sys_metadata>960fc48ec3f4fa10111afb377d01314f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_scope_delete display_value="">0cc400a5ae7b4560926829d174760089</sys_scope_delete>
+        <sys_update_name>par_dashboard_visibility_960fc48ec3f4fa10111afb377d01314f</sys_update_name>
+        <sys_update_version display_value="par_dashboard_visibility_960fc48ec3f4fa10111afb377d01314f">5a0fc48ec3f4fa10111afb377d013151</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-26 06:06:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

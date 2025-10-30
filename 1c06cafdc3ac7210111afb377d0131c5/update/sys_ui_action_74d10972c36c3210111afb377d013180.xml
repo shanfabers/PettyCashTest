@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>false</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>!current.isNewRecord()</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Print Report</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[function onClick() {
+  var id = g_form.getUniqueValue();
+  if (!id) { alert('Save the record first.'); return; }
+
+  var REPORT_ID = '09d4e83ac3e83210111afb377d01312c';
+  var CHILD_REF_FIELD = 'pettycashmain_ref'; // change if needed
+
+   alert('REPORT_ID in the Print Report is : ' + REPORT_ID);
+
+
+  var url = '/report_viewer.do'
+          + '?sysparm_report_id=' + REPORT_ID
+          + '&sysparm_query=' + encodeURIComponent(CHILD_REF_FIELD + '=' + id)
+          + '&sysparm_media=print&sysparm_display_value=true';
+  window.open(url, '_blank');
+}
+
+
+
+/*function onClick() {
+    if (!g_form.getUniqueValue()) {
+        g_form.save();
+        return;
+    }
+    // Your saved report sys_id:
+    var REPORT_ID = '09d4e83ac3e83210111afb377d01312c';
+	var CHILD_REF_FIELD = 'pettycashmain_ref'; 
+	var headerId = current.getUniqueValue();
+
+   alert('REPORT_ID in the Print Report is : ' + REPORT_ID);
+
+    // Filter the report to lines under this header:
+    var query = CHILD_REF_FIELD + '=' + headerId;
+
+	var gu = new GlideURL('report_viewer.do');
+gu.addParam('sysparm_report_id', REPORT_ID);   // <-- key param: report id
+gu.addParam('sysparm_query', query);           // <-- filter down to this header
+gu.addParam('sysparm_media', 'print');         // printer-friendly view
+gu.addParam('sysparm_display_value', 'true');  // optional (shows display values)
+
+action.setRedirectURL(gu.getURL());
+
+
+    alert('Query in the Print Report is : ' + query);
+/*
+    // Open the report viewer in print mode
+    var url = '/report_viewer.do?jvar_report_id=' + REPORT_ID +
+        '&sysparm_query=' + encodeURIComponent(query) +
+        '&sysparm_display_value=true&sysparm_stack=no&sysparm_media=print';
+
+    alert('URL in the Print Report is : ' + url);
+
+    window.open(url, '_blank');
+	
+}*/]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 07:25:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>74d10972c36c3210111afb377d013180</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Print Report</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_ui_action_74d10972c36c3210111afb377d013180</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-20 06:23:50</sys_updated_on>
+        <table>x_1797098_pettyc_0_petty_cash_lines</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>74d10972c36c3210111afb377d013180</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 07:25:43</sys_created_on>
+        <sys_id>6652c9bac36c3210111afb377d013147</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-16 07:45:44</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
