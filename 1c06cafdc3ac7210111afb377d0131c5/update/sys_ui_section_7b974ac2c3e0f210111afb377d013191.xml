@@ -4,55 +4,55 @@
             <element>manager</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-20 04:53:34</sys_created_on>
-            <sys_id>ece5850cc3b87210111afb377d01312b</sys_id>
+            <sys_created_on>2025-11-13 10:50:13</sys_created_on>
+            <sys_id>0fad3dbfc3417610111afb377d01318f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="More Info" display_value="More Info" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="Default view">7b974ac2c3e0f210111afb377d013191</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-20 04:53:34</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-20 04:53:34</sys_created_on>
-            <sys_id>a8e5850cc3b87210111afb377d01312c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="More Info" display_value="More Info" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="Default view">7b974ac2c3e0f210111afb377d013191</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-20 04:53:34</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>manager_email</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-20 04:53:34</sys_created_on>
-            <sys_id>20e5850cc3b87210111afb377d01312d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="More Info" display_value="More Info" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="Default view">7b974ac2c3e0f210111afb377d013191</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-20 04:53:34</sys_updated_on>
+            <sys_updated_on>2025-11-13 10:50:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>employee_email</element>
-            <position>3</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-20 04:53:34</sys_created_on>
-            <sys_id>a4e5850cc3b87210111afb377d01312d</sys_id>
+            <sys_created_on>2025-11-13 10:50:13</sys_created_on>
+            <sys_id>4bad3dbfc3417610111afb377d013190</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="More Info" display_value="More Info" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="Default view">7b974ac2c3e0f210111afb377d013191</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-20 04:53:34</sys_updated_on>
+            <sys_updated_on>2025-11-13 10:50:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-13 10:50:13</sys_created_on>
+            <sys_id>cfad3dbfc3417610111afb377d013190</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="More Info" display_value="More Info" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="Default view">7b974ac2c3e0f210111afb377d013191</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-13 10:50:13</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>manager_email</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-13 10:50:13</sys_created_on>
+            <sys_id>47ad3dbfc3417610111afb377d013191</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="More Info" display_value="More Info" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="Default view">7b974ac2c3e0f210111afb377d013191</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-13 10:50:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
