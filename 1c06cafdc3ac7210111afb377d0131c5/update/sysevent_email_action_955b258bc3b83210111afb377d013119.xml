@@ -38,21 +38,21 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html/>
+        <message_html><![CDATA[<p>Petty Cash Line has been Approved No: Number: ${pettycashmain_ref.number} and Line No: ${number}&nbsp;</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>PettyCash Line Status Approved</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields/>
+        <recipient_fields>pettycashmain_ref.employee_email,pettycashmain_ref.cashier.email</recipient_fields>
         <recipient_groups name="PettyCash Finance Managers">f13c5d01c3bcb610111afb377d01317c</recipient_groups>
-        <recipient_users>0258c2f1c3ec7210111afb377d01319f</recipient_users>
+        <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject/>
+        <subject>Petty Cash has been Approved  Number: ${pettycashmain_ref.number} and Line No: ${number} </subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -60,7 +60,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>955b258bc3b83210111afb377d013119</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>PettyCash Line Status Approved</sys_name>
         <sys_overrides/>
         <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
@@ -68,9 +68,9 @@
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_update_name>sysevent_email_action_955b258bc3b83210111afb377d013119</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-29 15:23:22</sys_updated_on>
+        <sys_updated_on>2025-11-26 05:16:28</sys_updated_on>
         <sys_version>2</sys_version>
-        <template display_value="Employee notification template">1462e7ca918a3010f877b1d70a4d6a3d</template>
+        <template/>
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>
