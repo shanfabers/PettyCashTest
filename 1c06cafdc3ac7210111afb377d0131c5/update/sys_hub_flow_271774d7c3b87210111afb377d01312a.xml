@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2688000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2338818000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>26000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,10 +15,10 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>pettycash_lines_when_finance_reviewer_sets_finance_status</internal_name>
-        <label_cache>[{"name":"Updated_1.current.total_line_amount","label":"Trigger - Record Updated➛PettyCashLines Record➛Total Line Amount","reference":"","reference_display":"Total Line Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"total_line_amount","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.amount","label":"1 - Look Up Record➛PettyCashMain Record➛Amount","reference":"","reference_display":"Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"amount","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employeename","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Name","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employeename","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_subject"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.number","label":"1 - Look Up Record➛PettyCashMain Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"number","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_subject"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employee_email","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employee_email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_cc"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.finance_manager.email","label":"1 - Look Up Record➛PettyCashMain Record➛Finance Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_to"]}},{"name":"Updated_1.current.pettycashmain_ref","label":"Trigger - Record Updated➛PettyCashLines Record➛PettyCashMain Ref","reference":"x_1797098_pettyc_0_pettycashmain","reference_display":"PettyCashMain","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"pettycashmain_ref","usedInstances":{"2c935d68-38f2-4d65-bf46-39ed710f013a":["conditions"]}}]</label_cache>
+        <label_cache>[{"name":"Updated_1.current.pettycashmain_ref","label":"Trigger - Record Updated➛PettyCashLines Record➛PettyCashMain Ref","reference":"x_1797098_pettyc_0_pettycashmain","reference_display":"PettyCashMain","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"pettycashmain_ref","usedInstances":{"2c935d68-38f2-4d65-bf46-39ed710f013a":["conditions"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.finance_manager.email","label":"1 - Look Up Record➛PettyCashMain Record➛Finance Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_to"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employee_email","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employee_email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_cc"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.number","label":"1 - Look Up Record➛PettyCashMain Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"number","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_subject"]}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_subject"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employeename","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Name","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employeename","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.amount","label":"1 - Look Up Record➛PettyCashMain Record➛Amount","reference":"","reference_display":"Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"amount","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"Updated_1.current.total_line_amount","label":"Trigger - Record Updated➛PettyCashLines Record➛Total Line Amount","reference":"","reference_display":"Total Line Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"total_line_amount","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"Updated_1.current.pettycashmain_ref.cashier.email","label":"Trigger - Record Updated➛PettyCashLines Record➛PettyCashMain Ref➛Cashier➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.cashier.email","label":"1 - Look Up Record➛PettyCashMain Record➛Cashier➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_to"]}}]</label_cache>
         <master_snapshot>14aaf01fc3b87210111afb377d0131b6</master_snapshot>
         <master_snapshot_digest/>
-        <name>PettyCash Lines When Finance Reviewer sets Finance Status</name>
+        <name>PettyCash Lines When Finance sets Approved Status</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
@@ -36,15 +36,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>271774d7c3b87210111afb377d01312a</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>PettyCash Lines When Finance Reviewer sets Finance Status</sys_name>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>PettyCash Lines When Finance sets Approved Status</sys_name>
         <sys_overrides/>
         <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
         <sys_policy/>
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_update_name>sys_hub_flow_271774d7c3b87210111afb377d01312a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-30 06:54:08</sys_updated_on>
+        <sys_updated_on>2025-11-26 06:49:38</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -82,14 +82,14 @@
         <identifier>271774d7c3b87210111afb377d01312a</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-10-30 06:54:08</sys_created_on>
-        <sys_id>98614d17c3f87210111afb377d013194</sys_id>
+        <sys_created_on>2025-11-26 06:49:38</sys_created_on>
+        <sys_id>e943c880c321f210111afb377d0131b7</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-30 06:54:08</sys_updated_on>
+        <sys_updated_on>2025-11-26 06:49:38</sys_updated_on>
         <trigger display_value="">24aa341fc3b87210111afb377d013103</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=271774d7c3b87210111afb377d01312a^sys_idNOT IN98614d17c3f87210111afb377d013194"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=271774d7c3b87210111afb377d01312a^sys_idNOT INe943c880c321f210111afb377d0131b7"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=271774d7c3b87210111afb377d01312a"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=271774d7c3b87210111afb377d01312a^sys_idNOT INab1774d7c3b87210111afb377d01312d"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -145,7 +145,7 @@
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</model>
+        <model display_value="PettyCash Lines When Finance sets Approved Status">271774d7c3b87210111afb377d01312a</model>
         <model_id>271774d7c3b87210111afb377d01312a</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_271774d7c3b87210111afb377d01312a</name>
@@ -229,7 +229,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</model>
+        <model display_value="PettyCash Lines When Finance sets Approved Status">271774d7c3b87210111afb377d01312a</model>
         <model_id>271774d7c3b87210111afb377d01312a</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_271774d7c3b87210111afb377d01312a</name>
@@ -313,7 +313,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</model>
+        <model display_value="PettyCash Lines When Finance sets Approved Status">271774d7c3b87210111afb377d01312a</model>
         <model_id>271774d7c3b87210111afb377d01312a</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_271774d7c3b87210111afb377d01312a</name>
@@ -363,7 +363,7 @@
     <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</flow>
+        <flow display_value="PettyCash Lines When Finance sets Approved Status">271774d7c3b87210111afb377d01312a</flow>
         <name>Updated</name>
         <remote_sys_id/>
         <sys_created_by>admin</sys_created_by>
@@ -386,7 +386,7 @@
         <comment/>
         <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
         <display_text/>
-        <flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</flow>
+        <flow display_value="PettyCash Lines When Finance sets Approved Status">271774d7c3b87210111afb377d01312a</flow>
         <generation_source/>
         <order>2</order>
         <parent_ui_id/>
@@ -394,12 +394,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-30 06:24:26</sys_created_on>
         <sys_id>0d9ab01fc3b87210111afb377d013110</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-30 06:56:36</sys_updated_on>
+        <sys_updated_on>2025-11-26 06:51:24</sys_updated_on>
         <ui_id>3e11dadd-eba7-4128-a39a-a36f6d7b3863</ui_id>
-        <values>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</values>
+        <values>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</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
@@ -408,7 +408,7 @@
         <comment/>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
-        <flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</flow>
+        <flow display_value="PettyCash Lines When Finance sets Approved Status">271774d7c3b87210111afb377d01312a</flow>
         <generation_source/>
         <order>1</order>
         <parent_ui_id/>
@@ -416,10 +416,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-30 06:24:25</sys_created_on>
         <sys_id>899ab01fc3b87210111afb377d01310c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-30 06:56:36</sys_updated_on>
+        <sys_updated_on>2025-11-26 06:51:24</sys_updated_on>
         <ui_id>2c935d68-38f2-4d65-bf46-39ed710f013a</ui_id>
         <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcigQGCrTNokl76RYERVIxsTSlklQSx/B/36FI2a6t2NauAyTYm8kZkm9m3htS/rEMOQ0vQzqJJtlkMhwnUdTvR9Fo1Cc4TtP+iKRRigdhJ5R4zsDT4FQwGD5gUdrxE4qTSRJNxqhgxiwIivwPrGdzzCW4Uq4LgRff/Yo/rfkKzJ+dmcy4oIrJ8PLHz05YYAUHGabCy+WO6VSkAqdMgOudh7qD3CyK9RBVNjf3aXtZ8MUZckUtlKgTsifDJGWAIcNCs044x5Jik6vFekYxTG+k2EzMuDSwY2idnzR/hnPHkfXLGERFmLOth8hnyk1n19jgW6NKYkrlXcks54Rplw/KMlwKc7U95xxuCsNz6Za4sN3qXJRz+cWlI1xvUBcGZkoNIFhhA7XIfRjZ7Sx//FqjnHJZ5cQbRU6wWI+wMYqnpbF4liETbA4boTkuCi7vUaHyB14tBizz7r2AQTcT+SMcqvm97GJigXchr7g7hfnravo7VtxG8Rm2gcUAiAtgCHIl1HmpqlQ+ICJKXRkUltrtFa46oV7oK4G13kQOKUe/Sovb5cFHjFzS7BKieGE+wBYPzAe36tRiGR6k4GRDOZJLyi0KvaUYQIM4/auExXS5/FZAsIyiuEtKBfk13d/kgwDparUvon+3SUupHY+zltrVdqBNwXvR7c19atrAiy4+m+gGUfSeZAeHvz3VtdeRS8ERMcX0IMnohk86Vwa5XG6paV8arXl+AoSa5zeWmUG6eAmVp3nGmaBNd8vUGnbult7/8255kyQHQBS56nEpuKweCgD0tdg/PEi9NN7hWUWvrZvEzmFN9jWAA5MHz62VcAKcWgm3cHZw5/A0QKz7fUWZ3V5fT3oB9M8mgH7vPAJYrsNcJ7Ih5/Xb0Faz9n+2/njXHyi4tSBeNQms1Zlx2zN7q30B91speJtsznL9AufO/Ih8QZGd12wBM1jqz0NOv+iR03tmNqfXXjQ3j1j83WT3jEN1oarwXuFBGh/8Jkq3HqQ8Q3OoHC/g3awYAXJohBVDWV5KivyLeUMkW8mMK228836j+cpAPzLIQZiBmbGg8g7W3i0v4uNx1Kn8mAV1IP40HUAgQRVIsA6kXdhtmtbgjI/TczetKeaiqgZ8DBVb5WRK5eqFxnWkkAcYcWJXOxFUfFZQ/73tNUmgsf0dwfouvqzP35oIw+mgh0dJP46jKI5oEo2TJB6P0myEk0G20ShCWhLoprBzBlSB7VFNjbrO0X7/cS21baM5AVVNwetc2q/sXmICCwvqG9SwjgP3DSXNc8Gw3Okod3BP/DH1+D1fh2+uq7yL/5lKfrebaTfVmOvXejeU/Jvkv0r20VJszKLeOKbkYpzEycUgo6OLCcXDCzxJh0mfMjLIzvkU+PkP904LsMoVAAA=</values>
     </sys_hub_action_instance_v2>
@@ -565,12 +565,12 @@
         <description>PettyCash Lines When Finance Reviewer sets Finance Status = Approved → email Finance Manager</description>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>pettycash_lines_when_finance_reviewer_sets_finance_status</internal_name>
-        <label_cache>[{"name":"Updated_1.current.total_line_amount","label":"Trigger - Record Updated➛PettyCashLines Record➛Total Line Amount","reference":"","reference_display":"Total Line Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"total_line_amount","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.amount","label":"1 - Look Up Record➛PettyCashMain Record➛Amount","reference":"","reference_display":"Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"amount","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employeename","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Name","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employeename","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_subject"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.number","label":"1 - Look Up Record➛PettyCashMain Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"number","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_subject"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employee_email","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employee_email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_cc"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.finance_manager.email","label":"1 - Look Up Record➛PettyCashMain Record➛Finance Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_to"]}},{"name":"Updated_1.current.pettycashmain_ref","label":"Trigger - Record Updated➛PettyCashLines Record➛PettyCashMain Ref","reference":"x_1797098_pettyc_0_pettycashmain","reference_display":"PettyCashMain","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"pettycashmain_ref","usedInstances":{"2c935d68-38f2-4d65-bf46-39ed710f013a":["conditions"]}}]</label_cache>
+        <label_cache>[{"name":"Updated_1.current.pettycashmain_ref","label":"Trigger - Record Updated➛PettyCashLines Record➛PettyCashMain Ref","reference":"x_1797098_pettyc_0_pettycashmain","reference_display":"PettyCashMain","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"pettycashmain_ref","usedInstances":{"2c935d68-38f2-4d65-bf46-39ed710f013a":["conditions"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.finance_manager.email","label":"1 - Look Up Record➛PettyCashMain Record➛Finance Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_to"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employee_email","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employee_email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_cc"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.number","label":"1 - Look Up Record➛PettyCashMain Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"number","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_subject"]}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_subject"]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.employeename","label":"1 - Look Up Record➛PettyCashMain Record➛Employee Name","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"employeename","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.amount","label":"1 - Look Up Record➛PettyCashMain Record➛Amount","reference":"","reference_display":"Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_pettycashmain","column_name":"amount","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"Updated_1.current.total_line_amount","label":"Trigger - Record Updated➛PettyCashLines Record➛Total Line Amount","reference":"","reference_display":"Total Line Amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"total_line_amount","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":[null]}},{"name":"Updated_1.current.pettycashmain_ref.cashier.email","label":"Trigger - Record Updated➛PettyCashLines Record➛PettyCashMain Ref➛Cashier➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{}},{"name":"2c935d68-38f2-4d65-bf46-39ed710f013a.Record.cashier.email","label":"1 - Look Up Record➛PettyCashMain Record➛Cashier➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"3e11dadd-eba7-4128-a39a-a36f6d7b3863":["ah_to"]}}]</label_cache>
         <master>true</master>
-        <name>PettyCash Lines When Finance Reviewer sets Finance Status</name>
+        <name>PettyCash Lines When Finance sets Approved Status</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">271774d7c3b87210111afb377d01312a</parent_flow>
+        <parent_flow display_value="PettyCash Lines When Finance sets Approved Status">271774d7c3b87210111afb377d01312a</parent_flow>
         <remote_trigger_id/>
         <run_as>user</run_as>
         <run_with_roles/>
@@ -582,7 +582,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>14aaf01fc3b87210111afb377d0131b6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -590,7 +590,7 @@
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-30 06:54:07</sys_updated_on>
+        <sys_updated_on>2025-11-26 06:49:37</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -651,7 +651,7 @@
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="PettyCash Lines When Finance Reviewer sets Finance Status">14aaf01fc3b87210111afb377d0131b6</model>
+        <model display_value="PettyCash Lines When Finance sets Approved Status">14aaf01fc3b87210111afb377d0131b6</model>
         <model_id>14aaf01fc3b87210111afb377d0131b6</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_14aaf01fc3b87210111afb377d0131b6</name>
@@ -735,7 +735,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="PettyCash Lines When Finance Reviewer sets Finance Status">14aaf01fc3b87210111afb377d0131b6</model>
+        <model display_value="PettyCash Lines When Finance sets Approved Status">14aaf01fc3b87210111afb377d0131b6</model>
         <model_id>14aaf01fc3b87210111afb377d0131b6</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_14aaf01fc3b87210111afb377d0131b6</name>
@@ -758,14 +758,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-30 06:24:39</sys_created_on>
         <sys_id>2caaf01fc3b87210111afb377d0131b8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-30 06:54:07</sys_updated_on>
+        <sys_updated_on>2025-11-26 06:49:37</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -819,7 +819,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="PettyCash Lines When Finance Reviewer sets Finance Status">14aaf01fc3b87210111afb377d0131b6</model>
+        <model display_value="PettyCash Lines When Finance sets Approved Status">14aaf01fc3b87210111afb377d0131b6</model>
         <model_id>14aaf01fc3b87210111afb377d0131b6</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_14aaf01fc3b87210111afb377d0131b6</name>
@@ -842,14 +842,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-30 06:24:39</sys_created_on>
         <sys_id>e8aaf01fc3b87210111afb377d0131cb</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-30 06:54:07</sys_updated_on>
+        <sys_updated_on>2025-11-26 06:49:37</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -869,7 +869,7 @@
     <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">14aaf01fc3b87210111afb377d0131b6</flow>
+        <flow display_value="PettyCash Lines When Finance sets Approved Status">14aaf01fc3b87210111afb377d0131b6</flow>
         <name>Updated</name>
         <remote_sys_id/>
         <sys_created_by>admin</sys_created_by>
@@ -892,7 +892,7 @@
         <comment/>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
-        <flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">14aaf01fc3b87210111afb377d0131b6</flow>
+        <flow display_value="PettyCash Lines When Finance sets Approved Status">14aaf01fc3b87210111afb377d0131b6</flow>
         <generation_source/>
         <order>1</order>
         <parent_ui_id/>
@@ -914,7 +914,7 @@
         <comment/>
         <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
         <display_text/>
-        <flow display_value="PettyCash Lines When Finance Reviewer sets Finance Status">14aaf01fc3b87210111afb377d0131b6</flow>
+        <flow display_value="PettyCash Lines When Finance sets Approved Status">14aaf01fc3b87210111afb377d0131b6</flow>
         <generation_source/>
         <order>2</order>
         <parent_ui_id/>
@@ -922,12 +922,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-30 06:24:40</sys_created_on>
         <sys_id>ecaaf01fc3b87210111afb377d0131da</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-30 06:54:07</sys_updated_on>
+        <sys_updated_on>2025-11-26 06:49:37</sys_updated_on>
         <ui_id>3e11dadd-eba7-4128-a39a-a36f6d7b3863</ui_id>
-        <values>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</values>
+        <values>H4sIAAAAAAAA/+1d23LaTBJ+FRW1lwYLxNG5ik/YlMGLzcHw5y9qpBkZ2aPDL42CSSpVe7+PsFVb+yz7KPsk26MDSEBA2DiBRBeU0Bx6unv66+7RDOiPrxkNZ04yRVwVy7JaRBVRKkiiWC3UarJUU8VqpSbmFZw5yhhIJ9DSJopp8/vPiLq8AL5izbEomvbmJcpYo9gmRubkjz+PMhayoTMjdubk60JV0tEpkgmFph1kPxIm3IVcLHLFpha/x6bi6sRgIy0svAkInAc1wvU51EAnzpV4lCEvjBiYADsqog45yujIwIiZ9nRWYhOEbw06LxhrBgOSHx3HVDTEiCOwMRGIjjQqTDQ2FpDgM5bLcHovjvYFmJMKnJRKQAcK51UzFA0DR5lI8ShQKVRfz6vVc8TQPbNdhbn2TNOmphDH1yYmKnIpO4uW+Q1uLaaZht+FIZmGvU3q6kbLV2JmRiAyk64DzBCL64YLC4OD4Or92JzchcxeaoanxUAr1FQQnd2p9wTZyvhSI5RPteHqMrQ9yiDGbE12GWcTjIJCq/k4I49VPha0JJR4U6kjy9KMx5Flm581b0BgX889UrjJqdScQH9HezRySOGy5mD2UO4Sys+94h6yNS54E8hA529HGWfqnFHkOHPxQf+jv1zOva+MODu898gzON5ZsTWLfYShPpNA2G9HAZrytXX2jItzu43Q3CmiEnAwRxS3htUcBWhaKruJ9hVafkWApfyWWPItKoBSB/DDfIj7yBFYwN4MPlUxDp/vwGY/4DIDQWK8xHHxPrYPRuKMfAMOZPMGfwUmNiFBLJdluSyXKtLcDmuKiiuyWkYVRZrb3QT8p60j+3nk+c8IHPLLeAg8w3aYSMBLiAnwudTFROiHTK3jMwCJbJrgxIxFhACnx5eedmcIKbwp2vimKTBTgMmkU4gxM5Z44TwCsTFiguYIDsxWTuiYghZIFelxJExNV9Bdh0EzBjUx8MXCVnF/cReYQ1B6vtJWDgKYuwdgaX0gQHPDRuMRMyOw+/q1oNSkEi5Xs1JVLWSLuFzKAqVyVqoRXMmLqpiXUM7PxHKqZiBuCGDH6JHYOc8Ev30TtqOiIGesRXp/Mpaxvzd8bed9EkzELCKby7MSOBkHbNB4XPAx92Fh4F+k9f7FD7hL7iUSYMX9hfqhIJkzTjVd8wzC90E7A3dYyLn37QO+rHIC32ZuAK+1PiLGDE5RXu0GiG5Rc0rIKETKW/G7iuB2wEsgegi8s7NlPWwDvOLrAnuKvENB3nyFt/aJBSnH7EiOAWoXq7vNo4cmfbpg0/LWRl1Kjfo3MerSerNSYobkuPITUVjEsP9OGJsKZ5AqCS3zZMsMy38uBP7de252oxmEU+haoBaCR/mc4to2X8fM2hmEYEcYmK7N10GgZESXkbUPLG2ZJm6egxDa97MZWDUr20C8nCaMPx3hu4czWmtKaiEeF0w8jWD5kyuKkmIJnOcs04yprhDbNJkMinn2KvGnzCe/GbkilJpHfhfZFo790kt/5SU4DDHXEcbIEWRCDO85AzOFjx5CCBZU0xbmOPWpHFs+jU+Gf4+1z4LCVRMOzfkaWRqlgoAUhVjMGTEbGQ4Q00eqa3gadwTNuTQVmH7owR8k8jl+CUmIUKaYBpg9wFnzDCqs8vQI1Z70fBRPLWHt67xIqKy1InmDZQOuvCsCt2PP+no9HQsZ8a68l5OkUZYBzkPBmGlSpllZDYdNvMWEV9gxrcVmAVdh27yQFW5M81noWsFujMCrCuVH9sGfTz6dTeB/ubrl6SQRw2A9NgtbLo8ZmAvvnIAYsm1zsmnY+Tx4jjarIJuwbTvFRvrfv//1HT4jBblcbs842k634JlC6sH0vnYAcLTMNIS5WXKgRsdbRvpIRQrCRDDMiBvgj0c1gjcpSjMoYCzre9KsBma+oofDpnP3EAS0ExjOIB9mOv3HPxOL7IsYKwJ/EHcQmmG5bGFOIfQw4vs9mRkes4KrZSFM2AR8Jzg5iPJh62CQjBDzXnB/vH7ghF7fh7MhO9aH1U7bWtKiR/eZTENS1fIKVXuNHApJVpYSpM4n3Z25ZFNVIYrEKZ2I62ktuC+fnN8hmuC92moThizEU0ZvBkGY1VblG+SH14en76eoYaeo5iqJItPPC7brpPm1QmrH1h4fiQ1BLoiYgeirAiu3Vmd3kfV7Q6fxNY2vaXzdbXxdEXE3R8pq6Dv8aKba6FGPuI5GB581OtdTudD4a9hvifx7o9M65ddhvfaE+3kqG23afLqmzecmXBvPg4e78bwd748vGp3GuUdHrz0PH5p+e/GCtrrXtCVe836fB7pFB1J7VgdlmgxjoGl32tS60za/Gnclpd6NtpkMHhrjodQYK/XH9+JDHD6MA9mD/vXeGOu9L3P6vbN1uuLth1pMDkquYmO0hw93IrmHuovWWClwWU5v5Wn3S5uXnUX66vmxorOFsXsXvnzhlfP5fX5Qv+TAh0Zlwld0Mrz3xvHH1O/GuH45Qf0XJ9puWL8UB/N2UpvLZZxacv2lP+i/5GM0NK9eaj81nm47zfzwfFC86TSLw6dr1qq3C637vDZ8ahegrDTst6Vm51Rvnl98GdyX7oHnz4redmWjxwZ6b+rLxT9zXpQ6deSLlzHUO1H5mp7ORK7Dplyo2VA26T185PchXXrXuaa33S58At13ud7HrUGfurx9V+89yVLjudHtAl16CZ+zzoyX6+l+29N1FAsMMGIr09m85GFO8ndnXQk+i1dOz59TvaYh0AE+i8xndByftjPsXxa2kJ2312N2V+8VY2Pwsa+whT08nzZ9O/XknsR01r+cImlh3G4bxm7PrpzHNbxYsv4Cn25UHpE8nNK4nwN7f+D2PdngXwJ7vByO5atejEbgf856D6e8Hx1eVl9u9FZeMRrcf77KxntXDWtYwFTRZrY+s2343lPqHL+9mP126z0RcH4+eGiZnTp1/XlbiYlb8O3a8MG3o1CXILcrF+7ogi39fHvZyjcm85GRcQLaL3TwMEwuO2/fH8Rsa4770C6uJ7Leo8Mrbx6GsuT5FohppxNFrxUG/clrcexfPwaRPMwidrMqrr5lVbxiOyO3s+VxJOV560OENDXak1CWpkZpapSmRmlqlKZGaWr0S6dGd+QvlziM2CdL+cvqB4U/5rm/iudP507UQhXXSIlkZVUUs8Wqks9Wy1I5W8UlEVexJJfLhcgj9LXMb3r0v9sH/u8kxgFtBLxlb/0iODDr/Sor3WL/RbcA4rP82nGWdgK+++R/lASHv8U+wiu0PDsS9VE3XYPtcdAoVcVKpYxq2VoRF7NFUqll5WpRylZkCVeqmCClJB1A0NidGL9J0PANM40Wv2i0CKb3B4SJJMhLw8SGMMHPdgSQFPY4WBQlpVAtieUsLlYL2aJYxNmqXKlmi3k1T0Qs58t5dADBYndiHFCw2MFRo47JEBUitpqeOvqlg8jyfP+AeJIEnGk82RBPVt/vdhMv3ZxLN+fSzbl0cy7dnEs359LNuXRz7udtzt1axAj+v+pEODbMyfHEtJ+BgEKO/dULZR/4qab+/Wwxc+y3P34Z5Su1ilirjiy++lFGYvAFlkE6LOaO//b1ikAmaeecqTPS8Lf3SKXS81BpypWmXGnKlaZcacqVplxpyrX/KdcdeUQ2dn5mMvSmdst/HBTrdxD/b5KA4A/an0jQMN1EPrzn/+mvjvfrV8eb/sXDv/3vfxKuI5Pd7+tfZaTuNN1UTZ1q6lTf2akm+OuGhH70R/y4cse+f/6rh5DwLo4ibYZmktNBSQG+d946TX4Pwk+n5+0P8eBLcN4+dVepu/q93FV64Pug/FTswHfqrdKl8O/os9LzxYfqvlbfv8f54mT3B30CaOeL9nfZmtvA5ZbVW78lI8GrDWYvwPFfbLD0poPg/RhjptOFt2NcdZo383djVN74+ptyqSSV07djvPn9N9YEF7BtWlYg247fgfPn/wGaXNxQCnsAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=14aaf01fc3b87210111afb377d0131b6"/>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=14aaf01fc3b87210111afb377d0131b6"/>
@@ -1067,17 +1067,17 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"34aa341fc3b87210111afb377d013105","name":"plan","plan_signature":null}}</plan>
         <plan_id>271774d7c3b87210111afb377d01312a</plan_id>
-        <snapshot>d8f1c957c3f87210111afb377d013135</snapshot>
+        <snapshot>aba304c0c321f210111afb377d0131c9</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-30 06:24:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>34aa341fc3b87210111afb377d013105</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-30 06:24:40</sys_updated_on>
+        <sys_updated_on>2025-11-26 06:47:46</sys_updated_on>
         <trigger display_value="">24aa341fc3b87210111afb377d013103</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=271774d7c3b87210111afb377d01312a"/>
