@@ -384,7 +384,7 @@
         <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
         <display_text/>
         <flow display_value="PettyCash Line – Cashier Approved → Notify Employee">4bcaf41bc3b87210111afb377d0131af</flow>
         <generation_source/>
@@ -394,19 +394,19 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-30 07:12:33</sys_created_on>
         <sys_id>4e95cddbc3f87210111afb377d01311c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-30 07:12:33</sys_updated_on>
+        <sys_updated_on>2025-11-24 10:39:44</sys_updated_on>
         <ui_id>7caff7df-d2fe-40fd-bd55-cc63cca9685b</ui_id>
-        <values>H4sIAAAAAAAA/+1a3W7bNhR+FcLXlitb8l96lTUrVqDthtbtMDSFQFGUzUUSVYpK6gUBdr9HGDDsWfYoe5IdSpQtxT+RHTdzWl0lInkOz+H5zndImh+uW8xrnbRsb2QOXN/GQ9PqWaY56o3HrjX2zdFwbHaJ12q3IhxSGCko4UJ9X+IgVQ3wr8eSOMDz98sWMmOBJ2jUOvnwsd2KsQBhSUXr5PpWl5zH1AmwSwMQPOMkDWkk0Ysz0FHXsEJ6gsWUSvSmMPC2wWoq+Pb0JA5TjdClzDLbLfpZ0sijMKmPg4S2WyGOPCy5mC9aBMXej1GwbJixSILK0yThhGFJEyRnFNEQswBdMTlDGOXTd1pK3+eE/QYmWD2lyqewCERZxCLCPLCoVWp29JpC94tlN5lxRuiPsWQ8yhdaYjco1pwHaRi9zr1WUaE+TgNZikqagF4aKzeV3VKk4IP/dsav3hTzPmdRtiDawYATHCy+sJSCuSn4mQUyoFgs9TmZSUonzEQDmq1xiOOYRVMnFvySZYrBzLAzDeCj4wf8CuQTNo06mCifOrDguPMc2s+y5vdYMOXgK1ADwjfZAjmfUmVT7mJ1cjXWyeIOQxMiWCxPQfEl1S7ctDXeu+NtsPLsJXxKOr8I5idKP3qd669rW0V4g60a7pU2jfbuvdA+AYjLPNdycCOpzVggfGRWEb4B2QdHtDZ0b0h/GdhCXBMnR6P2LZv8TjjfBWJzMHDdgdsfWkugjInvDV1/gIfEWgLjCrhJhFhcOBk3lZDcXYWyTuE94QzCT55n7rVrW1kIA9MFqUfRz4W52zzQ+HY5Bx6KluDu3QvcORKR5AhiF8yBwBczq8YlvcsZloglKIFwddCEI6aNL0m00ZynKEwTCcMk9FTSplIT7AfJGB1a3Xq2Nu6PIqXumzr97RyLl8DDM0fyUsJcX3vE89yR3TeGPXdo2KMxMcYjmxgEk5GFh11qk2En34V0aBgHfE5pjtqbG7SabvdXuF+mvoUoRdMiS2ssyCLF+erq6GRMCp06F63tuZhvQFZSsVRGzKaQVAqJRwMWsiy4eb7eNxG8rXGnZiXUhOydCAQnM0ZFp4DtbtI+i7CKuKCXjF7trQagh6cl6fsm47E6dQhCqAGMQvDZs1WUbCAEe7/i3DDCwzFCd+uJmw4qsXYrlHDAY1EVjDVsKgS/u4VGdxsc+w0cjx2O/e2hJ5VgJ6n7KyWyBMlfeCrQT1TKOXoGbI1OY+Up9dBrfrIj0UZp6FIBDJvd7LxkEdVK3sWwKtRzuh2SCqHOA8XQ1YT43+05yGbx7pgsBBcRWRelDWk5aLaNx3RYwlvD7feqfMu9eSn/zlPTtEiMlIWGZNE8JFRwLl1Yhous0ztvnefD6BnFoq3+7Q0iN4mf5sJJjCNEApwkxXilzAHoKg9iFgTnLZTIeUAX/XmET+BMHkBaPIV+wiMAFGQFy+JbjMwche7MPKUqs7vovb72PUcKHCU+F+EJ7Vm2Z+O+0R2RrmF7mBrYGhLDcodW18I9OrbGNzeFM9uNh6kQwoTQWCbLKRw/jbKIJmATGKqQ87kQNI/OjWwqQ9uU/cWw3OIuUSWV1BlkSKCBwi3JeSBZbDCvGJIdPrPGCY9vD9NWFWO7yEAvOb9A72L9CwHKgTaVT3M+VnT8Cuxf7f5en7mzW9padicSC1mMXJ06l32ihGsow0Lwq/rhyJgXCoagclehykz//vXnBjtLDZ1O58gs2m1tgQYL7dUo7zsPULnkEVqCdDW3HR8T7FGnTh6qlC8bvVEbiniJRtTdJaPeXaud06ORc7/BIGXWSKxn1ohnvKoD8/sftRcsX6DdFrXU0NYtse6PdiowpY1XsV863nIzombfx3Rg+OO+adi+3TPGZDAAfLi+a9rWaGyRR1BuDufGIyo3E8GmUyqA+XU10XvydUVHITFZrTqvsz377uVm09RN0TnCoqOD/ADVpk4aNtVmfcN+xeYN/ZTSRGa/AUqOLoBdgzlQahDA4Tf7JfE05GnOGcdZgXpmtzfs921j2B/6hj0eUcP1x75BYXviQdOAWv4jqECHc+PbqkATLnGQb5Q0Upti9DUXo9V4P0BdqpOcTV06bF2aYuElVR2rN9VaZ96d3cz98/fh6tNhSsbRMPauvNjcCT0KRmzuhB4DG266E8o/19z5NER2MCJrNniPiM6a24aj5rGtNFb3NqHhtobbvkVuaw6vXwnNrT+c7vds6YfJq5fFo6Uar1gWbwjzNywrj1r0c6WZDIPlY6XhPd8QDvp9a9A8Vyo/IoyvvJ4neBxr3+71kPDjf8rqw1XkOgAA</values>
+        <values>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</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="PettyCash Line – Cashier Approved → Notify Employee">4bcaf41bc3b87210111afb377d0131af</flow>
         <generation_source/>
@@ -416,12 +416,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-30 06:27:05</sys_created_on>
         <sys_id>803bfc1fc3b87210111afb377d0131c7</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-30 06:52:52</sys_updated_on>
+        <sys_updated_on>2025-11-24 10:39:43</sys_updated_on>
         <ui_id>dcddb845-72b7-489c-984c-cac83a71e4c7</ui_id>
-        <values>H4sIAAAAAAAA/9VYW2/bIBT+K5af08zOzUnfplaRJm3rtHV76SqEATdoBDzAbdMo/30HYydp7k0zrXsLcC7fOec7x5CbachpeB7SQTTIBoNuP4midjuKer02wXGatnskjVLcCRuhxGMGkhangsHyHovCrR9RnAySaNBHObN2QlBU/cBmNMZcgijlJhd48qPS+OKOL+D4kz8mIy6oZjI8v7lthDnW4MgyHZ5PV47sJGdI4JQJsHLtcASfHajGwTE8U16PyTmol0h600pThyVqhOzRMkkZuMqwMKwRjrGk2Co9me9ohumVFIuNEZcWLIZO+NHwJzDfj5xcxiAswvzZfImqVPltMlKcsKvcciX9jgfqD5UoxvKzD8AlmWW4ELZOMuwUBuyx3GF2ICpE2beRevhaOxxyWYZXHQpFsJivsLWap4VlxtWCCTYGQ2iM85zLO5Rrdc9LZcAybt4JWDQzoR7AqeF3somJA96EFOHmEPYvy+0fWHMXxScwA8oAiAuoNvJJN6rQZVbuERGFKQ80lsbbCmdlrtDvwqH0UVfxIZ8iEDBE89y+B4V7VoUya9Q07+6kyGBBCaIk5c6nWeK6mRjE6c8ClOl0+j2H0BhFcZMUGrJpm8+IjwDpbLZO/+OMHNckF8tRHJqBjcqb0lK1y7O9ql3ik7VLJ4r+UcNYXby9ftnXAT7gPW0Q050koIt6G6Ut8plb6oN1Uh/N0CFngj4b4weAq5WvHNmCdLINb0XQzPlYmeet/36ev0l6AiCKfL65FFyWn1MAehredndSI41XeFCWf2l6uz1syDp7cWBV8HT8lC3rWvP3AJC14jdAFFx7lBuA1/O1Nl9Rt30y6rZbL6MuEOdmOkc/z9qGBNe3Jle6Wv7JyeNVeWDXkkI8u51T/+I4n/FLfbacz5XebL+oOZeZ5U8utxDsxHeyLc3W+JvdPQLVyh/yzYoeOL1jduG9lqLKPmDxa9N5xa55D5Xhvfp+F+98AqRL9zueoTHUiedw6dSMABUMwpqhTBWSouq6uaCNq1vGtbGV8PoM+cpsoWWgoOUCO2JBKR3MpU8xWQ6Irlb8kAV1eBUGE0B4QRleMA/vZcnYMo86J7zrvWYeDTEXZerh2ZAv1Y5prfSWmbSnajvKf+DAOhBUfFJQr59om/i+cbLtwfpfvEFfO3UIw2mnhXtJO46jKI5oEvWTJO730qyHk062aDSEjCQwFsFyBsQA86gmQl3VaH20+Nl49B8lMHPfDSsTh+KtlS+VdC/VVmIDBxjqHNSA94dUzYtUKcGwXNCz+88Gxlv5L6Xg16u58VsfNxXtb33MC/5d8t8F++BI0WdRqx9TctZP4uSsk9He2YDi7hkepN2kTRnpZMd/n2//APhPkMpoFAAA</values>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcigQGCrTNokl76RYERVIxsTSlklQSx/B/36FI2a6t2NauAyTYm8kZkm9m3htS/rEMOQ0vQzqJJtlkMhwnUdTvR9Fo1Cc4TtP+iKRRigdhJ5R4zsDT4FQwGD5gUdrxE4qTSRJNxqhgxiwIivwPrGdzzCW4Uq4LgRff/Yo/rfkKzJ+dmcy4oIrJ8PLHz05YYAUHGabCy+WO6VSkAqdMgOudh7qD3CyK9RBVNjf3aXtZ8MUZckUtlKgTsifDJGWAIcNCs044x5Jik6vFekYxTG+k2EzMuDSwY2idnzR/hnPHkfXLGERFmLOth8hnyk1n19jgW6NKYkrlXcks54Rplw/KMlwKc7U95xxuCsNz6Za4sN3qXJRz+cWlI1xvUBcGZkoNIFhhA7XIfRjZ7Sx//FqjnHJZ5cQbRU6wWI+wMYqnpbF4liETbA4boTkuCi7vUaHyB14tBizz7r2AQTcT+SMcqvm97GJigXchr7g7hfnravo7VtxG8Rm2gcUAiAtgCHIl1HmpqlQ+ICJKXRkUltrtFa46oV7oK4G13kQOKUe/Sovb5cFHjFzS7BKieGE+wBYPzAe36tRiGR6k4GRDOZJLyi0KvaUYQIM4/auExXS5/FZAsIyiuEtKBfk13d/kgwDparUvon+3SUupHY+zltrVdqBNwXvR7c19atrAiy4+m+gGUfSeZAeHvz3VtdeRS8ERMcX0IMnohk86Vwa5XG6paV8arXl+AoSa5zeWmUG6eAmVp3nGmaBNd8vUGnbult7/8255kyQHQBS56nEpuKweCgD0tdg/PEi9NN7hWUWvrZvEzmFN9jWAA5MHz62VcAKcWgm3cHZw5/A0QKz7fUWZ3V5fT3oB9M8mgH7vPAJYrsNcJ7Ih5/Xb0Faz9n+2/njXHyi4tSBeNQms1Zlx2zN7q30B91speJtsznL9AufO/Ih8QZGd12wBM1jqz0NOv+iR03tmNqfXXjQ3j1j83WT3jEN1oarwXuFBGh/8Jkq3HqQ8Q3OoHC/g3awYAXJohBVDWV5KivyLeUMkW8mMK228836j+cpAPzLIQZiBmbGg8g7W3i0v4uNx1Kn8mAV1IP40HUAgQRVIsA6kXdhtmtbgjI/TczetKeaiqgZ8DBVb5WRK5eqFxnWkkAcYcWJXOxFUfFZQ/73tNUmgsf0dwfouvqzP35oIw+mgh0dJP46jKI5oEo2TJB6P0myEk0G20ShCWhLoprBzBlSB7VFNjbrO0X7/cS21baM5AVVNwetc2q/sXmICCwvqG9SwjgP3DSXNc8Gw3Okod3BP/DH1+D1fh2+uq7yL/5lKfrebaTfVmOvXejeU/Jvkv0r20VJszKLeOKbkYpzEycUgo6OLCcXDCzxJh0mfMjLIzvkU+PkP904LsMoVAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=4bcaf41bc3b87210111afb377d0131af"/>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=4bcaf41bc3b87210111afb377d0131af"/>
@@ -1128,14 +1128,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>4bcaf41bc3b87210111afb377d0131af</sys_id>
         <latest_snapshot>4784499bc3f87210111afb377d01313c</latest_snapshot>
-        <compiler_build/>
+        <compiler_build>glide-xanadu-07-02-2024__patch9-05-21-2025_06-04-2025_0434.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=4bcaf41bc3b87210111afb377d0131af^sys_idNOT IN0384499bc3f87210111afb377d013172"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
-        <plan/>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"0384499bc3f87210111afb377d013172","name":"plan","plan_signature":null}}</plan>
         <plan_id>4bcaf41bc3b87210111afb377d0131af</plan_id>
-        <snapshot>4784499bc3f87210111afb377d01313c</snapshot>
+        <snapshot>94c466dbc3113210111afb377d0131f5</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-30 07:07:59</sys_created_on>
         <sys_domain>global</sys_domain>

@@ -27,9 +27,9 @@
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element label="EmployeeId" max_length="40" name="employeeid" type="string"/>
         <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
-        <element label="Employee Email" max_length="40" name="employee_email" type="string"/>
+        <element label="Employee Email" max_length="240" name="employee_email" type="string"/>
         <element label="Manager Email" max_length="40" name="manager_email" read_only="true" type="string"/>
-        <element label="Receipt Upload" max_length="40" name="receipt_upload" type="file_attachment"/>
+        <element label="Receipt Upload" mandatory="true" max_length="40" name="receipt_upload" type="file_attachment"/>
         <element label="Comments" max_length="350" name="comments" type="journal_list"/>
         <element label="Amount Balance" max_length="38" name="amount_balance" read_only="true" type="decimal"/>
         <element label="Finance Reviewer" max_length="32" name="finance_reviewer" reference="sys_user" type="reference"/>
