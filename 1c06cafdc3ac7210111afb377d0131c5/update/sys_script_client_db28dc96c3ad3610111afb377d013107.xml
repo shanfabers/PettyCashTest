@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>employeename</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>PettyCash re-populate when Employchanges</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading) return;
+    if (oldValue === newValue) return;
+
+    // same helper as in onLoad (paste it here too)
+    populateFromEmployee(newValue);
+}
+
+function populateFromEmployee(userSysId) {
+    if (!userSysId) {
+        g_form.setValue('department', '');
+        g_form.setValue('employee_email', '');
+        g_form.setValue('manager', '');
+        g_form.setValue('manager_email', '');
+        return;
+    }
+
+    g_form.getReference('employeename', function(u) {
+        g_form.setValue('employee_email', u.email || '');
+        if (u.department) g_form.setValue('department', u.department);
+
+        if (u.manager) {
+            g_form.setValue('manager', u.manager);
+            g_form.getReference('manager', function(m) {
+                g_form.setValue('manager_email', (m && m.email) ? m.email : '');
+            });
+        } else {
+            g_form.setValue('manager', '');
+            g_form.setValue('manager_email', '');
+        }
+    });
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-03 08:13:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>db28dc96c3ad3610111afb377d013107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PettyCash re-populate when Employchanges</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_script_client_db28dc96c3ad3610111afb377d013107</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-03 08:13:42</sys_updated_on>
+        <table>x_1797098_pettyc_0_pettycashmain</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

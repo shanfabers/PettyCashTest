@@ -13,7 +13,7 @@
         <mobile_title>PettyCash Users</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_1797098_pettyc_0_pc_user</name>
-        <order>102</order>
+        <order>130</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2e7cd2f9c320b210111afb377d0131d6</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>PettyCash Users</sys_name>
         <sys_overrides/>
         <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_update_name>sys_app_module_2e7cd2f9c320b210111afb377d0131d6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-26 07:02:43</sys_updated_on>
+        <sys_updated_on>2025-12-03 10:01:46</sys_updated_on>
         <timeline_page/>
         <title>PettyCash Users</title>
         <uncancelable>false</uncancelable>

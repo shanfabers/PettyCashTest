@@ -42,20 +42,6 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-10-15 07:02:54</sys_updated_on>
         </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-15 07:42:02</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>f77c7312c3607610111afb377d013142</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_1797098_pettyc_0_petty_cash_lines" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">9db4afdec3ac3610111afb377d01312a</sys_ui_form>
-            <sys_ui_section caption="Other Info." display_value="Other Info." name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">7b7c7312c3607610111afb377d01313f</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-15 07:42:02</sys_updated_on>
-        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_1797098_pettyc_0_petty_cash_lines</name>
             <roles/>

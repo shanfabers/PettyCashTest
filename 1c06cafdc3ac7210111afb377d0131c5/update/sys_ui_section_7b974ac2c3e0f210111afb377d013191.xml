@@ -1,63 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="More Info" section_id="7b974ac2c3e0f210111afb377d013191" sys_domain="global" table="x_1797098_pettyc_0_pettycashmain" version="3" view="">
+    <sys_ui_section caption="Manager Details" section_id="7b974ac2c3e0f210111afb377d013191" sys_domain="global" table="x_1797098_pettyc_0_pettycashmain" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>manager</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-13 10:50:13</sys_created_on>
-            <sys_id>0fad3dbfc3417610111afb377d01318f</sys_id>
+            <sys_created_on>2025-12-03 07:26:05</sys_created_on>
+            <sys_id>b7bec05ec36d3610111afb377d013162</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="More Info" display_value="More Info" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="Default view">7b974ac2c3e0f210111afb377d013191</sys_ui_section>
+            <sys_ui_section caption="Manager Details" display_value="Manager Details" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="Default view">7b974ac2c3e0f210111afb377d013191</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-13 10:50:13</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>employee_email</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-13 10:50:13</sys_created_on>
-            <sys_id>4bad3dbfc3417610111afb377d013190</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="More Info" display_value="More Info" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="Default view">7b974ac2c3e0f210111afb377d013191</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-13 10:50:13</sys_updated_on>
+            <sys_updated_on>2025-12-03 07:26:05</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-13 10:50:13</sys_created_on>
-            <sys_id>cfad3dbfc3417610111afb377d013190</sys_id>
+            <sys_created_on>2025-12-03 07:26:05</sys_created_on>
+            <sys_id>bfbec05ec36d3610111afb377d013162</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="More Info" display_value="More Info" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="Default view">7b974ac2c3e0f210111afb377d013191</sys_ui_section>
+            <sys_ui_section caption="Manager Details" display_value="Manager Details" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="Default view">7b974ac2c3e0f210111afb377d013191</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-13 10:50:13</sys_updated_on>
+            <sys_updated_on>2025-12-03 07:26:05</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>manager_email</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-13 10:50:13</sys_created_on>
-            <sys_id>47ad3dbfc3417610111afb377d013191</sys_id>
+            <sys_created_on>2025-12-03 07:26:05</sys_created_on>
+            <sys_id>b7bec05ec36d3610111afb377d013163</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="More Info" display_value="More Info" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="Default view">7b974ac2c3e0f210111afb377d013191</sys_ui_section>
+            <sys_ui_section caption="Manager Details" display_value="Manager Details" name="x_1797098_pettyc_0_pettycashmain" sys_domain="global" view="Default view">7b974ac2c3e0f210111afb377d013191</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-13 10:50:13</sys_updated_on>
+            <sys_updated_on>2025-12-03 07:26:05</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption>More Info</caption>
+            <caption>Manager Details</caption>
             <header>false</header>
             <name>x_1797098_pettyc_0_pettycashmain</name>
             <roles/>
@@ -67,7 +53,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>7b974ac2c3e0f210111afb377d013191</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_name>x_1797098_pettyc_0_pettycashmain</sys_name>
             <sys_overrides/>
             <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
@@ -75,7 +61,7 @@
             <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
             <sys_update_name>sys_ui_section_7b974ac2c3e0f210111afb377d013191</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-20 04:28:12</sys_updated_on>
+            <sys_updated_on>2025-12-03 07:26:05</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Default view" name="NULL">Default view</view>

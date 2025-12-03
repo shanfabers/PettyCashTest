@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Petty Cash Lines" section_id="00537fd2c3207610111afb377d013151" sys_domain="global" table="x_1797098_pettyc_0_petty_cash_lines" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>invoice_no</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-30 05:58:15</sys_created_on>
-            <sys_id>3994f017c3b87210111afb377d0131de</sys_id>
+            <sys_created_on>2025-12-03 09:49:18</sys_created_on>
+            <sys_id>bd8fa45ac3217610111afb377d013107</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Petty Cash Lines" display_value="Petty Cash Lines" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">00537fd2c3207610111afb377d013151</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-30 05:58:15</sys_updated_on>
+            <sys_updated_on>2025-12-03 09:49:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,41 +18,41 @@
             <element>total_line_amount</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-30 05:58:15</sys_created_on>
-            <sys_id>f194f017c3b87210111afb377d0131df</sys_id>
+            <sys_created_on>2025-12-03 09:49:18</sys_created_on>
+            <sys_id>b58fa45ac3217610111afb377d013108</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Petty Cash Lines" display_value="Petty Cash Lines" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">00537fd2c3207610111afb377d013151</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-30 05:58:15</sys_updated_on>
+            <sys_updated_on>2025-12-03 09:49:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>finance_comments</element>
+            <element>.split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-30 05:58:15</sys_created_on>
-            <sys_id>7994f017c3b87210111afb377d0131df</sys_id>
+            <sys_created_on>2025-12-03 09:49:18</sys_created_on>
+            <sys_id>bd8fa45ac3217610111afb377d013108</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Petty Cash Lines" display_value="Petty Cash Lines" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">00537fd2c3207610111afb377d013151</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-30 05:58:15</sys_updated_on>
+            <sys_updated_on>2025-12-03 09:49:18</sys_updated_on>
             <sys_user/>
-            <type/>
+            <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>cashier_comments</element>
+            <element>description</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-30 05:58:15</sys_created_on>
-            <sys_id>fd94f017c3b87210111afb377d0131df</sys_id>
+            <sys_created_on>2025-12-03 09:49:18</sys_created_on>
+            <sys_id>b58fa45ac3217610111afb377d013109</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Petty Cash Lines" display_value="Petty Cash Lines" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">00537fd2c3207610111afb377d013151</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-30 05:58:15</sys_updated_on>
+            <sys_updated_on>2025-12-03 09:49:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,69 +60,13 @@
             <element>receipt_upload</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-30 05:58:15</sys_created_on>
-            <sys_id>7594f017c3b87210111afb377d0131e0</sys_id>
+            <sys_created_on>2025-12-03 09:49:18</sys_created_on>
+            <sys_id>bd8fa45ac3217610111afb377d013109</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Petty Cash Lines" display_value="Petty Cash Lines" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">00537fd2c3207610111afb377d013151</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-30 05:58:15</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-30 05:58:16</sys_created_on>
-            <sys_id>f5943417c3b87210111afb377d013112</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Petty Cash Lines" display_value="Petty Cash Lines" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">00537fd2c3207610111afb377d013151</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-30 05:58:16</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-30 05:58:16</sys_created_on>
-            <sys_id>7d943417c3b87210111afb377d013112</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Petty Cash Lines" display_value="Petty Cash Lines" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">00537fd2c3207610111afb377d013151</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-30 05:58:16</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>status</element>
-            <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-30 05:58:16</sys_created_on>
-            <sys_id>f1943417c3b87210111afb377d013113</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Petty Cash Lines" display_value="Petty Cash Lines" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">00537fd2c3207610111afb377d013151</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-30 05:58:16</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>cashier_status</element>
-            <position>8</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-10-30 05:58:16</sys_created_on>
-            <sys_id>79943417c3b87210111afb377d013113</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Petty Cash Lines" display_value="Petty Cash Lines" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">00537fd2c3207610111afb377d013151</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-30 05:58:16</sys_updated_on>
+            <sys_updated_on>2025-12-03 09:49:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

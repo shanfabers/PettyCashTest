@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name/>
-        <active>false</active>
+        <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
-        <comments>(function () {&#13;
-  var st = String(current.getValue('status') || '');&#13;
-  return ['approved','disbursed','closed'].indexOf(st) === -1;&#13;
-})()</comments>
-        <condition>current.status != 'approved' &amp;&amp; current.flow_status!= 'disbursed'</condition>
+        <comments>PettyCash Line Submit for Approval</comments>
+        <condition/>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -30,43 +27,41 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>PettyCash Submit for Approval</name>
+        <name>Submit for Approval</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.flow_status = 'Submitted';
-current.update();
-action.setRedirectURL(current);]]></script>
+        <script/>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-10-21 04:36:06</sys_created_on>
+        <sys_created_on>2025-12-03 10:24:23</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>373bce18c334f210111afb377d0131ac</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>PettyCash Submit for Approval</sys_name>
+        <sys_id>ae373cd2c3617610111afb377d0131f5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Submit for Approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
         <sys_policy/>
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
-        <sys_update_name>sys_ui_action_373bce18c334f210111afb377d0131ac</sys_update_name>
+        <sys_update_name>sys_ui_action_ae373cd2c3617610111afb377d0131f5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-12-03 10:29:20</sys_updated_on>
-        <table>x_1797098_pettyc_0_pettycashmain</table>
+        <sys_updated_on>2025-12-03 10:30:30</sys_updated_on>
+        <table>x_1797098_pettyc_0_petty_cash_lines</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>373bce18c334f210111afb377d0131ac</id>
+        <id>ae373cd2c3617610111afb377d0131f5</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-10-21 04:36:05</sys_created_on>
-        <sys_id>d67bce18c334f210111afb377d0131b4</sys_id>
+        <sys_created_on>2025-12-03 10:24:23</sys_created_on>
+        <sys_id>b38730d2c3617610111afb377d013198</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-21 04:36:05</sys_updated_on>
+        <sys_updated_on>2025-12-03 10:24:23</sys_updated_on>
         <table>sys_ui_action</table>
         <use_es_latest>true</use_es_latest>
     </sys_es_latest_script>
