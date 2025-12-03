@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_1797098_pettyc_0_pettycashmain</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="Petty Cash List Form Screen">bfacd77dc365f210111afb377d013102</embedded_screen>
+        <item_view/>
+        <name>Petty Cash List Form Screen Master Item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-02 09:08:53</sys_created_on>
+        <sys_id>fbacd77dc365f210111afb377d013106</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Petty Cash List Form Screen Master Item</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_sg_master_item_fbacd77dc365f210111afb377d013106</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-02 09:08:53</sys_updated_on>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="Petty Cash List List Screen View Config">f3ac977dc365f210111afb377d013161</view_config>
+    </sys_sg_master_item>
+</record_update>
