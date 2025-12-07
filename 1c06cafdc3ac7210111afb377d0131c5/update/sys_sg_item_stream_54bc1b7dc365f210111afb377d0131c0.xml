@@ -2,19 +2,19 @@
     <sys_sg_item_stream action="INSERT_OR_UPDATE">
         <data_item display_value="Petty Cash Details Data Item">84bcd77dc365f210111afb377d0131ba</data_item>
         <interleaved_field/>
-        <name>54bc1b7dc365f210111afb377d0131bd Item Stream</name>
+        <name>Item Stream</name>
         <sys_class_name>sys_sg_item_stream</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-12-02 09:08:54</sys_created_on>
         <sys_id>54bc1b7dc365f210111afb377d0131c0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>54bc1b7dc365f210111afb377d0131bd Item Stream</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Item Stream</sys_name>
         <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
         <sys_policy/>
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_update_name>sys_sg_item_stream_54bc1b7dc365f210111afb377d0131c0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-12-02 09:08:54</sys_updated_on>
+        <sys_updated_on>2025-12-07 10:34:46</sys_updated_on>
         <table/>
     </sys_sg_item_stream>
 </record_update>

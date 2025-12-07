@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1797098_pettyc_0_petty_cash_lines</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>PettyCashLine to pop emp details</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+  // Default employee to logged-in user if empty
+  if (!current.employee_name) current.employee_name = gs.getUserID();
+
+  var u = new GlideRecord('sys_user');
+  if (u.get(current.employee_name)) {
+
+    if (!current.employee_email && u.email)
+      current.employee_email = u.email;
+
+    if (!current.manager && u.manager)
+      current.manager = u.manager;
+
+    if (!current.manager_email && u.manager) {
+      var m = new GlideRecord('sys_user');
+      if (m.get(u.manager) && m.email)
+        current.manager_email = m.email;
+    }
+  }
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 05:35:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b49ef0aac36db210111afb377d013189</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>PettyCashLine to pop emp details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_script_b49ef0aac36db210111afb377d013189</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 06:01:51</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b49ef0aac36db210111afb377d013189"/>
+</record_update>

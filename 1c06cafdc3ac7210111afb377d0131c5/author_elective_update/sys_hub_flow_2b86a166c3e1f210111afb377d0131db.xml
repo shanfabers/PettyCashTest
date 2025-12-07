@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Sends manager approval for PettyCashLines</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>pc__submit_to_manager</internal_name>
+        <label_cache>[{"name":"12552995-9d9d-4528-8a00-43438732d9c0.Record.employee_name.manager.email","label":"1➛PettyCashLines Record➛Employee Name➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"6d2ab2a7-7177-46cc-b708-022a1058f466":["ah_to"]},"attributes":null},{"name":"12552995-9d9d-4528-8a00-43438732d9c0.Record","label":"1➛PettyCashLines Record","reference":"x_1797098_pettyc_0_petty_cash_lines","reference_display":"PettyCashLines Record","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3bbfefa7-8cc8-480b-9a99-34db557f7c30.record.number","label":"2 - Update Record➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"6d2ab2a7-7177-46cc-b708-022a1058f466":["ah_subject"]},"attributes":null},{"name":"12552995-9d9d-4528-8a00-43438732d9c0.Record.employee_name","label":"1➛PettyCashLines Record➛Employee Name","reference":"sys_user","reference_display":"Employee Name","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"employee_name","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"6d2ab2a7-7177-46cc-b708-022a1058f466":[null]},"attributes":null},{"name":"12552995-9d9d-4528-8a00-43438732d9c0.Record.invoice_no","label":"1➛PettyCashLines Record➛Invoice No","reference":"","reference_display":"Invoice No","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"invoice_no","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"6d2ab2a7-7177-46cc-b708-022a1058f466":["ah_subject"]},"attributes":null},{"name":"12552995-9d9d-4528-8a00-43438732d9c0.Record.employee_name.manager","label":"1➛PettyCashLines Record➛Employee Name➛Manager","reference":"sys_user","reference_display":"Manager","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"1c8665f8-8970-4d48-b552-40e9cfa7690f":["approval_conditions"]},"attributes":null},{"name":"12552995-9d9d-4528-8a00-43438732d9c0.Record.employee_email","label":"1➛PettyCashLines Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"employee_email","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"6d2ab2a7-7177-46cc-b708-022a1058f466":["ah_cc"]},"attributes":null}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>PC – Submit to Manager</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:28:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2b86a166c3e1f210111afb377d0131db</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>PC – Submit to Manager</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_hub_flow_2b86a166c3e1f210111afb377d0131db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:39:06</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 12-04-2025 00:38:57">8d09a9aac3e1f210111afb377d0131ed</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=2b86a166c3e1f210111afb377d0131db"/>
+    <sys_variable_value action="DELETE" query="document_key=2b86a166c3e1f210111afb377d0131db"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=2b86a166c3e1f210111afb377d0131db"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=2b86a166c3e1f210111afb377d0131db^sys_idNOT INab86a566c3e1f210111afb377d01312a"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>2b86a166c3e1f210111afb377d0131db</id>
+        <name>PC – Submit to Manager</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:28:13</sys_created_on>
+        <sys_id>ab86a566c3e1f210111afb377d01312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:28:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=ab86a566c3e1f210111afb377d01312a"/>
+    <sys_hub_flow_input action="DELETE" query="model=2b86a166c3e1f210111afb377d0131db^sys_idNOT IN3ba66966c3e1f210111afb377d01310d"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiUniqueId=8bceab82-6c3e-461b-a5e1-b65420fdf2e4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>record_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>record_sys_id</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="PC – Submit to Manager">2b86a166c3e1f210111afb377d0131db</model>
+        <model_id>2b86a166c3e1f210111afb377d0131db</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_2b86a166c3e1f210111afb377d0131db</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:28:46</sys_created_on>
+        <sys_id>3ba66966c3e1f210111afb377d01310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:28:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=3ba66966c3e1f210111afb377d01310d"/>
+    <sys_hub_flow_output action="DELETE" query="model=2b86a166c3e1f210111afb377d0131db"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=2b86a166c3e1f210111afb377d0131db"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=2b86a166c3e1f210111afb377d0131db"/>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=2b86a166c3e1f210111afb377d0131db^sys_idNOT IN2fd7252ac3e1f210111afb377d01313d,44a8ad6ac3e1f210111afb377d013101,b958256ac3e1f210111afb377d013134,ef7769a2c3e1f210111afb377d013170"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="PC – Submit to Manager">2b86a166c3e1f210111afb377d0131db</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:33:56</sys_created_on>
+        <sys_id>2fd7252ac3e1f210111afb377d01313d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:35:30</sys_updated_on>
+        <ui_id>3bbfefa7-8cc8-480b-9a99-34db557f7c30</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1T0U7bMBT9FeTntnKSFpq+TVRIkxhMgHhhyHLt29aS42S2A3RV/33XidN2wFCReBjS+hTfe499zuk9d2uiJJmQIUia5MmxyJIsSylNx8NkdpzNklRmHCAhPWJ4AThpQZRW4vmB6zoU1uskHY3SPB/1c5nL/nCUjvtjTml/mA2z8UmWylzQwVWD22wQKZWrNF/dxguwIpZKSwuGTO7ue6TiFt/yYMlk/ax1KFnNZ6Bx9Kpj+5y9X1XhLEtRF2A8U13xPCKnsXP0dYodBAU6Ce0RePJgJCCROdcOeqTgRnJf2hWZeFtjwQKXl0avthNLZXwrtOBPTv3Cl4c0zM0BlYlowvbIokFteT7lnl/jzcLXdutXqQS41hMJc15rf7pfawcuK69K00I8n+kOXeq6MBetI2R7wd7/UTskAVXQGZi3subXy/LxqiN5pkxjSZSoS8H19sS9t2pW+0BnTUBD43HBq0qZBats+aAaMFIpBguNh8Fcl4/4plMLM+Ai8B6gq3xwhvVpU77lVgUR3/AaBG96xK3cqebO7aSgh+xnHZi0wqIE1rjQWMCaTQhgYVXlv+BTDxCJb3oxDjR9c8Ngt1BNCtxeHLQywJznvnY/akozGSgE1bgmfIG8X+z/AYj35eMA9l0+zhRo6V6RE/PhoUCqHlgr78+I3MTm0W1sblPyYTFJjmnz+x+Wfzcss9Fb6yby3Xbt3bkLzBNLTvITmo9ZBd6vBKPtBxPcLVkIh3uZme9h4hQHzmP/fQk5gHKXkJtmFV6X0IXkee18H3t00TZiOEYflo3xZ0pFlPHpY/G3MNz/BpXBcm9KCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=2fd7252ac3e1f210111afb377d01313d"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="PC – Submit to Manager">2b86a166c3e1f210111afb377d0131db</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:37:15</sys_created_on>
+        <sys_id>44a8ad6ac3e1f210111afb377d013101</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:38:56</sys_updated_on>
+        <ui_id>6d2ab2a7-7177-46cc-b708-022a1058f466</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=44a8ad6ac3e1f210111afb377d013101"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="PC – Submit to Manager">2b86a166c3e1f210111afb377d0131db</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:36:01</sys_created_on>
+        <sys_id>b958256ac3e1f210111afb377d013134</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:37:06</sys_updated_on>
+        <ui_id>1c8665f8-8970-4d48-b552-40e9cfa7690f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2YTW/bOBCG/0qgs+2lPi3lFsQI0EW3XSRpL0Eg0OQo5oKmVIlK4zX830uKlKXarms3DtAUuRjmDEm9M5xHJHW3dBh1zh0IIj9UP+PMR67nohiiOCYJwiSOojDwnYEj8BxUT1wUZf6IeVoCrnKhHKpRa4/6S1lVcLz43FnIjHFagnDO7+4HToFLNYuE0jlfbrgOlcHxFLjqemF1nF23On4oUC4K7ahkycSDbb+309y0xrykWpY3cOBJgqCg9GSYVzBw5lhQLPNysbaoqelHwTvDjAlpAp7jp4r9r57nRkh3zECFSGw21s3UZsqYswmWWCmpiazLdeJyRqAyyaGQ4ZrLy77NdPhYSKaCbIZIPOXt6JzXc/HBZMRZT9BbmLpSIqDQkWrpNo7sZpZ/vW5VXjHRJMU6eU4wX7ewVKmb1lLrWTo1u92VVeAwV/Onc7UqypLqpWHNnErifPTAVWOU8fyr0lKxBzHCRMczUvnGoytlnzTmz7hkOrh/1DRq8MA+rr+oNfsk2Jca3uk6irxplKCYDmmGpsMg9sMhJoCGELkhhDQioes7q4FTLapLjquqS5RaofRLrcM0abMJSk2O9RBSskJeKJmPYHOxGliKkJt5kCQemroI+QjFIUGxD1N/HI19TOMdRZox4LQHEROPellTkW/j9J3vOLAOULYF1pWV9iPJFqummTadvkerGX/2wThOjleM0GviSz38OXi9DEfHE2BS8BMMyN5ig95m8l9el2IHBSomHW61zUDPcxwBB4hqCfjbqNoEYFPsr9S//1b/f379j+N9pUZQV1IlEFUYvcJfLl0vDL0kCYcJTegwCL14GGOEhoEf+PHY92hC0Oi6GbdaneDIdYDYlovrVu2meksCzUndrBKjGyhMrOfs3aRjAe1nwVTMISj43hsIvyUIJNxXW1nSlRKtVZKwhNNeJw54flvbkxrOJkbAtqT2AkFmQGtuzKlkW2/8G9uhmemvW9Z/84cne/MHr+m9//x7RdoePHXVKXhe7FZx+vtAsLf+oFds68M1yQVlWmzVQ8EcyaG6EItPd0dtESOYFzxfADQHlJEqOPwA5Wp1v03XyzzkOGAPSNh6M1KcVT9LoAW3+yRgB/Wh7T4kWKcFNjjV9vTKTmrPJfa1wDklew8+pKstk80Ox6fUHSdjlMRpAVIuSIrMn5TgapZyJmDHxeVf3eNSdXhv/ceRcYDaloxbK3dDvWWhae66rjTDNq4r7pGbloFiJwNvBPw2BNx/A1dP3yz2FQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=b958256ac3e1f210111afb377d013134"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="PC – Submit to Manager">2b86a166c3e1f210111afb377d0131db</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:32:18</sys_created_on>
+        <sys_id>ef7769a2c3e1f210111afb377d013170</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:33:30</sys_updated_on>
+        <ui_id>12552995-9d9d-4528-8a00-43438732d9c0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX227jNhD9FUHoo+NSvsnOW+HAQIB0U2zSvGwXBCVSMVGa1JJUEifIv3coUbbXVmyr8RZZ9MnWcMi5nTNDfnkJOQ3PwyFFk2wyGY5jhPp9hEajfkqiJOmP0gQlSRR2QkkWDDSN0hbbZc5A9EBEsZIRk4KIcpMLsrzzKySwKngGeTrngmomw/MvXzthTjScZpkOz1+2lo51R5CECVC9AdvBbeVPg4vlzznYUDytv6/81mktVJo6V/qdkD1ZJikDHzIiDOuECyIpsUovVxLNCL2WYi2Yc2nhtNApPxn+DPb6PaeXMYgqZdXa6hP7FFXi7IJYcmN1kdpCe9XKWQP5eFmFuUpkQ869++i1s9Z/dvpkW5+yzQ3RK+SbsowUwk7/nc2orc2es1kFeJ1brqDqYd/VhSSiDl+JYiE/VbUMVx7eNYCtWrl4A3OFgWSz3BXUVciXK7uZq8fPdTVmXJZ++UWhUiJWX8RazZPCury8hBnFGWeCYi4Fl84SlM3Bhwm2AAt4QfKcy3uca/XAy1MhlkX3XsBHNxPq0eWC38suSV3kXQAW6c5AflGK74jmLgu/wzGwueMMzmGrt4dNqnlu8SOn98yurddaVNlHIv5uWveIw3WhyvDC105olmYqiDHrZANM8bfC5aBKvc8eLgtVbim9+A0ieGA+UQ4DJW2jvbQldIuiVaE38LLbP1p3jiNcqLNw7RAZJMu3vPKto6p5qfF9+5i5heBTtVDD+2QtZIxO00KaKL5LwVYM3KWWg9rPw6z2wK9ycwj9k71Da7LGGc/wAvLJc8GwZilgx2CiGc5UISmuYtighUt2xrWxXnmXJp8ZlF4GCjAV2DkLSu1gpd2SQofjqCl0mQV1IN6aCSCQoAwkWAXSLuw2I3twMr4NTsS39TicES7KahjL8o1yMq2VfmNsHyjkHkQcOdOPdCo6qVPvH/pNFGgc/gd8PfGV4KP0p0OtKWUkGfTIKO5HEUIRojEax3E0HiXZiMSDbM1RjI1M4S4BJ2cAFTge19Co64x2+091oWjbaI7wqobghZJ/FQj1Yhs4t6C+Qe3WYcd9Q0mUEozIrY5yC5Pm15n33+N1+OG6yn8yxd/LhoLfvpXYH3VFrkx+V9yC/yn5t4JdOoiNGeqNI5qejeMoPhtkdHQ2oWR4RibJMO5Tlg6yH3ERpsO9t9CNq0CqJOUuVLP5bloazKkDfJ/+8nIp88KabtXDcLX2usvB4za1Y+gRcdQMnW4G0hRcPda3ZVdNB9Rj6IRERD8TFd95of4oc+moezPde98kgzWequPWPHnCUTyJ0WSMc2btMsWo+oNTYubYPSXMLk/+cBpTULjy6y0pcdjbmhK33t0t7z0Rys+md2W5betdif6f78qPeT8Dh7gAhOCqhEYVukzlA05FYcoFTaTxD5rTTZev/wC2FntIrhUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=ef7769a2c3e1f210111afb377d013170"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=2b86a166c3e1f210111afb377d0131db"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=2b86a166c3e1f210111afb377d0131db"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=2b86a166c3e1f210111afb377d0131db^sys_idNOT IN7c09ad6ac3e1f210111afb377d013198"/>
+    <sys_hub_pill_compound action="DELETE">
+        <attached_to>2b86a166c3e1f210111afb377d0131db</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{12552995-9d9d-4528-8a00-43438732d9c0.Record.employee_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:38:56</sys_created_on>
+        <sys_id>7c09ad6ac3e1f210111afb377d013198</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:38:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8d7986bf-32c0-4cf9-9a0e-4d5d155c4325</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="DELETE" query="model=2b86a166c3e1f210111afb377d0131db"/>
+    <sys_documentation action="DELETE">
+        <element>record_sys_id</element>
+        <help/>
+        <hint/>
+        <label>record_sys_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2b86a166c3e1f210111afb377d0131db</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:28:46</sys_created_on>
+        <sys_id>73a66966c3e1f210111afb377d013112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:28:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_2b86a166c3e1f210111afb377d0131db"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_2b86a166c3e1f210111afb377d0131db"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=2b86a166c3e1f210111afb377d0131db"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=2b86a166c3e1f210111afb377d0131db"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</application>
+        <file_path/>
+        <instance_id>577afe99db5a3d5cebdd2a59139619a6</instance_id>
+        <instance_name>dev202651</instance_name>
+        <name>sys_hub_flow_2b86a166c3e1f210111afb377d0131db</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;labelCacheCleanUpExecuted=true&lt;/attributes&gt;&lt;authored_on_release_version&gt;28100&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;Sends manager approval for PettyCashLines&lt;/description&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;pc__submit_to_manager&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"12552995-9d9d-4528-8a00-43438732d9c0.Record.employee_name.manager.email","label":"1➛PettyCashLines Record➛Employee Name➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"6d2ab2a7-7177-46cc-b708-022a1058f466":["ah_to"]},"attributes":null},{"name":"12552995-9d9d-4528-8a00-43438732d9c0.Record","label":"1➛PettyCashLines Record","reference":"x_1797098_pettyc_0_petty_cash_lines","reference_display":"PettyCashLines Record","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3bbfefa7-8cc8-480b-9a99-34db557f7c30.record.number","label":"2 - Update Record➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"6d2ab2a7-7177-46cc-b708-022a1058f466":["ah_subject"]},"attributes":null},{"name":"12552995-9d9d-4528-8a00-43438732d9c0.Record.employee_name","label":"1➛PettyCashLines Record➛Employee Name","reference":"sys_user","reference_display":"Employee Name","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"employee_name","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"6d2ab2a7-7177-46cc-b708-022a1058f466":[null]},"attributes":null},{"name":"12552995-9d9d-4528-8a00-43438732d9c0.Record.invoice_no","label":"1➛PettyCashLines Record➛Invoice No","reference":"","reference_display":"Invoice No","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"invoice_no","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"6d2ab2a7-7177-46cc-b708-022a1058f466":["ah_subject"]},"attributes":null},{"name":"12552995-9d9d-4528-8a00-43438732d9c0.Record.employee_name.manager","label":"1➛PettyCashLines Record➛Employee Name➛Manager","reference":"sys_user","reference_display":"Manager","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"1c8665f8-8970-4d48-b552-40e9cfa7690f":["approval_conditions"]},"attributes":null},{"name":"12552995-9d9d-4528-8a00-43438732d9c0.Record.employee_email","label":"1➛PettyCashLines Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"employee_email","choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"6d2ab2a7-7177-46cc-b708-022a1058f466":["ah_cc"]},"attributes":null}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;PC – Submit to Manager&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-04 08:28:13&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;2b86a166c3e1f210111afb377d0131db&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;PC – Submit to Manager&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="PettyCash" source="x_1797098_pettyc_0"&gt;1c06cafdc3ac7210111afb377d0131c5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="PettyCash"&gt;1c06cafdc3ac7210111afb377d0131c5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_2b86a166c3e1f210111afb377d0131db&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-04 08:39:06&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;version_record display_value="Created 12-04-2025 00:38:57"&gt;8d09a9aac3e1f210111afb377d0131ed&lt;/version_record&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=2b86a166c3e1f210111afb377d0131db"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=2b86a166c3e1f210111afb377d0131db"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=2b86a166c3e1f210111afb377d0131db"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=2b86a166c3e1f210111afb377d0131db^sys_idNOT INab86a566c3e1f210111afb377d01312a"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;2b86a166c3e1f210111afb377d0131db&lt;/id&gt;&lt;name&gt;PC – Submit to Manager&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-04 08:28:13&lt;/sys_created_on&gt;&lt;sys_id&gt;ab86a566c3e1f210111afb377d01312a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-04 08:28:13&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ab86a566c3e1f210111afb377d01312a"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=2b86a166c3e1f210111afb377d0131db^sys_idNOT IN3ba66966c3e1f210111afb377d01310d"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiUniqueId=8bceab82-6c3e-461b-a5e1-b65420fdf2e4&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;record_sys_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;record_sys_id&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="PC – Submit to Manager"&gt;2b86a166c3e1f210111afb377d0131db&lt;/model&gt;&lt;model_id&gt;2b86a166c3e1f210111afb377d0131db&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_2b86a166c3e1f210111afb377d0131db&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-04 08:28:46&lt;/sys_created_on&gt;&lt;sys_id&gt;3ba66966c3e1f210111afb377d01310d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="PettyCash"&gt;1c06cafdc3ac7210111afb377d0131c5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-04 08:28:46&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3ba66966c3e1f210111afb377d01310d"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=2b86a166c3e1f210111afb377d0131db"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=2b86a166c3e1f210111afb377d0131db"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=2b86a166c3e1f210111afb377d0131db"/&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=2b86a166c3e1f210111afb377d0131db^sys_idNOT IN2fd7252ac3e1f210111afb377d01313d,44a8ad6ac3e1f210111afb377d013101,b958256ac3e1f210111afb377d013134,ef7769a2c3e1f210111afb377d013170"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="PC – Submit to Manager"&gt;2b86a166c3e1f210111afb377d0131db&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-04 08:33:56&lt;/sys_created_on&gt;&lt;sys_id&gt;2fd7252ac3e1f210111afb377d01313d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="PettyCash"&gt;1c06cafdc3ac7210111afb377d0131c5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-04 08:35:30&lt;/sys_updated_on&gt;&lt;ui_id&gt;3bbfefa7-8cc8-480b-9a99-34db557f7c30&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1T0U7bMBT9FeTntnKSFpq+TVRIkxhMgHhhyHLt29aS42S2A3RV/33XidN2wFCReBjS+hTfe499zuk9d2uiJJmQIUia5MmxyJIsSylNx8NkdpzNklRmHCAhPWJ4AThpQZRW4vmB6zoU1uskHY3SPB/1c5nL/nCUjvtjTml/mA2z8UmWylzQwVWD22wQKZWrNF/dxguwIpZKSwuGTO7ue6TiFt/yYMlk/ax1KFnNZ6Bx9Kpj+5y9X1XhLEtRF2A8U13xPCKnsXP0dYodBAU6Ce0RePJgJCCROdcOeqTgRnJf2hWZeFtjwQKXl0avthNLZXwrtOBPTv3Cl4c0zM0BlYlowvbIokFteT7lnl/jzcLXdutXqQS41hMJc15rf7pfawcuK69K00I8n+kOXeq6MBetI2R7wd7/UTskAVXQGZi3subXy/LxqiN5pkxjSZSoS8H19sS9t2pW+0BnTUBD43HBq0qZBats+aAaMFIpBguNh8Fcl4/4plMLM+Ai8B6gq3xwhvVpU77lVgUR3/AaBG96xK3cqebO7aSgh+xnHZi0wqIE1rjQWMCaTQhgYVXlv+BTDxCJb3oxDjR9c8Ngt1BNCtxeHLQywJznvnY/akozGSgE1bgmfIG8X+z/AYj35eMA9l0+zhRo6V6RE/PhoUCqHlgr78+I3MTm0W1sblPyYTFJjmnz+x+Wfzcss9Fb6yby3Xbt3bkLzBNLTvITmo9ZBd6vBKPtBxPcLVkIh3uZme9h4hQHzmP/fQk5gHKXkJtmFV6X0IXkee18H3t00TZiOEYflo3xZ0pFlPHpY/G3MNz/BpXBcm9KCQAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=2fd7252ac3e1f210111afb377d01313d"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="PC – Submit to Manager"&gt;2b86a166c3e1f210111afb377d0131db&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-04 08:37:15&lt;/sys_created_on&gt;&lt;sys_id&gt;44a8ad6ac3e1f210111afb377d013101&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="PettyCash"&gt;1c06cafdc3ac7210111afb377d0131c5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-04 08:38:56&lt;/sys_updated_on&gt;&lt;ui_id&gt;6d2ab2a7-7177-46cc-b708-022a1058f466&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;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&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=44a8ad6ac3e1f210111afb377d013101"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Ask For Approval"&gt;f8f2e9920b10030085c083eb37673abd&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="PC – Submit to Manager"&gt;2b86a166c3e1f210111afb377d0131db&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-04 08:36:01&lt;/sys_created_on&gt;&lt;sys_id&gt;b958256ac3e1f210111afb377d013134&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="PettyCash"&gt;1c06cafdc3ac7210111afb377d0131c5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-04 08:37:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;1c8665f8-8970-4d48-b552-40e9cfa7690f&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+2YTW/bOBCG/0qgs+2lPi3lFsQI0EW3XSRpL0Eg0OQo5oKmVIlK4zX830uKlKXarms3DtAUuRjmDEm9M5xHJHW3dBh1zh0IIj9UP+PMR67nohiiOCYJwiSOojDwnYEj8BxUT1wUZf6IeVoCrnKhHKpRa4/6S1lVcLz43FnIjHFagnDO7+4HToFLNYuE0jlfbrgOlcHxFLjqemF1nF23On4oUC4K7ahkycSDbb+309y0xrykWpY3cOBJgqCg9GSYVzBw5lhQLPNysbaoqelHwTvDjAlpAp7jp4r9r57nRkh3zECFSGw21s3UZsqYswmWWCmpiazLdeJyRqAyyaGQ4ZrLy77NdPhYSKaCbIZIPOXt6JzXc/HBZMRZT9BbmLpSIqDQkWrpNo7sZpZ/vW5VXjHRJMU6eU4wX7ewVKmb1lLrWTo1u92VVeAwV/Onc7UqypLqpWHNnErifPTAVWOU8fyr0lKxBzHCRMczUvnGoytlnzTmz7hkOrh/1DRq8MA+rr+oNfsk2Jca3uk6irxplKCYDmmGpsMg9sMhJoCGELkhhDQioes7q4FTLapLjquqS5RaofRLrcM0abMJSk2O9RBSskJeKJmPYHOxGliKkJt5kCQemroI+QjFIUGxD1N/HI19TOMdRZox4LQHEROPellTkW/j9J3vOLAOULYF1pWV9iPJFqummTadvkerGX/2wThOjleM0GviSz38OXi9DEfHE2BS8BMMyN5ig95m8l9el2IHBSomHW61zUDPcxwBB4hqCfjbqNoEYFPsr9S//1b/f379j+N9pUZQV1IlEFUYvcJfLl0vDL0kCYcJTegwCL14GGOEhoEf+PHY92hC0Oi6GbdaneDIdYDYlovrVu2meksCzUndrBKjGyhMrOfs3aRjAe1nwVTMISj43hsIvyUIJNxXW1nSlRKtVZKwhNNeJw54flvbkxrOJkbAtqT2AkFmQGtuzKlkW2/8G9uhmemvW9Z/84cne/MHr+m9//x7RdoePHXVKXhe7FZx+vtAsLf+oFds68M1yQVlWmzVQ8EcyaG6EItPd0dtESOYFzxfADQHlJEqOPwA5Wp1v03XyzzkOGAPSNh6M1KcVT9LoAW3+yRgB/Wh7T4kWKcFNjjV9vTKTmrPJfa1wDklew8+pKstk80Ox6fUHSdjlMRpAVIuSIrMn5TgapZyJmDHxeVf3eNSdXhv/ceRcYDaloxbK3dDvWWhae66rjTDNq4r7pGbloFiJwNvBPw2BNx/A1dP3yz2FQAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=b958256ac3e1f210111afb377d013134"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="PC – Submit to Manager"&gt;2b86a166c3e1f210111afb377d0131db&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-04 08:32:18&lt;/sys_created_on&gt;&lt;sys_id&gt;ef7769a2c3e1f210111afb377d013170&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="PettyCash"&gt;1c06cafdc3ac7210111afb377d0131c5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-04 08:33:30&lt;/sys_updated_on&gt;&lt;ui_id&gt;12552995-9d9d-4528-8a00-43438732d9c0&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VX227jNhD9FUHoo+NSvsnOW+HAQIB0U2zSvGwXBCVSMVGa1JJUEifIv3coUbbXVmyr8RZZ9MnWcMi5nTNDfnkJOQ3PwyFFk2wyGY5jhPp9hEajfkqiJOmP0gQlSRR2QkkWDDSN0hbbZc5A9EBEsZIRk4KIcpMLsrzzKySwKngGeTrngmomw/MvXzthTjScZpkOz1+2lo51R5CECVC9AdvBbeVPg4vlzznYUDytv6/81mktVJo6V/qdkD1ZJikDHzIiDOuECyIpsUovVxLNCL2WYi2Yc2nhtNApPxn+DPb6PaeXMYgqZdXa6hP7FFXi7IJYcmN1kdpCe9XKWQP5eFmFuUpkQ869++i1s9Z/dvpkW5+yzQ3RK+SbsowUwk7/nc2orc2es1kFeJ1brqDqYd/VhSSiDl+JYiE/VbUMVx7eNYCtWrl4A3OFgWSz3BXUVciXK7uZq8fPdTVmXJZ++UWhUiJWX8RazZPCury8hBnFGWeCYi4Fl84SlM3Bhwm2AAt4QfKcy3uca/XAy1MhlkX3XsBHNxPq0eWC38suSV3kXQAW6c5AflGK74jmLgu/wzGwueMMzmGrt4dNqnlu8SOn98yurddaVNlHIv5uWveIw3WhyvDC105olmYqiDHrZANM8bfC5aBKvc8eLgtVbim9+A0ieGA+UQ4DJW2jvbQldIuiVaE38LLbP1p3jiNcqLNw7RAZJMu3vPKto6p5qfF9+5i5heBTtVDD+2QtZIxO00KaKL5LwVYM3KWWg9rPw6z2wK9ycwj9k71Da7LGGc/wAvLJc8GwZilgx2CiGc5UISmuYtighUt2xrWxXnmXJp8ZlF4GCjAV2DkLSu1gpd2SQofjqCl0mQV1IN6aCSCQoAwkWAXSLuw2I3twMr4NTsS39TicES7KahjL8o1yMq2VfmNsHyjkHkQcOdOPdCo6qVPvH/pNFGgc/gd8PfGV4KP0p0OtKWUkGfTIKO5HEUIRojEax3E0HiXZiMSDbM1RjI1M4S4BJ2cAFTge19Co64x2+091oWjbaI7wqobghZJ/FQj1Yhs4t6C+Qe3WYcd9Q0mUEozIrY5yC5Pm15n33+N1+OG6yn8yxd/LhoLfvpXYH3VFrkx+V9yC/yn5t4JdOoiNGeqNI5qejeMoPhtkdHQ2oWR4RibJMO5Tlg6yH3ERpsO9t9CNq0CqJOUuVLP5bloazKkDfJ/+8nIp88KabtXDcLX2usvB4za1Y+gRcdQMnW4G0hRcPda3ZVdNB9Rj6IRERD8TFd95of4oc+moezPde98kgzWequPWPHnCUTyJ0WSMc2btMsWo+oNTYubYPSXMLk/+cBpTULjy6y0pcdjbmhK33t0t7z0Rys+md2W5betdif6f78qPeT8Dh7gAhOCqhEYVukzlA05FYcoFTaTxD5rTTZev/wC2FntIrhUAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=ef7769a2c3e1f210111afb377d013170"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2b86a166c3e1f210111afb377d0131db"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2b86a166c3e1f210111afb377d0131db"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=2b86a166c3e1f210111afb377d0131db^sys_idNOT IN7c09ad6ac3e1f210111afb377d013198"/&gt;&lt;sys_hub_pill_compound action="INSERT_OR_UPDATE"&gt;&lt;attached_to&gt;2b86a166c3e1f210111afb377d0131db&lt;/attached_to&gt;&lt;extra_info/&gt;&lt;order&gt;0&lt;/order&gt;&lt;prescription&gt;{{12552995-9d9d-4528-8a00-43438732d9c0.Record.employee_name}}&lt;/prescription&gt;&lt;source_ui_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-04 08:38:56&lt;/sys_created_on&gt;&lt;sys_id&gt;7c09ad6ac3e1f210111afb377d013198&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="PettyCash"&gt;1c06cafdc3ac7210111afb377d0131c5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-04 08:38:56&lt;/sys_updated_on&gt;&lt;transform_compositions&gt;[]&lt;/transform_compositions&gt;&lt;transform_definition_id/&gt;&lt;ui_id&gt;8d7986bf-32c0-4cf9-9a0e-4d5d155c4325&lt;/ui_id&gt;&lt;/sys_hub_pill_compound&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=2b86a166c3e1f210111afb377d0131db"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;record_sys_id&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;record_sys_id&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_2b86a166c3e1f210111afb377d0131db&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-04 08:28:46&lt;/sys_created_on&gt;&lt;sys_id&gt;73a66966c3e1f210111afb377d013112&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="PettyCash" source="x_1797098_pettyc_0"&gt;1c06cafdc3ac7210111afb377d0131c5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="PettyCash"&gt;1c06cafdc3ac7210111afb377d0131c5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-04 08:28:46&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2b86a166c3e1f210111afb377d0131db"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2b86a166c3e1f210111afb377d0131db"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=2b86a166c3e1f210111afb377d0131db"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=2b86a166c3e1f210111afb377d0131db"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>592686439</payload_hash>
+        <record_name>PC – Submit to Manager</record_name>
+        <reverted_from/>
+        <source>5fbf495bc33c7210111afb377d0131d9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:39:07</sys_created_on>
+        <sys_id>13092daac3e1f210111afb377d013169</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19ae883dcc20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:39:07</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>5f092daa09e1f210f5f9b52955949467</update_guid>
+        <update_guid_history>5f092daa09e1f210f5f9b52955949467:592686439,50a8ad6afde1f210c8e558935d744b6e:992955079,e868656a40e1f210d17e29644bb6ff96:-85976102,c548616a5ee1f21084c1a215ca131aa5:137785758,86e7652aede1f210f65fc5baa905d5ae:-1652638204,a3c7a12af4e1f2103067375e93521d6a:-995643372,4e8769e6bfe1f210b38e9ad33a11e23a:-2136005947,5ab62d66afe1f210f01eba25309243e8:1390862472,ef86a56677e1f21001cf2c7c65acf630:-839697043</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:42:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>003c71ca92fa44098a22fc0607315c11</sys_id>
+        <sys_metadata>2b86a166c3e1f210111afb377d0131db</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PC – Submit to Manager</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_scope_delete display_value="">0cc400a5ae7b4560926829d174760089</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_2b86a166c3e1f210111afb377d0131db</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_2b86a166c3e1f210111afb377d0131db">13092daac3e1f210111afb377d013169</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:42:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

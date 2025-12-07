@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_field">
+    <sys_sg_screen_field action="DELETE">
+        <data_item_field_name>amount_balance</data_item_field_name>
+        <field_name/>
+        <hidden>false</hidden>
+        <order/>
+        <record_id_field/>
+        <screen display_value="Details">bbacd77dc365f210111afb377d013103</screen>
+        <screen_data_item_table>x_1797098_pettyc_0_pettycashmain</screen_data_item_table>
+        <sys_class_name>sys_sg_screen_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-07 10:23:56</sys_created_on>
+        <sys_id>0cdddd23c3a93210111afb377d013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>amount_balance</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_sg_screen_field_0cdddd23c3a93210111afb377d013138</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-07 10:23:56</sys_updated_on>
+        <type>text</type>
+        <value_only>false</value_only>
+    </sys_sg_screen_field>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</application>
+        <file_path/>
+        <instance_id>577afe99db5a3d5cebdd2a59139619a6</instance_id>
+        <instance_name>dev202651</instance_name>
+        <name>sys_sg_screen_field_0cdddd23c3a93210111afb377d013138</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_field"><sys_sg_screen_field action="INSERT_OR_UPDATE"><data_item_field_name>amount_balance</data_item_field_name><field_name/><hidden>false</hidden><order/><record_id_field/><screen display_value="Details">bbacd77dc365f210111afb377d013103</screen><screen_data_item_table>x_1797098_pettyc_0_pettycashmain</screen_data_item_table><sys_class_name>sys_sg_screen_field</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-07 10:23:56</sys_created_on><sys_id>0cdddd23c3a93210111afb377d013138</sys_id><sys_mod_count>0</sys_mod_count><sys_name>amount_balance</sys_name><sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package><sys_policy/><sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope><sys_update_name>sys_sg_screen_field_0cdddd23c3a93210111afb377d013138</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-07 10:23:56</sys_updated_on><type>text</type><value_only>false</value_only></sys_sg_screen_field></record_update>]]></payload>
+        <payload_hash>-305312910</payload_hash>
+        <record_name>amount_balance</record_name>
+        <reverted_from/>
+        <source>5fbf495bc33c7210111afb377d0131d9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-07 10:23:56</sys_created_on>
+        <sys_id>48dddd23c3a93210111afb377d01313c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19af856e7100000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-07 10:23:56</sys_updated_on>
+        <type>Screen fields</type>
+        <update_guid>c4dddd23aaa932101fe7439f284fe23b</update_guid>
+        <update_guid_history>c4dddd23aaa932101fe7439f284fe23b:-305312910</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-07 10:30:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_screen_field">sys_sg_screen_field</sys_db_object>
+        <sys_id>2941c5f1a9ab41d0894b634c76acbbe1</sys_id>
+        <sys_metadata>0cdddd23c3a93210111afb377d013138</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>amount_balance</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_scope_delete display_value="">0cc400a5ae7b4560926829d174760089</sys_scope_delete>
+        <sys_update_name>sys_sg_screen_field_0cdddd23c3a93210111afb377d013138</sys_update_name>
+        <sys_update_version display_value="sys_sg_screen_field_0cdddd23c3a93210111afb377d013138">48dddd23c3a93210111afb377d01313c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-07 10:30:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

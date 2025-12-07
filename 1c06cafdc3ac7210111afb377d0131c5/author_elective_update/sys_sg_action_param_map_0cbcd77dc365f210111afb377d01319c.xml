@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="DELETE">
+        <button display_value="Edit Button (Petty Cash List)">8cbcd77dc365f210111afb377d01318c</button>
+        <item_parameter display_value="Petty Cash List closed_at">48bcd77dc365f210111afb377d013176</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-02 09:08:53</sys_created_on>
+        <sys_id>0cbcd77dc365f210111afb377d01319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>48bcd77dc365f210111afb377d013176</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_0cbcd77dc365f210111afb377d01319c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-02 09:08:53</sys_updated_on>
+        <ui_parameter display_value="Closed At">c0bcd77dc365f210111afb377d013192</ui_parameter>
+    </sys_sg_action_param_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</application>
+        <file_path/>
+        <instance_id>577afe99db5a3d5cebdd2a59139619a6</instance_id>
+        <instance_name>dev202651</instance_name>
+        <name>sys_sg_action_param_map_0cbcd77dc365f210111afb377d01319c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map"><sys_sg_action_param_map action="INSERT_OR_UPDATE"><button display_value="Edit Button (Petty Cash List)">8cbcd77dc365f210111afb377d01318c</button><item_parameter display_value="Petty Cash List closed_at">48bcd77dc365f210111afb377d013176</item_parameter><sys_class_name>sys_sg_action_param_map</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-02 09:08:53</sys_created_on><sys_id>0cbcd77dc365f210111afb377d01319c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>48bcd77dc365f210111afb377d013176</sys_name><sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package><sys_policy/><sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope><sys_update_name>sys_sg_action_param_map_0cbcd77dc365f210111afb377d01319c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-02 09:08:53</sys_updated_on><ui_parameter display_value="Closed At">c0bcd77dc365f210111afb377d013192</ui_parameter></sys_sg_action_param_map></record_update>]]></payload>
+        <payload_hash>602947754</payload_hash>
+        <record_name>48bcd77dc365f210111afb377d013176</record_name>
+        <reverted_from/>
+        <source>5fbf495bc33c7210111afb377d0131d9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-02 09:08:56</sys_created_on>
+        <sys_id>b4bc9b7dc365f210111afb377d01316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19ade5272150000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-02 09:08:56</sys_updated_on>
+        <type>Action parameters mapping</type>
+        <update_guid>f8bc9b7d3465f2104258346e56fcfc6a</update_guid>
+        <update_guid_history>f8bc9b7d3465f2104258346e56fcfc6a:602947754</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-07 10:27:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_action_param_map">sys_sg_action_param_map</sys_db_object>
+        <sys_id>91ac29def7fd4d588b39ff0b69475240</sys_id>
+        <sys_metadata>0cbcd77dc365f210111afb377d01319c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>48bcd77dc365f210111afb377d013176</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_scope_delete display_value="">0cc400a5ae7b4560926829d174760089</sys_scope_delete>
+        <sys_update_name>sys_sg_action_param_map_0cbcd77dc365f210111afb377d01319c</sys_update_name>
+        <sys_update_version display_value="sys_sg_action_param_map_0cbcd77dc365f210111afb377d01319c">b4bc9b7dc365f210111afb377d01316b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-07 10:27:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

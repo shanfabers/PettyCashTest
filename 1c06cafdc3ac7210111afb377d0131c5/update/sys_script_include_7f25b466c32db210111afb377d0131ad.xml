@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_1797098_pettyc_0.PCLineUserInfo</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>PCLineUserInfo</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var PCLineUserInfo = Class.create();
+PCLineUserInfo.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+  // Client-callable entry (GlideAjax)
+  byUser: function () {
+    var uid = this.getParameter('sysparm_user') || gs.getUserID();
+    return this._payload(uid);
+  },
+
+  // Server-side convenience method (for Scripts - Background)
+  byUserId: function (uid) {
+    return this._payload(uid || gs.getUserID());
+  },
+
+  _payload: function (uid) {
+    var out = { email: '', manager: '', manager_email: '' };
+
+    var u = new global.GlideRecord('sys_user');
+    if (u.get(uid)) {
+      out.email = u.getValue('email') || '';
+      var mid = u.getValue('manager');
+      if (mid) {
+        out.manager = mid;                           // sys_id of manager
+        var m = new global.GlideRecord('sys_user');
+        if (m.get(mid)) out.manager_email = m.getValue('email') || '';
+      }
+    }
+    return new global.JSON().encode(out);
+  },
+
+  type: 'PCLineUserInfo'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 04:54:06</sys_created_on>
+        <sys_id>7f25b466c32db210111afb377d0131ad</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>PCLineUserInfo</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_script_include_7f25b466c32db210111afb377d0131ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 06:02:13</sys_updated_on>
+    </sys_script_include>
+</record_update>

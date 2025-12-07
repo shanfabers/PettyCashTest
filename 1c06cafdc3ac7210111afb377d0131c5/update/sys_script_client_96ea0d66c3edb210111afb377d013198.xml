@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>PettyCash Disable Update and delete btn</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    try {
+        // Hide Update and Delete actions in Zurich Form Engine
+        g_form.hideAction('update');
+        g_form.hideAction('delete');
+        g_form.hideAction('sysverb_update');
+        g_form.hideAction('sysverb_delete');
+    } catch (e) {
+        console.log("Action hide error: ", e);
+    }
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 06:27:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>96ea0d66c3edb210111afb377d013198</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>PettyCash Disable Update and delete btn</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_script_client_96ea0d66c3edb210111afb377d013198</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-05 08:37:55</sys_updated_on>
+        <table>x_1797098_pettyc_0_pettycashmain</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

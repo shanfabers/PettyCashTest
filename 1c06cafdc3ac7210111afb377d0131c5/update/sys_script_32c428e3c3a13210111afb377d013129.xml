@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1797098_pettyc_0_petty_cash_lines</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>PettyCash – Prevent Over-Allocation</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[// Block saving a line if it would take the header over its Allocated Amount.
+(function executeRule(current /*, previous*/ ) {
+
+    // === API names you already use ===
+    var LINES_TABLE = 'x_1797098_pettyc_0_petty_cash_lines';
+    var HEADER_TABLE = 'x_1797098_pettyc_0_pettycashmain';
+    var REF_TO_HEADER = 'pettycashmain_ref'; // line -> header reference
+    var LINE_AMOUNT = 'total_line_amount'; // amount on the line
+    var HDR_ALLOCATED = 'amount'; // allocated amount on header
+
+    function toNum(v) {
+        var n = parseFloat(v);
+        return isNaN(n) ? 0 : n;
+    }
+
+    function r2(n) {
+        return Math.round(n * 100) / 100;
+    }
+
+    var headerId = current.getValue(REF_TO_HEADER);
+    if (!headerId) return; // nothing to validate
+
+    // Get header allocated amount
+    var hdr = new GlideRecord(HEADER_TABLE);
+    if (!hdr.get(headerId)) return;
+    var allocated = toNum(hdr.getValue(HDR_ALLOCATED));
+
+    // Sum all other lines for this header
+    var sumOther = 0;
+    var gr = new GlideRecord(LINES_TABLE);
+    gr.addQuery(REF_TO_HEADER, headerId);
+    if (current.operation() === 'update') {
+        gr.addQuery('sys_id', '!=', current.getUniqueValue());
+    }
+    gr.query();
+    while (gr.next()) {
+        sumOther += toNum(gr.getValue(LINE_AMOUNT));
+    }
+
+    var thisLine = toNum(current.getValue(LINE_AMOUNT));
+    var projectedTotal = r2(sumOther + thisLine);
+
+    // If you want to permit reimbursed amount to extend the ceiling:
+    // var allocated = toNum(hdr.getValue(HDR_ALLOCATED)) + toNum(hdr.getValue('amount_reimbursed'));
+
+    if (projectedTotal > allocated) {
+        var remaining = r2(allocated - sumOther);
+        if (remaining < 0) remaining = 0;
+
+        gs.addErrorMessage(
+            'Cannot save: this invoice would exceed the Allocated Amount. ' +
+            'Allocated = ' + allocated.toFixed(2) + ', ' +
+            'Current total of other lines = ' + sumOther.toFixed(2) + ', ' +
+            'Remaining available = ' + remaining.toFixed(2) + '.'
+        );
+        current.setAbortAction(true); // prevent insert/update
+    }
+
+})(current);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-07 06:16:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>32c428e3c3a13210111afb377d013129</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PettyCash – Prevent Over-Allocation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_script_32c428e3c3a13210111afb377d013129</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-07 06:16:01</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=32c428e3c3a13210111afb377d013129"/>
+</record_update>

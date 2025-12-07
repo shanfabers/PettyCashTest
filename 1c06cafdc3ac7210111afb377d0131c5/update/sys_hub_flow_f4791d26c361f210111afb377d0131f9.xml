@@ -1,0 +1,1561 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=integrated,timeFromCreateToActivate=10278000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>51cbc6c97743011031e3b3c64b5a9907</copied_from>
+        <copied_from_name>FlowTemplate: Record Trigger</copied_from_name>
+        <description>PettyCash Line – Submit to Manager based on Line Status = \'New\'</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>pettycash_line__submit_to_manager</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.line_status","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Line Status","reference":"","reference_display":"Line Status","type":"choice","base_type":"choice","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"line_status","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"New","image":"","reference":false,"rawLabel":"New","selected":false,"missing":false,"value":"new","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Pending Manager","image":"","reference":false,"rawLabel":"Pending Manager","selected":false,"missing":false,"value":"pending_manager","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Approved","image":"","reference":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Rejected","image":"","reference":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}}],"usedInstances":{"d81678d3-b4ba-4cde-8d30-f78372b1ba82":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛PettyCashLines Record","reference":"x_1797098_pettyc_0_petty_cash_lines","reference_display":"PettyCashLines","type":"reference","base_type":"reference","usedInstances":{"6d90a44d-18a0-4ba5-960a-19fc716be2f7":["record"],"c7e62e58-3097-45e0-84d1-f49f59e5a199":["record"],"015b5bb3-ade7-448d-82e0-76b7725f9506":["record"]},"attributes":{}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛PettyCashLines Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"sys_id","usedInstances":{"6d90a44d-18a0-4ba5-960a-19fc716be2f7":["record"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛PettyCashLines Record","reference":"x_1797098_pettyc_0_petty_cash_lines","reference_display":"PettyCashLines","type":"reference","base_type":"reference","usedInstances":{"6d90a44d-18a0-4ba5-960a-19fc716be2f7":["record"],"c7e62e58-3097-45e0-84d1-f49f59e5a199":["record"],"015b5bb3-ade7-448d-82e0-76b7725f9506":["record",null]},"attributes":{}},{"name":"Created_1.current.manager.manager","label":"Trigger - Record Created➛PettyCashLines Record➛Manager➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{}},{"name":"Created_1.current.description","label":"Trigger - Record Created➛PettyCashLines Record➛Invoice Description","reference":"","reference_display":"Invoice Description","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"description","usedInstances":{"c7e62e58-3097-45e0-84d1-f49f59e5a199":["approval_reason"],"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created_1.current.manager_email","label":"Trigger - Record Created➛PettyCashLines Record➛Manager Email","reference":"","reference_display":"Manager Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"manager_email","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_to"]}},{"name":"Created_1.current.employee_email","label":"Trigger - Record Created➛PettyCashLines Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"employee_email","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_cc"]}},{"name":"Created_1.current.invoice_no","label":"Trigger - Record Created➛PettyCashLines Record➛Invoice No","reference":"","reference_display":"Invoice No","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"invoice_no","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_subject",null]}},{"name":"Created_1.current.manager","label":"Trigger - Record Created➛PettyCashLines Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"manager","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created_1.current.number","label":"Trigger - Record Created➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created_1.current.employee_name","label":"Trigger - Record Created➛PettyCashLines Record➛Employee Name","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"employee_name","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created_1.current.employee_name.manager","label":"Trigger - Record Created➛PettyCashLines Record➛Employee Name➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"c7e62e58-3097-45e0-84d1-f49f59e5a199":["approval_conditions"]}},{"name":"Created_1.current.line_status","label":"Trigger - Record Created➛PettyCashLines Record➛Line Status","reference":"","reference_display":"Line Status","type":"choice","base_type":"choice","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"line_status","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"New","image":"","reference":false,"rawLabel":"New","selected":false,"missing":false,"value":"new","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Pending Manager","image":"","reference":false,"rawLabel":"Pending Manager","selected":false,"missing":false,"value":"pending_manager","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Approved","image":"","reference":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Rejected","image":"","reference":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}}],"usedInstances":{"d81678d3-b4ba-4cde-8d30-f78372b1ba82":["condition"]}},{"name":"Created or Updated_1.current.employee_name.manager","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Employee Name➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"c7e62e58-3097-45e0-84d1-f49f59e5a199":["approval_conditions"]}},{"name":"Created or Updated_1.current.employee_name.manager.email","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Employee Name➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_to"]}},{"name":"Created or Updated_1.current.employee_email","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"employee_email","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_cc"]}},{"name":"Created or Updated_1.current.invoice_no","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Invoice No","reference":"","reference_display":"Invoice No","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"invoice_no","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_subject",null]}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_subject",null]}},{"name":"Created or Updated_1.current.manager","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"manager","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created or Updated_1.current.description","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Invoice Description","reference":"","reference_display":"Invoice Description","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"description","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created or Updated_1.current.employee_name","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Employee Name","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"employee_name","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created or Updated_1.current.display_value","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Display Value","reference":"","reference_display":"Display Value","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"display_value","usedInstances":{"c7e62e58-3097-45e0-84d1-f49f59e5a199":["approval_reason"]}}]</label_cache>
+        <master_snapshot>45f2692ec3a1f210111afb377d013181</master_snapshot>
+        <master_snapshot_digest/>
+        <name>PettyCash Line – Submit to Manager</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>62a08e22c3e5f210111afb377d0131a6</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:30:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f4791d26c361f210111afb377d0131f9</sys_id>
+        <sys_mod_count>59</sys_mod_count>
+        <sys_name>PettyCash Line – Submit to Manager</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_hub_flow_f4791d26c361f210111afb377d0131f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-07 09:08:45</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 12-07-2025 01:08:42">069c45ebc3e53210111afb377d013112</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=f4791d26c361f210111afb377d0131f9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f4791d26c361f210111afb377d0131f9"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1797098_pettyc_0_petty_cash_lines">line_status=new<item display_value="New" endquery="false" field="line_status" goto="false" newquery="false" operator="=" or="false" value="new"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 10:22:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>62a08e22c3e5f210111afb377d0131a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 10:22:16</sys_updated_on>
+        <table>x_1797098_pettyc_0_petty_cash_lines</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>f4791d26c361f210111afb377d0131f9</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 10:22:16</sys_created_on>
+        <sys_id>a6a08e22c3e5f210111afb377d0131a7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 10:22:16</sys_updated_on>
+        <trigger display_value="">62a08e22c3e5f210111afb377d0131a6</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=f4791d26c361f210111afb377d0131f9^sys_idNOT INa6a08e22c3e5f210111afb377d0131a7"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f4791d26c361f210111afb377d0131f9"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f4791d26c361f210111afb377d0131f9^sys_idNOT IN30791d26c361f210111afb377d0131fe"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f4791d26c361f210111afb377d0131f9</id>
+        <name>PettyCash Line – Submit to Manager</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:30:56</sys_created_on>
+        <sys_id>30791d26c361f210111afb377d0131fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 07:30:56</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=30791d26c361f210111afb377d0131fe"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f4791d26c361f210111afb377d0131f9^sys_idNOT INa38c21e2c325f210111afb377d0131c2,b8795d26c361f210111afb377d01311e,bc795d26c361f210111afb377d013109"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="PettyCash Line – Submit to Manager">f4791d26c361f210111afb377d0131f9</model>
+        <model_id>f4791d26c361f210111afb377d0131f9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f4791d26c361f210111afb377d0131f9</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:54:25</sys_created_on>
+        <sys_id>a38c21e2c325f210111afb377d0131c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:54:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a38c21e2c325f210111afb377d0131c2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PettyCash Line – Submit to Manager">f4791d26c361f210111afb377d0131f9</model>
+        <model_id>f4791d26c361f210111afb377d0131f9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f4791d26c361f210111afb377d0131f9</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:30:57</sys_created_on>
+        <sys_id>b8795d26c361f210111afb377d01311e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:12:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b8795d26c361f210111afb377d01311e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PettyCash Line – Submit to Manager">f4791d26c361f210111afb377d0131f9</model>
+        <model_id>f4791d26c361f210111afb377d0131f9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f4791d26c361f210111afb377d0131f9</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:30:56</sys_created_on>
+        <sys_id>bc795d26c361f210111afb377d013109</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:12:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bc795d26c361f210111afb377d013109"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f4791d26c361f210111afb377d0131f9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f4791d26c361f210111afb377d0131f9"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=f4791d26c361f210111afb377d0131f9^sys_idNOT IN77db6962c325f210111afb377d013199"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="PettyCash Line – Submit to Manager">f4791d26c361f210111afb377d0131f9</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:51:26</sys_created_on>
+        <sys_id>77db6962c325f210111afb377d013199</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:59:17</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=f4791d26c361f210111afb377d0131f9^sys_idNOT IN489a59e6c361f210111afb377d01314b,86e99122c361f210111afb377d01315b,91ab9d6ac361f210111afb377d013108"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PettyCash Line – Submit to Manager">f4791d26c361f210111afb377d0131f9</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>d81678d3-b4ba-4cde-8d30-f78372b1ba82</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:35:48</sys_created_on>
+        <sys_id>489a59e6c361f210111afb377d01314b</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-07 09:08:41</sys_updated_on>
+        <ui_id>c7e62e58-3097-45e0-84d1-f49f59e5a199</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YXW/iOhD9K8jPlHUICYG3qqjSXu3HVT/2pVSRcRzwlXGyidNtLuK/7zh2SAqUhSv2obf7gvB4xjlzMsdj52GFeITGaBjEfTYa9fHMwdjFOPAoDlw2c4f+0CUUoy6SZMnAM2M0ySIYPxFRaMNqdZUxoljUSbLOfRrpv6HTo0WWManWa3CNeJ4KUn6zEWChCy4imEfjh8cuSkkGiyuWofFqa+pYdILMmADXmxreNlxVpnocJbRYAq6Q18ZPNnJiZzofJzADQRoO7iL2rJiMGOCIichZFy2JhCSTrERjlRVggPSjr1KUG48Fl8rkuSTPOf8XHuz2tV/MIDFqOdgMQ8uPMccTosgtrExVkW3oSjhluaEkYjEphLpq24zD11TxRJoQRWaijk5EsZRfDCFos0DrdRQ5gGCpzlMjN2nFt4vkx00N8prLihGbokgoEZsRUSrjs0JpOCvEBKsoXpI05XIeplnyxKtggLLszQUMerFIfsAzcz6XPUI17h6wSnrXYJ9U5m8k4zqJz7AMBK+7KC/zK0HyvEkFOAy/FxqJScymEFYsGAp0HM14qi7hKU/MYl53beXP6MHaok0pmeWawn8OneFoiEdBmDKlShpi8yekJF+EgktgY6f2/9YeV+Dwyc6fpoQj0NZKuLNwt9BbHVTDsJp7KYMqrPPFTFgVOIdVYC2NDEz97FFBgN+QCmxab14Gv1IAG/iuBz/D2MVO38EB84OAjjChge97A7epIUAAORARwqvOYe1jm0DPvtqwct/XEk6OP002R6RYy+bS5ti5qXN8NXkrpRxeupxvyei2NloJ9U+U0OudxPHfk4gKfrfFsrHs8Px71KYfdy/594J91HXk92f+CAfRRRTj2cUgcL0LQhm+YL7jMS/yqee4v0Gh2Dm060fBniKNORPtU5puR2GuiCr2NKWXk6dJ6whsO9K6tuBeA22FVQ339agqfqtHnU9gAcZvSWHv6bBGDxYba7Wqf5Iik3t0ADnpdPeIoDVzmgKOAFUr4C+DalsA22D/S/27f+r//1//A+9gqbWO+5s9lSYy4hpx3lKB2YlZfinL+4dfnL3YMhVJycxloQclReYsW68fdxV0plVPU98RlGy+DRSiunIdpMhqrznt2aC2/pozop20Ghyc62vBG5Pge7kp0YO1Fo+a2ooKIAhKvn1FmiIDe4rGUyQTyaaoO0XaK9TFVZnBA8BtJirbarVeG0uREbuA0xo20REp88ozpwsWQW1W1heWsBKDtZ/j29wRnNT6mxSsMzGk7NJUX6ZqnIYXvtP7bq1DtdKHO97ugd7ZeuDgj/zOcXUK621UNzjY/c6oycefpAL4QrsWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=489a59e6c361f210111afb377d01314b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>line_status = pending_manager</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PettyCash Line – Submit to Manager">f4791d26c361f210111afb377d0131f9</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>d81678d3-b4ba-4cde-8d30-f78372b1ba82</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:32:56</sys_created_on>
+        <sys_id>86e99122c361f210111afb377d01315b</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 10:23:16</sys_updated_on>
+        <ui_id>6d90a44d-18a0-4ba5-960a-19fc716be2f7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy27iMBT9FeR1hBLoA9iNQJVG6rSjdoZNW1nGvhRLjpOxHSCD8u9znTgB0YdaqRs0Wdn3YZ9zc07ysCNSkAk5AxEn4+SCD5PhcBDHg9FZsrgYLpKBGDKAhEREsxSw0gDPjMD9mqnCB3a7qQHmQPQy0/udC7+kSZ8XxoB2VYWlQtpcsXIeOjDCV1IJzJPJw1NEcmbwcAeGTHZHqY+iU2wBCkvvWnjHcF2Z+73IeJEiLirb4HXonIVM7/sMM9jk4SRxRGDrQAtAIEumLEQkZRpZZqYkE2cKDCB/catV2VWspHYN0ZRtrfyLN5/Fvm4JyIyHIXRbGgbUhJcz5tg9nsxdYbp5ZZKDbWYiYMkK5aaHsabgNncy002LYwvVdmeqSPVNMxHSHXDwPgqLICD3PD3yhtbyfpVt7lqQV1LXIwkUVcaZ6nbMOSMXhfNwdgQU1DNOWZ5L/Uxzk61l3YxQ0v6zwk1/qbIN3mnls+4z7nH3caqsf4XxWR2eMyM9iR94DDZXEbGlnSpm7Z4KzpD+KTyShligQOsp1COgtRJ8Mzcyd9/wqjV0wJugBx2UgqtXCquqioJVFufviZGP99o7uH5vly1NLseX8XhEc3Cu5DRuFpQzu6JKahzhC8f89BVTLLgO+c/55wOQW//8qlXzOoVgoRex68Pe3k2TCAY6/zIDjU7JQIHGyTvoDd90ZogH736ZD5RU698eGMFLnVrHXGEfizgeCg2bl8p/o+pz+v8Aylb/VxKUsK/AbsUPKcJzQBsaRwYIyd48JLu/yJe5ILmI6+eEvPC//Eyqp3894Ke3TgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=86e99122c361f210111afb377d01315b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PettyCash Line – Submit to Manager">f4791d26c361f210111afb377d0131f9</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>d81678d3-b4ba-4cde-8d30-f78372b1ba82</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:40:32</sys_created_on>
+        <sys_id>91ab9d6ac361f210111afb377d013108</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-07 09:08:41</sys_updated_on>
+        <ui_id>015b5bb3-ade7-448d-82e0-76b7725f9506</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=91ab9d6ac361f210111afb377d013108"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=f4791d26c361f210111afb377d0131f9"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f4791d26c361f210111afb377d0131f9^sys_idNOT IN1fa4e922c3e1f210111afb377d0131b0,c20421eec3a1f210111afb377d0131bf"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">53a4e922c3e1f210111afb377d0131b0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="PettyCash Line – Submit to Manager">f4791d26c361f210111afb377d0131f9</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>d81678d3-b4ba-4cde-8d30-f78372b1ba82</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:20:00</sys_created_on>
+        <sys_id>1fa4e922c3e1f210111afb377d0131b0</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-07 09:08:41</sys_updated_on>
+        <ui_id>babe9a0e-321d-4411-84d1-5c307f2a6df4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4e0421eec3a1f210111afb377d0131bd</block>
+        <comment>if line</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="PettyCash Line – Submit to Manager">f4791d26c361f210111afb377d0131f9</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:17:10</sys_created_on>
+        <sys_id>c20421eec3a1f210111afb377d0131bf</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-07 09:08:41</sys_updated_on>
+        <ui_id>d81678d3-b4ba-4cde-8d30-f78372b1ba82</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9FYNnQdASG41vgYMABdIGaNJc2kAYkZRNlCJVLnZcwf/eoTYbrbuk7bE38c1w5r3HGagl2rvGO/ugr6wVa0WWH54iIlTA8LslCmpOloRqxYQTWhUdEJEtSB8CUiheWAfO25mwM8V3GGTCNhL2jz/LoRshmeFDxwYM1nXckGX7TUgwLFElUKWXNKV5tsizJMleXaTlIi/TjOXAIceCEkouMXU1Up3ddkj0Qw1u3wTcOiPUejjfDlXuR1AbFlilSUT4s+OKceRTgbQ8IjUoBk6b/YQYDuxOySOwEcphORKSn634gg2z+TwkVhwlUt4Hp2MxeNfD1TU4QCqeOm+GVLrRgnLbm8N4BV661SnWJ9w1QWp/xUEpx9ta+lq97R0hU4HxqRDxFknwJigN1Acd1f1G796NLG+E6lwZglJTkNMJHHpXehf4tIRLXmOhooamQUeLxuit6C4jlzpeSzzEldQ7bBomMAYaiMdoLMQ3iF938CMYEVS8wTJ4uadZghW06KYVy6FNnBwiYvd2JcHao0h0t/jsA8Ve8iCu6P0JV6gRjbvCzls+6DhE3w//ydy37Qrf2nE202b2vmHhs0hj6g0a5OKTkT8cPvokydnZ1fjTMi/bnkuYV/M0mZ/fnovFue05szcvXJnsFysT3us3NyZJkv8r89crI2zRD/qgrWv+DzfmKaxH33PymgqL1B4C9nr8q4TAHodL0FNop82nIOqIHb4C/686S58GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f4791d26c361f210111afb377d0131f9^sys_idNOT IN1d9d2126c325f210111afb377d0131dc,1dbc19eac361f210111afb377d0131b2,51bc19eac361f210111afb377d0131b3,559d2126c325f210111afb377d0131dd,91bc19eac361f210111afb377d0131b2,95bc19eac361f210111afb377d0131b3,9d9d2126c325f210111afb377d0131db,d19d2126c325f210111afb377d0131dc,d1bc19eac361f210111afb377d0131b1,d59d2126c325f210111afb377d0131db,d5bc19eac361f210111afb377d0131b2,d9bc19eac361f210111afb377d0131b3"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f4791d26c361f210111afb377d0131f9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:58:54</sys_created_on>
+        <sys_id>1d9d2126c325f210111afb377d0131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:58:54</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0b1c1b02-895f-428e-8c9a-07da3629f573</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f4791d26c361f210111afb377d0131f9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:45:11</sys_created_on>
+        <sys_id>1dbc19eac361f210111afb377d0131b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 07:45:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7ad02170-79bd-4fca-a621-fb42a5e1d4b6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f4791d26c361f210111afb377d0131f9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:45:11</sys_created_on>
+        <sys_id>51bc19eac361f210111afb377d0131b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 07:45:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ea9f466f-47ed-4177-b90b-0253f46c4f26</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f4791d26c361f210111afb377d0131f9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.manager}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:58:54</sys_created_on>
+        <sys_id>559d2126c325f210111afb377d0131dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:58:54</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>41f9958f-c9be-41d3-992c-064aa55b32dd</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f4791d26c361f210111afb377d0131f9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.invoice_no}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:45:11</sys_created_on>
+        <sys_id>91bc19eac361f210111afb377d0131b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 07:45:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e62654fe-5792-419c-9120-764748a03468</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f4791d26c361f210111afb377d0131f9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.employee_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:45:11</sys_created_on>
+        <sys_id>95bc19eac361f210111afb377d0131b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 07:45:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b32b70ac-4456-4ca7-a953-ccbcb0fd20af</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f4791d26c361f210111afb377d0131f9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:58:54</sys_created_on>
+        <sys_id>9d9d2126c325f210111afb377d0131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:58:54</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a972a6a9-2082-42e9-ab21-fff90f0fdebc</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f4791d26c361f210111afb377d0131f9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.employee_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:58:54</sys_created_on>
+        <sys_id>d19d2126c325f210111afb377d0131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:58:54</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>34558884-77b7-43c3-afbf-a02d202a4eb3</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f4791d26c361f210111afb377d0131f9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.manager}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:45:11</sys_created_on>
+        <sys_id>d1bc19eac361f210111afb377d0131b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 07:45:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ba2f5513-8b59-4daa-8713-b28ad8dd8d1e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f4791d26c361f210111afb377d0131f9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.invoice_no}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:58:54</sys_created_on>
+        <sys_id>d59d2126c325f210111afb377d0131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:58:54</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4bdcd377-9f24-4d96-b01b-0305c485b5f2</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f4791d26c361f210111afb377d0131f9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:45:11</sys_created_on>
+        <sys_id>d5bc19eac361f210111afb377d0131b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 07:45:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7b668ec6-2122-46b6-9c0f-0b7fd07516c2</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f4791d26c361f210111afb377d0131f9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:45:11</sys_created_on>
+        <sys_id>d9bc19eac361f210111afb377d0131b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 07:45:11</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d1c1fcf2-27cc-4e1d-89e5-56719cc0f70b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f4791d26c361f210111afb377d0131f9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f4791d26c361f210111afb377d0131f9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:54:25</sys_created_on>
+        <sys_id>a78c21e2c325f210111afb377d0131c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:54:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f4791d26c361f210111afb377d0131f9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:30:57</sys_created_on>
+        <sys_id>bc795d26c361f210111afb377d013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 07:30:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f4791d26c361f210111afb377d0131f9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 07:30:57</sys_created_on>
+        <sys_id>f0795d26c361f210111afb377d01311d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 07:30:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f4791d26c361f210111afb377d0131f9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f4791d26c361f210111afb377d0131f9"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=integrated,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>51cbc6c97743011031e3b3c64b5a9907</copied_from>
+        <copied_from_name/>
+        <description>PettyCash Line – Submit to Manager based on Line Status = \'New\'</description>
+        <flow_priority/>
+        <internal_name>pettycash_line__submit_to_manager</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.line_status","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Line Status","reference":"","reference_display":"Line Status","type":"choice","base_type":"choice","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"line_status","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"New","image":"","reference":false,"rawLabel":"New","selected":false,"missing":false,"value":"new","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Pending Manager","image":"","reference":false,"rawLabel":"Pending Manager","selected":false,"missing":false,"value":"pending_manager","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Approved","image":"","reference":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Rejected","image":"","reference":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}}],"usedInstances":{"d81678d3-b4ba-4cde-8d30-f78372b1ba82":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛PettyCashLines Record","reference":"x_1797098_pettyc_0_petty_cash_lines","reference_display":"PettyCashLines","type":"reference","base_type":"reference","usedInstances":{"6d90a44d-18a0-4ba5-960a-19fc716be2f7":["record"],"c7e62e58-3097-45e0-84d1-f49f59e5a199":["record"],"015b5bb3-ade7-448d-82e0-76b7725f9506":["record"]},"attributes":{}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛PettyCashLines Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"sys_id","usedInstances":{"6d90a44d-18a0-4ba5-960a-19fc716be2f7":["record"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛PettyCashLines Record","reference":"x_1797098_pettyc_0_petty_cash_lines","reference_display":"PettyCashLines","type":"reference","base_type":"reference","usedInstances":{"6d90a44d-18a0-4ba5-960a-19fc716be2f7":["record"],"c7e62e58-3097-45e0-84d1-f49f59e5a199":["record"],"015b5bb3-ade7-448d-82e0-76b7725f9506":["record",null]},"attributes":{}},{"name":"Created_1.current.manager.manager","label":"Trigger - Record Created➛PettyCashLines Record➛Manager➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{}},{"name":"Created_1.current.description","label":"Trigger - Record Created➛PettyCashLines Record➛Invoice Description","reference":"","reference_display":"Invoice Description","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"description","usedInstances":{"c7e62e58-3097-45e0-84d1-f49f59e5a199":["approval_reason"],"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created_1.current.manager_email","label":"Trigger - Record Created➛PettyCashLines Record➛Manager Email","reference":"","reference_display":"Manager Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"manager_email","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_to"]}},{"name":"Created_1.current.employee_email","label":"Trigger - Record Created➛PettyCashLines Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"employee_email","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_cc"]}},{"name":"Created_1.current.invoice_no","label":"Trigger - Record Created➛PettyCashLines Record➛Invoice No","reference":"","reference_display":"Invoice No","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"invoice_no","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_subject",null]}},{"name":"Created_1.current.manager","label":"Trigger - Record Created➛PettyCashLines Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"manager","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created_1.current.number","label":"Trigger - Record Created➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created_1.current.employee_name","label":"Trigger - Record Created➛PettyCashLines Record➛Employee Name","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"employee_name","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created_1.current.employee_name.manager","label":"Trigger - Record Created➛PettyCashLines Record➛Employee Name➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"c7e62e58-3097-45e0-84d1-f49f59e5a199":["approval_conditions"]}},{"name":"Created_1.current.line_status","label":"Trigger - Record Created➛PettyCashLines Record➛Line Status","reference":"","reference_display":"Line Status","type":"choice","base_type":"choice","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"line_status","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"New","image":"","reference":false,"rawLabel":"New","selected":false,"missing":false,"value":"new","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Pending Manager","image":"","reference":false,"rawLabel":"Pending Manager","selected":false,"missing":false,"value":"pending_manager","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Approved","image":"","reference":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}},{"used":false,"label":"Rejected","image":"","reference":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"x_1797098_pettyc_0_petty_cash_lines","dependent_values":[""]}}],"usedInstances":{"d81678d3-b4ba-4cde-8d30-f78372b1ba82":["condition"]}},{"name":"Created or Updated_1.current.employee_name.manager","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Employee Name➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"c7e62e58-3097-45e0-84d1-f49f59e5a199":["approval_conditions"]}},{"name":"Created or Updated_1.current.employee_name.manager.email","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Employee Name➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_to"]}},{"name":"Created or Updated_1.current.employee_email","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Employee Email","reference":"","reference_display":"Employee Email","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"employee_email","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_cc"]}},{"name":"Created or Updated_1.current.invoice_no","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Invoice No","reference":"","reference_display":"Invoice No","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"invoice_no","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_subject",null]}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"number","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":["ah_subject",null]}},{"name":"Created or Updated_1.current.manager","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"manager","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created or Updated_1.current.description","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Invoice Description","reference":"","reference_display":"Invoice Description","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"description","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created or Updated_1.current.employee_name","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Employee Name","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"employee_name","usedInstances":{"015b5bb3-ade7-448d-82e0-76b7725f9506":[null]}},{"name":"Created or Updated_1.current.display_value","label":"Trigger - Record Created or Updated➛PettyCashLines Record➛Display Value","reference":"","reference_display":"Display Value","type":"string","base_type":"string","parent_table_name":"x_1797098_pettyc_0_petty_cash_lines","column_name":"display_value","usedInstances":{"c7e62e58-3097-45e0-84d1-f49f59e5a199":["approval_reason"]}}]</label_cache>
+        <master>true</master>
+        <name>PettyCash Line – Submit to Manager</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="PettyCash Line – Submit to Manager">f4791d26c361f210111afb377d0131f9</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>45f2692ec3a1f210111afb377d013181</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 10:22:16</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=45f2692ec3a1f210111afb377d013181"/>
+    <sys_variable_value action="delete_multiple" query="document_key=45f2692ec3a1f210111afb377d013181"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=45f2692ec3a1f210111afb377d013181"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=45f2692ec3a1f210111afb377d013181^sys_idNOT INc5f2692ec3a1f210111afb377d013182"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>45f2692ec3a1f210111afb377d013181</id>
+        <name>PettyCash Line – Submit to Manager</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:28</sys_created_on>
+        <sys_id>c5f2692ec3a1f210111afb377d013182</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:12:28</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c5f2692ec3a1f210111afb377d013182"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=45f2692ec3a1f210111afb377d013181^sys_idNOT IN0df2692ec3a1f210111afb377d013190,3b8c61e2c325f210111afb377d0131d1,91f2692ec3a1f210111afb377d0131a4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PettyCash Line – Submit to Manager">45f2692ec3a1f210111afb377d013181</model>
+        <model_id>45f2692ec3a1f210111afb377d013181</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_45f2692ec3a1f210111afb377d013181</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:28</sys_created_on>
+        <sys_id>0df2692ec3a1f210111afb377d013190</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 10:22:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0df2692ec3a1f210111afb377d013190"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="PettyCash Line – Submit to Manager">45f2692ec3a1f210111afb377d013181</model>
+        <model_id>45f2692ec3a1f210111afb377d013181</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_45f2692ec3a1f210111afb377d013181</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:54:26</sys_created_on>
+        <sys_id>3b8c61e2c325f210111afb377d0131d1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:54:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3b8c61e2c325f210111afb377d0131d1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PettyCash Line – Submit to Manager">45f2692ec3a1f210111afb377d013181</model>
+        <model_id>45f2692ec3a1f210111afb377d013181</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_45f2692ec3a1f210111afb377d013181</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>91f2692ec3a1f210111afb377d0131a4</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 10:22:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=91f2692ec3a1f210111afb377d0131a4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=45f2692ec3a1f210111afb377d013181"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=45f2692ec3a1f210111afb377d013181"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=45f2692ec3a1f210111afb377d013181^sys_idNOT IN11f2692ec3a1f210111afb377d0131d9"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="PettyCash Line – Submit to Manager">45f2692ec3a1f210111afb377d013181</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>11f2692ec3a1f210111afb377d0131d9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:59:19</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=45f2692ec3a1f210111afb377d013181^sys_idNOT IN95f2692ec3a1f210111afb377d0131d6,99f2692ec3a1f210111afb377d0131cf,d9f2692ec3a1f210111afb377d0131d1"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PettyCash Line – Submit to Manager">45f2692ec3a1f210111afb377d013181</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>d81678d3-b4ba-4cde-8d30-f78372b1ba82</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>95f2692ec3a1f210111afb377d0131d6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:59:19</sys_updated_on>
+        <ui_id>015b5bb3-ade7-448d-82e0-76b7725f9506</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=95f2692ec3a1f210111afb377d0131d6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>line_status = pending_manager</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PettyCash Line – Submit to Manager">45f2692ec3a1f210111afb377d013181</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>d81678d3-b4ba-4cde-8d30-f78372b1ba82</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>99f2692ec3a1f210111afb377d0131cf</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:59:19</sys_updated_on>
+        <ui_id>6d90a44d-18a0-4ba5-960a-19fc716be2f7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy27iMBT9FeR1hBLoA9iNQJVG6rSjdoZNW1nGvhRLjpOxHSCD8u9znTgB0YdaqRs0Wdn3YZ9zc07ysCNSkAk5AxEn4+SCD5PhcBDHg9FZsrgYLpKBGDKAhEREsxSw0gDPjMD9mqnCB3a7qQHmQPQy0/udC7+kSZ8XxoB2VYWlQtpcsXIeOjDCV1IJzJPJw1NEcmbwcAeGTHZHqY+iU2wBCkvvWnjHcF2Z+73IeJEiLirb4HXonIVM7/sMM9jk4SRxRGDrQAtAIEumLEQkZRpZZqYkE2cKDCB/catV2VWspHYN0ZRtrfyLN5/Fvm4JyIyHIXRbGgbUhJcz5tg9nsxdYbp5ZZKDbWYiYMkK5aaHsabgNncy002LYwvVdmeqSPVNMxHSHXDwPgqLICD3PD3yhtbyfpVt7lqQV1LXIwkUVcaZ6nbMOSMXhfNwdgQU1DNOWZ5L/Uxzk61l3YxQ0v6zwk1/qbIN3mnls+4z7nH3caqsf4XxWR2eMyM9iR94DDZXEbGlnSpm7Z4KzpD+KTyShligQOsp1COgtRJ8Mzcyd9/wqjV0wJugBx2UgqtXCquqioJVFufviZGP99o7uH5vly1NLseX8XhEc3Cu5DRuFpQzu6JKahzhC8f89BVTLLgO+c/55wOQW//8qlXzOoVgoRex68Pe3k2TCAY6/zIDjU7JQIHGyTvoDd90ZogH736ZD5RU698eGMFLnVrHXGEfizgeCg2bl8p/o+pz+v8Aylb/VxKUsK/AbsUPKcJzQBsaRwYIyd48JLu/yJe5ILmI6+eEvPC//Eyqp3894Ke3TgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=99f2692ec3a1f210111afb377d0131cf"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="PettyCash Line – Submit to Manager">45f2692ec3a1f210111afb377d013181</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>d81678d3-b4ba-4cde-8d30-f78372b1ba82</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>d9f2692ec3a1f210111afb377d0131d1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 10:22:16</sys_updated_on>
+        <ui_id>c7e62e58-3097-45e0-84d1-f49f59e5a199</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YXW/iOhD9K8jPlHUICYG3qqjSXu3HVT/2pVSRcRzwlXGyidNtLuK/7zh2SAqUhSv2obf7gvB4xjlzMsdj52GFeITGaBjEfTYa9fHMwdjFOPAoDlw2c4f+0CUUoy6SZMnAM2M0ySIYPxFRaMNqdZUxoljUSbLOfRrpv6HTo0WWManWa3CNeJ4KUn6zEWChCy4imEfjh8cuSkkGiyuWofFqa+pYdILMmADXmxreNlxVpnocJbRYAq6Q18ZPNnJiZzofJzADQRoO7iL2rJiMGOCIichZFy2JhCSTrERjlRVggPSjr1KUG48Fl8rkuSTPOf8XHuz2tV/MIDFqOdgMQ8uPMccTosgtrExVkW3oSjhluaEkYjEphLpq24zD11TxRJoQRWaijk5EsZRfDCFos0DrdRQ5gGCpzlMjN2nFt4vkx00N8prLihGbokgoEZsRUSrjs0JpOCvEBKsoXpI05XIeplnyxKtggLLszQUMerFIfsAzcz6XPUI17h6wSnrXYJ9U5m8k4zqJz7AMBK+7KC/zK0HyvEkFOAy/FxqJScymEFYsGAp0HM14qi7hKU/MYl53beXP6MHaok0pmeWawn8OneFoiEdBmDKlShpi8yekJF+EgktgY6f2/9YeV+Dwyc6fpoQj0NZKuLNwt9BbHVTDsJp7KYMqrPPFTFgVOIdVYC2NDEz97FFBgN+QCmxab14Gv1IAG/iuBz/D2MVO38EB84OAjjChge97A7epIUAAORARwqvOYe1jm0DPvtqwct/XEk6OP002R6RYy+bS5ti5qXN8NXkrpRxeupxvyei2NloJ9U+U0OudxPHfk4gKfrfFsrHs8Px71KYfdy/594J91HXk92f+CAfRRRTj2cUgcL0LQhm+YL7jMS/yqee4v0Gh2Dm060fBniKNORPtU5puR2GuiCr2NKWXk6dJ6whsO9K6tuBeA22FVQ339agqfqtHnU9gAcZvSWHv6bBGDxYba7Wqf5Iik3t0ADnpdPeIoDVzmgKOAFUr4C+DalsA22D/S/27f+r//1//A+9gqbWO+5s9lSYy4hpx3lKB2YlZfinL+4dfnL3YMhVJycxloQclReYsW68fdxV0plVPU98RlGy+DRSiunIdpMhqrznt2aC2/pozop20Ghyc62vBG5Pge7kp0YO1Fo+a2ooKIAhKvn1FmiIDe4rGUyQTyaaoO0XaK9TFVZnBA8BtJirbarVeG0uREbuA0xo20REp88ozpwsWQW1W1heWsBKDtZ/j29wRnNT6mxSsMzGk7NJUX6ZqnIYXvtP7bq1DtdKHO97ugd7ZeuDgj/zOcXUK621UNzjY/c6oycefpAL4QrsWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d9f2692ec3a1f210111afb377d0131d1"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=45f2692ec3a1f210111afb377d013181"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=45f2692ec3a1f210111afb377d013181^sys_idNOT IN4ec4a162c3e1f210111afb377d013138,86c4a162c3e1f210111afb377d01313b"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4e0421eec3a1f210111afb377d0131bd</block>
+        <comment>if line</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="PettyCash Line – Submit to Manager">45f2692ec3a1f210111afb377d013181</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:20:27</sys_created_on>
+        <sys_id>4ec4a162c3e1f210111afb377d013138</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 10:22:16</sys_updated_on>
+        <ui_id>d81678d3-b4ba-4cde-8d30-f78372b1ba82</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9FYNnQdASG41vgYMABdIGaNJc2kAYkZRNlCJVLnZcwf/eoTYbrbuk7bE38c1w5r3HGagl2rvGO/ugr6wVa0WWH54iIlTA8LslCmpOloRqxYQTWhUdEJEtSB8CUiheWAfO25mwM8V3GGTCNhL2jz/LoRshmeFDxwYM1nXckGX7TUgwLFElUKWXNKV5tsizJMleXaTlIi/TjOXAIceCEkouMXU1Up3ddkj0Qw1u3wTcOiPUejjfDlXuR1AbFlilSUT4s+OKceRTgbQ8IjUoBk6b/YQYDuxOySOwEcphORKSn634gg2z+TwkVhwlUt4Hp2MxeNfD1TU4QCqeOm+GVLrRgnLbm8N4BV661SnWJ9w1QWp/xUEpx9ta+lq97R0hU4HxqRDxFknwJigN1Acd1f1G796NLG+E6lwZglJTkNMJHHpXehf4tIRLXmOhooamQUeLxuit6C4jlzpeSzzEldQ7bBomMAYaiMdoLMQ3iF938CMYEVS8wTJ4uadZghW06KYVy6FNnBwiYvd2JcHao0h0t/jsA8Ve8iCu6P0JV6gRjbvCzls+6DhE3w//ydy37Qrf2nE202b2vmHhs0hj6g0a5OKTkT8cPvokydnZ1fjTMi/bnkuYV/M0mZ/fnovFue05szcvXJnsFysT3us3NyZJkv8r89crI2zRD/qgrWv+DzfmKaxH33PymgqL1B4C9nr8q4TAHodL0FNop82nIOqIHb4C/686S58GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">53a4e922c3e1f210111afb377d0131b0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="PettyCash Line – Submit to Manager">45f2692ec3a1f210111afb377d013181</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>d81678d3-b4ba-4cde-8d30-f78372b1ba82</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:20:28</sys_created_on>
+        <sys_id>86c4a162c3e1f210111afb377d01313b</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 10:22:16</sys_updated_on>
+        <ui_id>babe9a0e-321d-4411-84d1-5c307f2a6df4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=45f2692ec3a1f210111afb377d013181^sys_idNOT IN1bad2966c325f210111afb377d013128,1df2692ec3a1f210111afb377d0131d9,1df2692ec3a1f210111afb377d0131e6,59f2692ec3a1f210111afb377d0131d9,59f2692ec3a1f210111afb377d0131e6,5fad2966c325f210111afb377d013128,95f2692ec3a1f210111afb377d0131d9,97ad2966c325f210111afb377d013129,d1f2692ec3a1f210111afb377d0131d9,d3ad2966c325f210111afb377d013128,ddf2692ec3a1f210111afb377d0131d9,dfad2966c325f210111afb377d013129"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>45f2692ec3a1f210111afb377d013181</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:59:19</sys_created_on>
+        <sys_id>1bad2966c325f210111afb377d013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:59:19</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a972a6a9-2082-42e9-ab21-fff90f0fdebc</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>45f2692ec3a1f210111afb377d013181</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>1df2692ec3a1f210111afb377d0131d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:12:29</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7ad02170-79bd-4fca-a621-fb42a5e1d4b6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>45f2692ec3a1f210111afb377d013181</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>1df2692ec3a1f210111afb377d0131e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:12:29</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d1c1fcf2-27cc-4e1d-89e5-56719cc0f70b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>45f2692ec3a1f210111afb377d013181</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>59f2692ec3a1f210111afb377d0131d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:12:29</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7b668ec6-2122-46b6-9c0f-0b7fd07516c2</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>45f2692ec3a1f210111afb377d013181</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.employee_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>59f2692ec3a1f210111afb377d0131e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:12:29</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b32b70ac-4456-4ca7-a953-ccbcb0fd20af</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>45f2692ec3a1f210111afb377d013181</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.employee_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:59:19</sys_created_on>
+        <sys_id>5fad2966c325f210111afb377d013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:59:19</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>34558884-77b7-43c3-afbf-a02d202a4eb3</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>45f2692ec3a1f210111afb377d013181</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.invoice_no}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>95f2692ec3a1f210111afb377d0131d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:12:29</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e62654fe-5792-419c-9120-764748a03468</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>45f2692ec3a1f210111afb377d013181</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:59:19</sys_created_on>
+        <sys_id>97ad2966c325f210111afb377d013129</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:59:19</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0b1c1b02-895f-428e-8c9a-07da3629f573</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>45f2692ec3a1f210111afb377d013181</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.manager}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>d1f2692ec3a1f210111afb377d0131d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:12:29</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ba2f5513-8b59-4daa-8713-b28ad8dd8d1e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>45f2692ec3a1f210111afb377d013181</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.invoice_no}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:59:19</sys_created_on>
+        <sys_id>d3ad2966c325f210111afb377d013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:59:19</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4bdcd377-9f24-4d96-b01b-0305c485b5f2</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>45f2692ec3a1f210111afb377d013181</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>ddf2692ec3a1f210111afb377d0131d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:12:29</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ea9f466f-47ed-4177-b90b-0253f46c4f26</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>45f2692ec3a1f210111afb377d013181</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.manager}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:59:19</sys_created_on>
+        <sys_id>dfad2966c325f210111afb377d013129</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:59:19</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>41f9958f-c9be-41d3-992c-064aa55b32dd</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=45f2692ec3a1f210111afb377d013181"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_45f2692ec3a1f210111afb377d013181</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:54:26</sys_created_on>
+        <sys_id>338c61e2c325f210111afb377d0131d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:54:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_45f2692ec3a1f210111afb377d013181</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>99f2692ec3a1f210111afb377d0131b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:12:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_45f2692ec3a1f210111afb377d013181</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_id>d1f2692ec3a1f210111afb377d0131a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 08:12:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_45f2692ec3a1f210111afb377d013181"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_45f2692ec3a1f210111afb377d013181"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>f4791d26c361f210111afb377d0131f9</sys_id>
+        <latest_snapshot>45f2692ec3a1f210111afb377d013181</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch3-10-16-2025_10-24-2025_0919.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f4791d26c361f210111afb377d0131f9^sys_idNOT IN59f2a92ec3a1f210111afb377d013105"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"59f2a92ec3a1f210111afb377d013105","name":"plan","plan_signature":null}}</plan>
+        <plan_id>f4791d26c361f210111afb377d0131f9</plan_id>
+        <snapshot>01e04a62c3e5f210111afb377d01317f</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 08:12:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>59f2a92ec3a1f210111afb377d013105</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 10:22:16</sys_updated_on>
+        <trigger display_value="">62a08e22c3e5f210111afb377d0131a6</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f4791d26c361f210111afb377d0131f9"/>
+</record_update>

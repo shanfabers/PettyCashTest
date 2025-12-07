@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="a7d9fab1c3e0b210111afb377d013114" label="PettyCashMain" max_length="40" name="x_1797098_pettyc_0_pettycashmain" text_index="true" type="collection">
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" mandatory="true" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Amount Re-Imbursed" max_length="38" name="amount_reimbursed" read_only="true" type="decimal"/>
         <element choice="1" label="Category" max_length="40" name="category" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Department" sequence="0" value="department"/>
@@ -24,22 +25,22 @@
         </element>
         <element label="Closed By" max_length="40" name="closed_by" type="string"/>
         <element label="Manager" max_length="40" name="manager" read_only="true" reference="sys_user" type="reference"/>
-        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
         <element label="EmployeeId" max_length="40" name="employeeid" type="string"/>
         <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
         <element label="Employee Email" max_length="240" name="employee_email" type="string"/>
         <element label="Manager Email" max_length="40" name="manager_email" read_only="true" type="string"/>
         <element label="Receipt Upload" max_length="40" name="receipt_upload" type="file_attachment"/>
         <element label="Comments" max_length="350" name="comments" type="journal_list"/>
-        <element label="Amount Balance" max_length="38" name="amount_balance" read_only="true" type="decimal"/>
+        <element label="Amount Available" max_length="38" name="amount_balance" read_only="true" type="decimal"/>
         <element label="Finance Reviewer" max_length="32" name="finance_reviewer" reference="sys_user" type="reference"/>
         <element default="KWD" label="currency" max_length="40" name="currency" type="string"/>
         <element label="Finance Manager" max_length="32" name="finance_manager" reference="sys_user" type="reference"/>
         <element label="Last Line Amount" max_length="40" name="last_line_amount" type="string"/>
         <element label="Cashier" max_length="32" name="cashier" reference="sys_user" type="reference"/>
-        <element label="Details Amount" max_length="20" name="total_line_amount" read_only="true" type="decimal"/>
+        <element label="Total Invoice Amount" max_length="20" name="total_line_amount" read_only="true" type="decimal"/>
         <element default="6816f79cc0a8016401c5a33be04be441" label="Employee Name" max_length="140" name="employeename" reference="sys_user" type="reference"/>
-        <element label="Amount" mandatory="true" max_length="38" name="amount" type="decimal"/>
+        <element label="Allocated Amount" mandatory="true" max_length="38" name="amount" type="decimal"/>
         <element label="Description" max_length="400" name="description" type="journal"/>
         <element label="Closed At" max_length="40" name="closed_at" type="glide_date_time"/>
         <element choice="1" label="Flow Status" max_length="40" name="flow_status" type="choice">

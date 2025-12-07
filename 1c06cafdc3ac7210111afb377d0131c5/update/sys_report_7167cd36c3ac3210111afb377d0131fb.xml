@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
         <aggregation_source>no_override</aggregation_source>
@@ -72,7 +72,7 @@
         <lower_limit/>
         <map display_value="World">93b8a3a2d7101200bd4a4ebfae61033a</map>
         <map_source/>
-        <no_bulk_migration>false</no_bulk_migration>
+        <no_bulk_migration>true</no_bulk_migration>
         <orderby_list/>
         <other_threshold>-2</other_threshold>
         <others>true</others>
@@ -108,14 +108,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-16 07:47:48</sys_created_on>
         <sys_id>7167cd36c3ac3210111afb377d0131fb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Petty Cash Line Report</sys_name>
         <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
         <sys_policy/>
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_update_name>sys_report_7167cd36c3ac3210111afb377d0131fb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-16 07:47:48</sys_updated_on>
+        <sys_updated_on>2025-12-07 11:14:26</sys_updated_on>
         <table>x_1797098_pettyc_0_petty_cash_lines</table>
         <title>Petty Cash Line Report</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

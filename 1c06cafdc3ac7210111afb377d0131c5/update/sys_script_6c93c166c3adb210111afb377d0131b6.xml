@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1797098_pettyc_0_petty_cash_lines</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>PettyCashLine server → g_scratchpad</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[//(function executeRule(current, previous /*null when async*/) {
+
+// Add your code here
+
+//})(current, previous);
+
+(function() {
+    // Put current user + manager details into g_scratchpad
+    var uid = gs.getUserID();
+    var u = new GlideRecord('sys_user');
+    if (u.get(uid)) {
+        g_scratchpad.emp = u.getUniqueValue(); // sys_id of current user
+        g_scratchpad.emp_email = u.getValue('email') || '';
+        var mid = u.getValue('manager');
+
+        g_scratchpad.manager = mid || '';
+        g_scratchpad.manager_email = '';
+
+        if (mid) {
+            var m = new GlideRecord('sys_user');
+            if (m.get(mid)) {
+                g_scratchpad.manager_email = m.getValue('email') || '';
+            }
+        }
+    }
+})();]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-04 05:56:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6c93c166c3adb210111afb377d0131b6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>PettyCashLine server → g_scratchpad</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>sys_script_6c93c166c3adb210111afb377d0131b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-04 05:57:03</sys_updated_on>
+        <template/>
+        <when>before_display</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=6c93c166c3adb210111afb377d0131b6"/>
+</record_update>

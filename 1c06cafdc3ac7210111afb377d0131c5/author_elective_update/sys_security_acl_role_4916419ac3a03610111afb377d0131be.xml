@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-14 18:25:03</sys_created_on>
+        <sys_id>4916419ac3a03610111afb377d0131be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1797098_pettyc_0_petty_cash_lines.x_1797098_pettyc_0.petty_cash_lines_user</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_security_acl display_value="x_1797098_pettyc_0_petty_cash_lines">0516419ac3a03610111afb377d0131bb</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_4916419ac3a03610111afb377d0131be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-14 18:25:03</sys_updated_on>
+        <sys_user_role display_value="x_1797098_pettyc_0.petty_cash_lines_user" name="x_1797098_pettyc_0.petty_cash_lines_user">b816015ac3a03610111afb377d0131cf</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</application>
+        <file_path/>
+        <instance_id>577afe99db5a3d5cebdd2a59139619a6</instance_id>
+        <instance_name>dev202651</instance_name>
+        <name>sys_security_acl_role_4916419ac3a03610111afb377d0131be</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-14 18:25:03</sys_created_on><sys_id>4916419ac3a03610111afb377d0131be</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1797098_pettyc_0_petty_cash_lines.x_1797098_pettyc_0.petty_cash_lines_user</sys_name><sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package><sys_policy/><sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope><sys_security_acl display_value="x_1797098_pettyc_0_petty_cash_lines">0516419ac3a03610111afb377d0131bb</sys_security_acl><sys_update_name>sys_security_acl_role_4916419ac3a03610111afb377d0131be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-14 18:25:03</sys_updated_on><sys_user_role display_value="x_1797098_pettyc_0.petty_cash_lines_user" name="x_1797098_pettyc_0.petty_cash_lines_user">b816015ac3a03610111afb377d0131cf</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-292744163</payload_hash>
+        <record_name>x_1797098_pettyc_0_petty_cash_lines.x_1797098_pettyc_0.petty_cash_lines_user</record_name>
+        <reverted_from/>
+        <source>1006cafdc3ac7210111afb377d0131cb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-14 18:25:03</sys_created_on>
+        <sys_id>c516419ac3a03610111afb377d0131c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199e3f7f9530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-14 18:25:03</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>c916419a08a036107f93f727cc3de2c0</update_guid>
+        <update_guid_history>c916419a08a036107f93f727cc3de2c0:-292744163</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1797098_pettyc_0_petty_cash_lines.x_1797098_pettyc_0.petty_cash_lines_user">6533d16bc3293210111afb377d01315f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-07 09:37:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>03b5ad84814d47808c3fb4ed09244000</sys_id>
+        <sys_metadata>4916419ac3a03610111afb377d0131be</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1797098_pettyc_0_petty_cash_lines.x_1797098_pettyc_0.petty_cash_lines_user</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_scope_delete display_value="">0cc400a5ae7b4560926829d174760089</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_4916419ac3a03610111afb377d0131be</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_4916419ac3a03610111afb377d0131be">c516419ac3a03610111afb377d0131c1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-07 09:37:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -4,13 +4,13 @@
             <element>pettycashmain_ref.department</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-03 07:29:28</sys_created_on>
-            <sys_id>6d8fc09ec36d3610111afb377d0131f2</sys_id>
+            <sys_created_on>2025-12-07 06:22:30</sys_created_on>
+            <sys_id>638664e7c3a13210111afb377d013160</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Main Header" display_value="Main Header" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">41b4afdec3ac3610111afb377d013129</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-03 07:29:28</sys_updated_on>
+            <sys_updated_on>2025-12-07 06:22:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>pettycashmain_ref.number</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-03 07:29:28</sys_created_on>
-            <sys_id>658fc09ec36d3610111afb377d0131f3</sys_id>
+            <sys_created_on>2025-12-07 06:22:30</sys_created_on>
+            <sys_id>ef8664e7c3a13210111afb377d013160</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Main Header" display_value="Main Header" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">41b4afdec3ac3610111afb377d013129</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-03 07:29:28</sys_updated_on>
+            <sys_updated_on>2025-12-07 06:22:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,55 +32,69 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-03 07:29:28</sys_created_on>
-            <sys_id>6d8fc09ec36d3610111afb377d0131f3</sys_id>
+            <sys_created_on>2025-12-07 06:22:30</sys_created_on>
+            <sys_id>6f8664e7c3a13210111afb377d013161</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Main Header" display_value="Main Header" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">41b4afdec3ac3610111afb377d013129</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-03 07:29:28</sys_updated_on>
+            <sys_updated_on>2025-12-07 06:22:30</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>pettycashmain_ref.employeename</element>
+            <element>pettycashmain_ref.amount</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-03 07:29:28</sys_created_on>
-            <sys_id>658fc09ec36d3610111afb377d0131f4</sys_id>
+            <sys_created_on>2025-12-07 06:22:30</sys_created_on>
+            <sys_id>eb8664e7c3a13210111afb377d013162</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Main Header" display_value="Main Header" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">41b4afdec3ac3610111afb377d013129</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-03 07:29:28</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>pettycashmain_ref.amount</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-03 07:29:28</sys_created_on>
-            <sys_id>6d8fc09ec36d3610111afb377d0131f4</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Main Header" display_value="Main Header" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">41b4afdec3ac3610111afb377d013129</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-03 07:29:28</sys_updated_on>
+            <sys_updated_on>2025-12-07 06:22:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>pettycashmain_ref.total_line_amount</element>
-            <position>5</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-03 07:29:28</sys_created_on>
-            <sys_id>658fc09ec36d3610111afb377d0131f5</sys_id>
+            <sys_created_on>2025-12-07 06:22:30</sys_created_on>
+            <sys_id>6b8664e7c3a13210111afb377d013163</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Main Header" display_value="Main Header" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">41b4afdec3ac3610111afb377d013129</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-03 07:29:28</sys_updated_on>
+            <sys_updated_on>2025-12-07 06:22:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pettycashmain_ref.amount_reimbursed</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-07 06:22:30</sys_created_on>
+            <sys_id>e78664e7c3a13210111afb377d013164</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Main Header" display_value="Main Header" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">41b4afdec3ac3610111afb377d013129</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-07 06:22:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pettycashmain_ref.amount_balance</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-07 06:22:30</sys_created_on>
+            <sys_id>678664e7c3a13210111afb377d013165</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Main Header" display_value="Main Header" name="x_1797098_pettyc_0_petty_cash_lines" sys_domain="global" view="Default view">41b4afdec3ac3610111afb377d013129</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-07 06:22:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
