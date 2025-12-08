@@ -4,6 +4,7 @@
         <app_config display_value="PettyCash Form">778850eec3a07610111afb377d01312f</app_config>
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
+        <disable_interoperable>false</disable_interoperable>
         <event_mappings/>
         <macroponent display_value="Default">5f0950a6c3e07610111afb377d013177</macroponent>
         <macroponent_config/>

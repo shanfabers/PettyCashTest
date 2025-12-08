@@ -3,7 +3,7 @@
         <can_read>true</can_read>
         <can_share>false</can_share>
         <can_write>false</can_write>
-        <dashboard display_value="Petty Cash Workspace">635dc0cac3f4fa10111afb377d0131f8</dashboard>
+        <dashboard display_value="Petty Cash Workspace-Dashboard">635dc0cac3f4fa10111afb377d0131f8</dashboard>
         <group/>
         <owner>false</owner>
         <role display_value="x_1797098_pettyc_0.admin" name="x_1797098_pettyc_0.admin">5c06cafdc3ac7210111afb377d0131d0</role>

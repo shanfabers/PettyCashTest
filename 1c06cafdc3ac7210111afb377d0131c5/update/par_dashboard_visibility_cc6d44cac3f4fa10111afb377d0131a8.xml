@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_visibility">
     <par_dashboard_visibility action="INSERT_OR_UPDATE">
-        <dashboard display_value="Petty Cash Workspace">635dc0cac3f4fa10111afb377d0131f8</dashboard>
+        <dashboard display_value="Petty Cash Workspace-Dashboard">635dc0cac3f4fa10111afb377d0131f8</dashboard>
         <experience display_value="Petty Cash Workspace">7b4d4c8a35f4fa10a462a3d6a59af8b5</experience>
         <sys_class_name>par_dashboard_visibility</sys_class_name>
         <sys_created_by>admin</sys_created_by>

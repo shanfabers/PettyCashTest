@@ -5,7 +5,8 @@
         <advanced>true</advanced>
         <applies_to/>
         <condition/>
-        <decision_type/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
         <description/>
         <local_or_existing/>
         <name>x.1797098.petty-cash-workspace.*</name>

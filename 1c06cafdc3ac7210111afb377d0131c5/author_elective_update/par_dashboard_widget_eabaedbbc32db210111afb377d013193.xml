@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">7b5d04cac3f4fa10111afb377d01313d</canvas>
+        <component display_value="List">7ff373544303121093711347efb8f23c</component>
+        <component_props>{"metrics":[{"aggregateFunction":"COUNT","axisId":"primary","dataSource":"dGFibGVpbmNpZGVudDE3MzYzNjA0MzU5NjM=","id":"ZEdGaWJHVnBibU5wWkdWdWRERTNNell6TmpBME16VTVOak09MTczNjM2MDQzNjgwMQ==","numberFormat":{"customFormat":false}}],"showHeader":true,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headingLevel":2,"limit":10,"columnLimit":0,"maxCharLimit":40,"columnPreferenceKey":"","showPersonalization":false,"hideDotwalk":false,"showColumnReorder":true,"showColumnGrouping":true,"showColumnResizing":true,"showColumnFiltering":false,"showColumnSorting":true,"parFilter":"","allowAdditionalGroupByPerMetric":false,"groupBy":[],"sortByOrder":"ORDERBY","followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableCustomEmptyState":false,"componentId":"2v0zjimu","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","filterConfigurations":"@state.parFilters","groupByField":"","showLinks":true,"wrapCellContent":"useLineBreaksUserPref","showViewAll":false,"showInlineEditing":true,"allowListPagination":true,"showBorder":true,"dataSources":[],"bareBorder":false,"additionalGroupByConfig":[],"showAdditionalGroupBySelector":false}</component_props>
+        <h>13</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-08 05:58:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eabaedbbc32db210111afb377d013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>par_dashboard_widget_eabaedbbc32db210111afb377d013193</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-08 05:58:50</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>25</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</application>
+        <file_path/>
+        <instance_id>577afe99db5a3d5cebdd2a59139619a6</instance_id>
+        <instance_name>dev202651</instance_name>
+        <name>par_dashboard_widget_eabaedbbc32db210111afb377d013193</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">7b5d04cac3f4fa10111afb377d01313d</canvas><component display_value="List">7ff373544303121093711347efb8f23c</component><component_props>{"metrics":[{"aggregateFunction":"COUNT","axisId":"primary","dataSource":"dGFibGVpbmNpZGVudDE3MzYzNjA0MzU5NjM=","id":"ZEdGaWJHVnBibU5wWkdWdWRERTNNell6TmpBME16VTVOak09MTczNjM2MDQzNjgwMQ==","numberFormat":{"customFormat":false}}],"showHeader":true,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headingLevel":2,"limit":10,"columnLimit":0,"maxCharLimit":40,"columnPreferenceKey":"","showPersonalization":false,"hideDotwalk":false,"showColumnReorder":true,"showColumnGrouping":true,"showColumnResizing":true,"showColumnFiltering":false,"showColumnSorting":true,"parFilter":"","allowAdditionalGroupByPerMetric":false,"groupBy":[],"sortByOrder":"ORDERBY","followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableCustomEmptyState":false,"componentId":"2v0zjimu","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","filterConfigurations":"@state.parFilters","groupByField":"","showLinks":true,"wrapCellContent":"useLineBreaksUserPref","showViewAll":false,"showInlineEditing":true,"allowListPagination":true,"showBorder":true,"dataSources":[],"bareBorder":false,"additionalGroupByConfig":[],"showAdditionalGroupBySelector":false}</component_props><h>13</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-08 05:58:50</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>eabaedbbc32db210111afb377d013193</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package><sys_policy/><sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope><sys_update_name>par_dashboard_widget_eabaedbbc32db210111afb377d013193</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-08 05:58:50</sys_updated_on><visualization/><w>48</w><widget_props/><x>0</x><y>25</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>267128280</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>5fbf495bc33c7210111afb377d0131d9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-08 05:58:51</sys_created_on>
+        <sys_id>aebaedbbc32db210111afb377d0131af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19afc8a918d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-08 05:58:51</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>2ebaedbbf52db210baddaab47fc687ae</update_guid>
+        <update_guid_history>2ebaedbbf52db210baddaab47fc687ae:267128280</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">028bed3fc32db210111afb377d0131b3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-08 06:02:21</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>02aeff8a46864f5a810c4dc8ad559e21</sys_id>
+        <sys_metadata>eabaedbbc32db210111afb377d013193</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_scope_delete display_value="">0cc400a5ae7b4560926829d174760089</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_eabaedbbc32db210111afb377d013193</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_eabaedbbc32db210111afb377d013193">aebaedbbc32db210111afb377d0131af</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-08 06:02:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

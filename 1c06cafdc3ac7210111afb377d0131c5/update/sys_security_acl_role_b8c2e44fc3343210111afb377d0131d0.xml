@@ -13,6 +13,6 @@
         <sys_update_name>sys_security_acl_role_b8c2e44fc3343210111afb377d0131d0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-10-29 10:04:38</sys_updated_on>
-        <sys_user_role display_value="x_1797098_pettyc_0.PettyCash_Finance_Reviewer" name="x_1797098_pettyc_0.PettyCash_Finance_Reviewer">716bd4c3c3343210111afb377d0131c6</sys_user_role>
+        <sys_user_role display_value="x_1797098_pettyc_0.PettyCashFinanceReviewer" name="x_1797098_pettyc_0.PettyCashFinanceReviewer">716bd4c3c3343210111afb377d0131c6</sys_user_role>
     </sys_security_acl_role>
 </record_update>

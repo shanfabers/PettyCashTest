@@ -2,7 +2,7 @@
     <par_dashboard_tab action="INSERT_OR_UPDATE">
         <active>true</active>
         <background_color/>
-        <dashboard display_value="Petty Cash Workspace">635dc0cac3f4fa10111afb377d0131f8</dashboard>
+        <dashboard display_value="Petty Cash Workspace-Dashboard">635dc0cac3f4fa10111afb377d0131f8</dashboard>
         <name>Tab</name>
         <order>0</order>
         <sys_class_name>par_dashboard_tab</sys_class_name>

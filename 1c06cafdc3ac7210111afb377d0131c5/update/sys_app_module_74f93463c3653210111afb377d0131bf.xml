@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <application display_value="Petty Cash">7cf51a75c320b210111afb377d013164</application>
         <assessment/>
         <device_type/>
@@ -20,14 +20,14 @@
         <query/>
         <report/>
         <require_confirmation>true</require_confirmation>
-        <roles/>
+        <roles>x_1797098_pettyc_0.PettyCashUser</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-12-07 07:47:46</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>74f93463c3653210111afb377d0131bf</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>My Department Petty Cash</sys_name>
         <sys_overrides/>
         <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_update_name>sys_app_module_74f93463c3653210111afb377d0131bf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-12-07 07:49:34</sys_updated_on>
+        <sys_updated_on>2025-12-08 09:53:20</sys_updated_on>
         <timeline_page/>
         <title>My Department Petty Cash</title>
         <uncancelable>false</uncancelable>

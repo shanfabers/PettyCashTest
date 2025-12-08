@@ -6,20 +6,20 @@
         <elevated_privilege>false</elevated_privilege>
         <grantable>true</grantable>
         <includes_roles/>
-        <name>x_1797098_pettyc_0.PettyCash_Finance_Reviewer</name>
+        <name>x_1797098_pettyc_0.PettyCashFinanceReviewer</name>
         <scoped_admin>false</scoped_admin>
-        <suffix>PettyCash_Finance_Reviewer</suffix>
+        <suffix>PettyCashFinanceReviewer</suffix>
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-29 09:32:38</sys_created_on>
         <sys_id>716bd4c3c3343210111afb377d0131c6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>x_1797098_pettyc_0.PettyCash_Finance_Reviewer</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_1797098_pettyc_0.PettyCashFinanceReviewer</sys_name>
         <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
         <sys_policy/>
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_update_name>sys_user_role_716bd4c3c3343210111afb377d0131c6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-29 09:35:08</sys_updated_on>
+        <sys_updated_on>2025-12-08 08:22:36</sys_updated_on>
     </sys_user_role>
 </record_update>

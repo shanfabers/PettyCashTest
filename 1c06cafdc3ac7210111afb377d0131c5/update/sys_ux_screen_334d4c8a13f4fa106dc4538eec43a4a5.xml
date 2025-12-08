@@ -4,6 +4,7 @@
         <app_config display_value="Petty Cash Workspace App Config">3f4d4c8ae6f4fa1037711b07fc74d2b4</app_config>
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
+        <disable_interoperable>false</disable_interoperable>
         <event_mappings>[
     {
         "eventMappingId": "ckhffjjisfyaaaabboddhhhmwraaxeeaft",

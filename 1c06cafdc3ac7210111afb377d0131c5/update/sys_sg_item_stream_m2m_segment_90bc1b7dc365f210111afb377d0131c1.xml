@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_segment">
     <sys_sg_item_stream_m2m_segment action="INSERT_OR_UPDATE">
-        <item_stream display_value="54bc1b7dc365f210111afb377d0131bd Item Stream">54bc1b7dc365f210111afb377d0131c0</item_stream>
+        <item_stream display_value="Item Stream">54bc1b7dc365f210111afb377d0131c0</item_stream>
         <segment display_value="Petty Cash Details Item Stream Segment">58bc1b7dc365f210111afb377d0131bf</segment>
         <sys_class_name>sys_sg_item_stream_m2m_segment</sys_class_name>
         <sys_created_by>admin</sys_created_by>

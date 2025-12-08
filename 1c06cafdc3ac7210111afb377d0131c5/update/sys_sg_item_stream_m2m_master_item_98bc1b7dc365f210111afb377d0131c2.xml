@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_master_item">
     <sys_sg_item_stream_m2m_master_item action="INSERT_OR_UPDATE">
-        <item_stream display_value="54bc1b7dc365f210111afb377d0131bd Item Stream">54bc1b7dc365f210111afb377d0131c0</item_stream>
+        <item_stream display_value="Item Stream">54bc1b7dc365f210111afb377d0131c0</item_stream>
         <master_item display_value="Petty Cash Details Form Screen Master Item">9cbc1b7dc365f210111afb377d0131c1</master_item>
         <sys_class_name>sys_sg_item_stream_m2m_master_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
