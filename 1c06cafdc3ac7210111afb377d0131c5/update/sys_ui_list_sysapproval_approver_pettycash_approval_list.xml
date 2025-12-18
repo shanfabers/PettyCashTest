@@ -2,363 +2,108 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="sysapproval_approver" version="2" view="pettycash_approval_list">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>state</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
+            <element>approver.department</element>
+            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">c692c4f2c33db210111afb377d01317b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>7ee48aaac3e5f210111afb377d0131a3</sys_id>
+            <sys_created_on>2025-12-17 06:05:39</sys_created_on>
+            <sys_id>8692c4f2c33db210111afb377d01317c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
+            <sys_updated_on>2025-12-17 06:05:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>approver</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
+            <element>state</element>
+            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">c692c4f2c33db210111afb377d01317b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>f2e48aaac3e5f210111afb377d0131a4</sys_id>
+            <sys_created_on>2025-12-17 06:05:39</sys_created_on>
+            <sys_id>0e92c4f2c33db210111afb377d01317c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
+            <sys_updated_on>2025-12-17 06:05:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>document_id</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
+            <element>approver</element>
+            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">c692c4f2c33db210111afb377d01317b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>7ae48aaac3e5f210111afb377d0131a4</sys_id>
+            <sys_created_on>2025-12-17 06:05:39</sys_created_on>
+            <sys_id>8292c4f2c33db210111afb377d01317d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
+            <sys_updated_on>2025-12-17 06:05:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>comments</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
+            <element>document_id</element>
+            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">c692c4f2c33db210111afb377d01317b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>fee48aaac3e5f210111afb377d0131a4</sys_id>
+            <sys_created_on>2025-12-17 06:05:39</sys_created_on>
+            <sys_id>0a92c4f2c33db210111afb377d01317d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
+            <sys_updated_on>2025-12-17 06:05:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sysapproval</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
+            <element>comments</element>
+            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">c692c4f2c33db210111afb377d01317b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>76e48aaac3e5f210111afb377d0131a5</sys_id>
+            <sys_created_on>2025-12-17 06:05:39</sys_created_on>
+            <sys_id>8e92c4f2c33db210111afb377d01317d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
+            <sys_updated_on>2025-12-17 06:05:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sys_created_on</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
+            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">c692c4f2c33db210111afb377d01317b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>fae48aaac3e5f210111afb377d0131a5</sys_id>
+            <sys_created_on>2025-12-17 06:05:39</sys_created_on>
+            <sys_id>0692c4f2c33db210111afb377d01317e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
+            <sys_updated_on>2025-12-17 06:05:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sysapproval.approval_history</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
+            <element>sys_created_by</element>
+            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">c692c4f2c33db210111afb377d01317b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>72e48aaac3e5f210111afb377d0131a6</sys_id>
+            <sys_created_on>2025-12-17 06:05:39</sys_created_on>
+            <sys_id>8a92c4f2c33db210111afb377d01317e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>approval_journal_column</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>7</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>f6e48aaac3e5f210111afb377d0131a6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>approval_column</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>8</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>7ee48aaac3e5f210111afb377d0131a6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>approval_reason</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>9</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>f2e48aaac3e5f210111afb377d0131a7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>approval_source</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>10</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>7ae48aaac3e5f210111afb377d0131a7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>sys_created_by</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>11</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>fee48aaac3e5f210111afb377d0131a7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>due_date</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>12</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>76e48aaac3e5f210111afb377d0131a8</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>expected_start</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>13</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>fae48aaac3e5f210111afb377d0131a8</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>group</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>14</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>72e48aaac3e5f210111afb377d0131a9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>iteration</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>15</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>f6e48aaac3e5f210111afb377d0131a9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>order</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>16</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>7ee48aaac3e5f210111afb377d0131a9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>process_step</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>17</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>f2e48aaac3e5f210111afb377d0131aa</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>source_table</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>18</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>7ae48aaac3e5f210111afb377d0131aa</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>state_binding</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>19</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>fee48aaac3e5f210111afb377d0131aa</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>sys_tags</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>20</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>76e48aaac3e5f210111afb377d0131ab</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>sys_updated_on</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>21</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>fae48aaac3e5f210111afb377d0131ab</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>sys_updated_by</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>22</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>72e48aaac3e5f210111afb377d0131ac</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>sys_mod_count</element>
-            <list_id display_value="sysapproval_approver" element="NULL" name="sysapproval_approver" parent="NULL" relationship="NULL" sys_domain="global" view="b6d446aac3e5f210111afb377d0131d2">fae48aaac3e5f210111afb377d0131a2</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>23</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
-            <sys_id>f6e48aaac3e5f210111afb377d0131ac</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
+            <sys_updated_on>2025-12-17 06:05:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -372,10 +117,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-04 10:40:52</sys_created_on>
+            <sys_created_on>2025-12-17 06:05:39</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>fae48aaac3e5f210111afb377d0131a2</sys_id>
+            <sys_id>c692c4f2c33db210111afb377d01317b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>sysapproval_approver</sys_name>
             <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
@@ -383,7 +128,7 @@
             <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
             <sys_update_name>sys_ui_list_sysapproval_approver_pettycash_approval_list</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-04 10:40:52</sys_updated_on>
+            <sys_updated_on>2025-12-17 06:05:39</sys_updated_on>
             <sys_user/>
             <view display_value="PettyCash Approval List" name="pettycash_approval_list">b6d446aac3e5f210111afb377d0131d2</view>
             <view_name/>

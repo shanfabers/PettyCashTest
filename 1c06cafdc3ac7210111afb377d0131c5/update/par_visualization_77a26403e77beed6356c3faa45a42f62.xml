@@ -4,8 +4,8 @@
         <certified>false</certified>
         <description/>
         <macroponent display_value="List">7ff373544303121093711347efb8f23c</macroponent>
-        <name>Petty Cash Line Report</name>
-        <properties>{"metrics":[{"aggregateFunction":"COUNT","axisId":"primary","dataSource":"dGFibGV4XzE3OTcwOThfcGV0dHljXzBfcGV0dHlfY2FzaF9saW5lczE3NjUxMDYwNjQ3NjYzNzcyNTQzOS41NTU1NjczNg==","id":"ZEdGaWJHVjRYekUzT1Rjd09UaGZjR1YwZEhsalh6QmZjR1YwZEhsZlkyRnphRjlzYVc1bGN6RTNOalV4TURZd05qUTNOall6TnpjeU5UUXpPUzQxTlRVMU5qY3pOZz09MTc2NTEwNjA2NDc2Nzg1MjA3MzMzLjkwNjM1NDQx","numberFormat":{"customFormat":true,"abbreviationEnabled":true,"numberInTooltipsEnabled":true},"durationFormat":{"customFormat":false},"dateFormat":{"customFormat":false},"stringFormat":{"customFormat":false}}],"table":"x_1797098_pettyc_0_petty_cash_lines","columns":"number,description,receipt_upload,line_amount,sys_created_on","dataSources":[{"allowRealTime":true,"dataCategories":["trend","group","simple"],"filterQuery":null,"id":"dGFibGV4XzE3OTcwOThfcGV0dHljXzBfcGV0dHlfY2FzaF9saW5lczE3NjUxMDYwNjQ3NjYzNzcyNTQzOS41NTU1NjczNg==","isDatabaseView":false,"label":null,"sourceType":"table","tableOrViewName":"x_1797098_pettyc_0_petty_cash_lines"}],"emptyStateAlignment":"vertical-centered","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateIllustration":"no-data","enableCustomEmptyState":false,"enableDrilldown":true,"enableRealTimeUpdate":false,"filterConfigurations":"@state.parFilters","followFilters":false,"groupByField":null,"groupBy":null,"hideDotwalk":false,"limit":10,"maxCharLimit":4000,"showColumnFiltering":true,"showColumnGrouping":true,"showColumnReorder":true,"showColumnResizing":true,"showColumnSorting":true,"showFilterIcon":false,"showHeader":true,"headerTitle":"Petty Cash Line Report","showHeaderSeparator":false,"showInlineEditing":true,"showLinks":true,"showPersonalization":true,"showViewAll":true,"allowListPagination":true,"preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"showBorder":true,"wrapTitle":false,"showLoadingIndicator":false}</properties>
+        <name>Petty Cash Details</name>
+        <properties>{"metrics":[{"aggregateFunction":"COUNT","axisId":"primary","dataSource":"dGFibGV4XzE3OTcwOThfcGV0dHljXzBfcGV0dHlfY2FzaF9saW5lczE3NjUxMDYwNjQ3NjYzNzcyNTQzOS41NTU1NjczNg==","id":"ZEdGaWJHVjRYekUzT1Rjd09UaGZjR1YwZEhsalh6QmZjR1YwZEhsZlkyRnphRjlzYVc1bGN6RTNOalV4TURZd05qUTNOall6TnpjeU5UUXpPUzQxTlRVMU5qY3pOZz09MTc2NTEwNjA2NDc2Nzg1MjA3MzMzLjkwNjM1NDQx","numberFormat":{"customFormat":true,"abbreviationEnabled":true,"numberInTooltipsEnabled":true},"durationFormat":{"customFormat":false},"dateFormat":{"customFormat":false},"stringFormat":{"customFormat":false}}],"table":"x_1797098_pettyc_0_petty_cash_lines","columns":"number,description,receipt_upload,line_amount,sys_created_on","dataSources":[{"allowRealTime":true,"dataCategories":["trend","group","simple"],"filterQuery":null,"id":"dGFibGV4XzE3OTcwOThfcGV0dHljXzBfcGV0dHlfY2FzaF9saW5lczE3NjUxMDYwNjQ3NjYzNzcyNTQzOS41NTU1NjczNg==","isDatabaseView":false,"label":"PettyCashLines","sourceType":"table","tableOrViewName":"x_1797098_pettyc_0_petty_cash_lines"}],"emptyStateAlignment":"vertical-centered","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateIllustration":"no-data","enableCustomEmptyState":false,"enableDrilldown":true,"enableRealTimeUpdate":false,"filterConfigurations":[],"followFilters":false,"groupByField":null,"groupBy":null,"hideDotwalk":false,"limit":10,"maxCharLimit":4000,"showColumnFiltering":true,"showColumnGrouping":true,"showColumnReorder":true,"showColumnResizing":true,"showColumnSorting":true,"showFilterIcon":false,"showHeader":true,"headerTitle":"Petty Cash Details","showHeaderSeparator":true,"showInlineEditing":true,"showLinks":true,"showPersonalization":true,"showViewAll":true,"allowListPagination":true,"showBorder":true,"wrapTitle":false,"showLoadingIndicator":false,"componentId":"h2ahddvn","bareBorder":false,"titleColor":{"themeVariable":"","value":"#ca4c63"},"headerColor":{"themeVariable":"--now-color_alert--high-0","value":"#ffe5bf"}}</properties>
         <requested_by/>
         <scheduled_count>0</scheduled_count>
         <sys_class_name>par_visualization</sys_class_name>
@@ -14,15 +14,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>77a26403e77beed6356c3faa45a42f62</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Petty Cash Line Report</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Petty Cash Details</sys_name>
         <sys_overrides/>
         <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
         <sys_policy/>
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_update_name>par_visualization_77a26403e77beed6356c3faa45a42f62</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-12-07 11:14:26</sys_updated_on>
+        <sys_updated_on>2025-12-10 10:08:37</sys_updated_on>
         <type>List</type>
     </par_visualization>
 </record_update>

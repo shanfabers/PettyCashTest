@@ -91,5 +91,24 @@
             <sys_updated_on>2025-12-04 07:29:13</sys_updated_on>
             <value>rejected</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Requested</label>
+            <language>en</language>
+            <name>x_1797098_pettyc_0_petty_cash_lines</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-18 06:03:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-18 06:03:27</sys_updated_on>
+            <value>requested</value>
+        </sys_choice>
     </sys_choice>
 </record_update>

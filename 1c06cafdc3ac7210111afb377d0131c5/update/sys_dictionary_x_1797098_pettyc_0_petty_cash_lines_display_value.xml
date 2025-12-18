@@ -4,15 +4,16 @@
         <array>false</array>
         <attributes/>
         <audit>false</audit>
-        <calculation><![CDATA[(function() {
-    var parts = [];
+        <calculation><![CDATA[//(current.number + ' - ' + current.invoice_description).toString();
 
-    if (current.number) parts.push(current.number); // Line number
-    if (current.invoice_description) parts.push(current.invoice_description);
-    if (current.invoice_amount) parts.push('Amt: ' + current.invoice_amount);
+(current.number).toString();
 
-    answer = parts.join(' | '); // <- the value written to display_value
-})();]]></calculation>
+// Dictionary -> Calculation (for the display_value field)
+/*(function() {
+    var num = current.number ? current.number.toString() : '';
+    var desc = current.invoice_description ? current.invoice_description.toString() : '';
+    answer = desc ? (num + ' - ' + desc) : num; // no " - undefined"
+})();*/]]></calculation>
         <choice/>
         <choice_field/>
         <choice_table/>
@@ -61,7 +62,7 @@
         <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
         <sys_update_name>sys_dictionary_x_1797098_pettyc_0_petty_cash_lines_display_value</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-12-07 08:55:55</sys_updated_on>
+        <sys_updated_on>2025-12-17 06:12:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

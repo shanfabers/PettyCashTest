@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_visualization">
+    <par_visualization action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <certified>false</certified>
+        <description/>
+        <macroponent display_value="Donut">a2b0596cec6b9d49dd1ff9bf76b5084b</macroponent>
+        <name>PettyCash Based onStatus</name>
+        <properties>{"selectedElements":[],"showDataLabels":true,"dataLabelsType":"both","truncationType":"end","showRegister":true,"registerPosition":"bottom","registerOrientation":"horizontal","showRegisterOnSameLine":true,"showRegisterValue":true,"legendHorizontalAlignment":"center","legendExpandToFit":false,"showRegisterPercentage":true,"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[{"id":"status","label":"Finance Status"},{"id":"cashier_status","label":"Cashier Status"},{"id":"line_status","label":"Line Status"}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":true,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"refreshRequest":"","showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"dataPassthrough":null,"sortByOrder":"desc","showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":true,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":true,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"configPropModifiers":{},"showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","sharedContext":{},"colors":{},"filterConfigurations":[],"componentId":"8rs7n65l","filterPerMetric":[],"sortBy":"value","configVersion":"23.0.0-ci-SNAPSHOT","dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"PettyCashLines","sourceType":"table","tableOrViewName":"x_1797098_pettyc_0_petty_cash_lines","filterQuery":"","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE3OTcwOThfcGV0dHljXzBfcGV0dHlfY2FzaF9saW5lczE3NjYwMzg2NDk1MTU=","dataCategories":["trend","group","simple"]}],"metrics":[{"dataSource":"dGFibGV4XzE3OTcwOThfcGV0dHljXzBfcGV0dHlfY2FzaF9saW5lczE3NjYwMzg2NDk1MTU=","id":"ZEdGaWJHVjRYekUzT1Rjd09UaGZjR1YwZEhsalh6QmZjR1YwZEhsZlkyRnphRjlzYVc1bGN6RTNOall3TXpnMk5EazFNVFU9MTc2NjAzODY1MDI2Nw==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"rangesConfig":{},"colorConfig":{"type":"default"},"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzE3OTcwOThfcGV0dHljXzBfcGV0dHlfY2FzaF9saW5lczE3NjYwMzg2NDk1MTU=","groupByField":"status","isRange":false,"isChoice":true,"isPaBucket":false}],"maxNumberOfGroups":10,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"showTotalValue":true}</properties>
+        <requested_by/>
+        <scheduled_count>0</scheduled_count>
+        <sys_class_name>par_visualization</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 06:46:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3f95dd8fc3f57610111afb377d0131ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PettyCash Based onStatus</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>par_visualization_3f95dd8fc3f57610111afb377d0131ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 06:46:53</sys_updated_on>
+        <type>Donut</type>
+    </par_visualization>
+</record_update>

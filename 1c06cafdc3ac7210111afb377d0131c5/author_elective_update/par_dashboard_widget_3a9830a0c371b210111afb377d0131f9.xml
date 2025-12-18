@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">7b5d04cac3f4fa10111afb377d01313d</canvas>
+        <component display_value="List">7ff373544303121093711347efb8f23c</component>
+        <component_props>{"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"PettyCashMain","sourceType":"table","tableOrViewName":"x_1797098_pettyc_0_pettycashmain","filterQuery":"employeenameDYNAMIC90d1921e5f510100a9ad2572f2b477fe","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"204770ecc331b210111afb377d01315c","dataCategories":["trend","group","simple"]}],"additionalGroupByConfig":[],"allowAdditionalGroupByPerMetric":false,"componentId":"2n1lzgvt","contextMenuActions":[],"description":"","emptyStateAlignment":"vertical-centered","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateIllustration":"no-data","enableCustomEmptyState":false,"enableDrilldown":true,"enableRealTimeUpdate":false,"filterConfigurations":[],"headingLevel":2,"metrics":[{"aggregateFunction":"COUNT","axisId":"primary","dataSource":"dGFibGVpbmNpZGVudDE3MzYzNjA0MzU5NjM=","id":"ZEdGaWJHVnBibU5wWkdWdWRERTNNell6TmpBME16VTVOak09MTczNjM2MDQzNjgwMQ==","numberFormat":{"customFormat":false}}],"showAdditionalGroupBySelector":false,"showFilterIcon":true,"showHeaderSeparator":true,"showHeader":true,"showLoadingIndicator":false,"wrapTitle":false,"parFilter":"","parFilterConfig":[],"allowListPagination":true,"columnLimit":10,"limit":20,"maxCharLimit":4000,"columnPreferenceKey":"","bareBorder":false,"wrapCellContent":"useLineBreaksUserPref","showPersonalization":false,"hideDotwalk":false,"showColumnReorder":true,"showColumnGrouping":true,"showColumnResizing":true,"showColumnFiltering":true,"showColumnSorting":true,"followFilters":true,"showLinks":true,"showViewAll":true,"showInlineEditing":true,"columns":"number,employeename,manager,currency,amount,department,manager_email,receipt_upload,status,employee_email","headerTitle":"Petty Cash","table":"x_1797098_pettyc_0_pettycashmain","headerColor":{"themeVariable":"--now-color_alert--high-0","value":"#ffe5bf"},"titleColor":{"themeVariable":"","value":"#de1968"}}</component_props>
+        <h>15</h>
+        <name>Petty Cash</name>
+        <stored_component display_value="Petty Cash">052521b6c9a5cbebc418c0a128c395dd</stored_component>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 10:15:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3a9830a0c371b210111afb377d0131f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Petty Cash</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>par_dashboard_widget_3a9830a0c371b210111afb377d0131f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-10 10:15:18</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>37</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</application>
+        <file_path/>
+        <instance_id>577afe99db5a3d5cebdd2a59139619a6</instance_id>
+        <instance_name>dev202651</instance_name>
+        <name>par_dashboard_widget_3a9830a0c371b210111afb377d0131f9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">7b5d04cac3f4fa10111afb377d01313d</canvas><component display_value="List">7ff373544303121093711347efb8f23c</component><component_props>{"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"PettyCashMain","sourceType":"table","tableOrViewName":"x_1797098_pettyc_0_pettycashmain","filterQuery":"employeenameDYNAMIC90d1921e5f510100a9ad2572f2b477fe","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"204770ecc331b210111afb377d01315c","dataCategories":["trend","group","simple"]}],"additionalGroupByConfig":[],"allowAdditionalGroupByPerMetric":false,"componentId":"2n1lzgvt","contextMenuActions":[],"description":"","emptyStateAlignment":"vertical-centered","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateIllustration":"no-data","enableCustomEmptyState":false,"enableDrilldown":true,"enableRealTimeUpdate":false,"filterConfigurations":[],"headingLevel":2,"metrics":[{"aggregateFunction":"COUNT","axisId":"primary","dataSource":"dGFibGVpbmNpZGVudDE3MzYzNjA0MzU5NjM=","id":"ZEdGaWJHVnBibU5wWkdWdWRERTNNell6TmpBME16VTVOak09MTczNjM2MDQzNjgwMQ==","numberFormat":{"customFormat":false}}],"showAdditionalGroupBySelector":false,"showFilterIcon":true,"showHeaderSeparator":true,"showHeader":true,"showLoadingIndicator":false,"wrapTitle":false,"parFilter":"","parFilterConfig":[],"allowListPagination":true,"columnLimit":10,"limit":20,"maxCharLimit":4000,"columnPreferenceKey":"","bareBorder":false,"wrapCellContent":"useLineBreaksUserPref","showPersonalization":false,"hideDotwalk":false,"showColumnReorder":true,"showColumnGrouping":true,"showColumnResizing":true,"showColumnFiltering":true,"showColumnSorting":true,"followFilters":true,"showLinks":true,"showViewAll":true,"showInlineEditing":true,"columns":"number,employeename,manager,currency,amount,department,manager_email,receipt_upload,status,employee_email","headerTitle":"Petty Cash","table":"x_1797098_pettyc_0_pettycashmain","headerColor":{"themeVariable":"--now-color_alert--high-0","value":"#ffe5bf"},"titleColor":{"themeVariable":"","value":"#de1968"}}</component_props><h>15</h><name>Petty Cash</name><stored_component display_value="Petty Cash">052521b6c9a5cbebc418c0a128c395dd</stored_component><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-10 10:15:18</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3a9830a0c371b210111afb377d0131f9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Petty Cash</sys_name><sys_overrides/><sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package><sys_policy/><sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope><sys_update_name>par_dashboard_widget_3a9830a0c371b210111afb377d0131f9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-10 10:15:18</sys_updated_on><visualization/><w>48</w><widget_props/><x>0</x><y>37</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>1401498235</payload_hash>
+        <record_name>Petty Cash</record_name>
+        <reverted_from/>
+        <source>5fbf495bc33c7210111afb377d0131d9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 10:15:18</sys_created_on>
+        <sys_id>769830a0c371b210111afb377d0131fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b07c2151e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-10 10:15:18</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>f29830a02471b2106942b5df23512bfd</update_guid>
+        <update_guid_history>f29830a02471b2106942b5df23512bfd:1401498235</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Petty Cash">b48b3c28c371b210111afb377d013171</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 10:28:00</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>d5a1f1db8916439c8471205a99e5f924</sys_id>
+        <sys_metadata>3a9830a0c371b210111afb377d0131f9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Petty Cash</sys_name>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_scope_delete display_value="">0cc400a5ae7b4560926829d174760089</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_3a9830a0c371b210111afb377d0131f9</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_3a9830a0c371b210111afb377d0131f9">769830a0c371b210111afb377d0131fe</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-10 10:28:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

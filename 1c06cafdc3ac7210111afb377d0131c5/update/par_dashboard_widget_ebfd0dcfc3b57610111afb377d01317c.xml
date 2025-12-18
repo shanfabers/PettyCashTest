@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">7b5d04cac3f4fa10111afb377d01313d</canvas>
+        <component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"filterConfigurations":[],"scoreSize":"auto","headingPosition":"top","sparklineStyle":"area","scoreIcon":"","iconStyle":"background","showScoreDate":false,"useRelativeScoreTime":false,"showScoreUpdateTime":false,"showZero":true,"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":true,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"sortByOrder":"desc","showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"configPropModifiers":{},"showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","sharedContext":{},"colors":{},"description":"Disbursed Amount","componentId":"4o0rscnp","filterPerMetric":[],"sortBy":"value","configVersion":"23.0.0-ci-SNAPSHOT","rangesConfig":{},"colorConfig":{"type":"singleColor","values":[{"color":"d8c13f7f9f5c73001bb9baac757fcf65","metric":"ZEdGaWJHVjRYekUzT1Rjd09UaGZjR1YwZEhsalh6QmZjR1YwZEhsZlkyRnphRjlzYVc1bGN6RTNOall3TXpneE5USTVOemM9MTc2NjAzODE1NDk0Mg==","rules":[]}]},"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"PettyCashLines","sourceType":"table","tableOrViewName":"x_1797098_pettyc_0_petty_cash_lines","filterQuery":"cashier_status=disbursed^line_status=approved^status=approved","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE3OTcwOThfcGV0dHljXzBfcGV0dHlfY2FzaF9saW5lczE3NjYwMzgxNTI5Nzc=","dataCategories":["trend","group","simple"]}],"metrics":[{"dataSource":"dGFibGV4XzE3OTcwOThfcGV0dHljXzBfcGV0dHlfY2FzaF9saW5lczE3NjYwMzgxNTI5Nzc=","id":"ZEdGaWJHVjRYekUzT1Rjd09UaGZjR1YwZEhsalh6QmZjR1YwZEhsZlkyRnphRjlzYVc1bGN6RTNOall3TXpneE5USTVOemM9MTc2NjAzODE1NDk0Mg==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"headerTitle":"Disbursed","headerColor":{"themeVariable":"--now-color_alert--warning-0","value":"#fbf7bf"},"titleColor":{"themeVariable":"","value":"#1961df"}}</component_props>
+        <h>11</h>
+        <name>PettyCash Disbursed Amount</name>
+        <stored_component display_value="PettyCash Disbursed Amount">615d494fc3b57610111afb377d01314f</stored_component>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 06:13:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ebfd0dcfc3b57610111afb377d01317c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>PettyCash Disbursed Amount</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PettyCash" source="x_1797098_pettyc_0">1c06cafdc3ac7210111afb377d0131c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PettyCash">1c06cafdc3ac7210111afb377d0131c5</sys_scope>
+        <sys_update_name>par_dashboard_widget_ebfd0dcfc3b57610111afb377d01317c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 06:14:47</sys_updated_on>
+        <visualization/>
+        <w>9</w>
+        <widget_props/>
+        <x>36</x>
+        <y>3</y>
+    </par_dashboard_widget>
+</record_update>
